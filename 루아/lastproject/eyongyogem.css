@@ -1,0 +1,68 @@
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title__img{
+    background-image: url('./이용요금/castle.jpg');
+    background-size: 1269px 597px;
+    width: 1269px;
+    height: 597px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titel__name {
+    margin-top: 80px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+.titel__search{
+    margin-top: 250px;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.test{
+    border:none;
+    width: 200.32px;
+    height: 57px;
+    left: 734px;
+    top: 754px;
+
+    background: #3A73CC;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.test1{
+    margin-left: 63.26px;
+    /* border:none; */
+    width: 200.32px;
+    height: 57px;
+    left: 734px;
+    top: 754px;
+
+    background: #fff;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.test_1{
+    margin: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
