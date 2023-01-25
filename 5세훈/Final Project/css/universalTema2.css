@@ -1,6 +1,11 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 *{ 
     list-style-type: none;
     margin:0;
+}
+    
+body, * {
+	font-family: 'Noto Sans KR', sans-serif;
 }
 .main_tema_header{ 
     background-color: black;
@@ -17,18 +22,12 @@
 
 .main_tema_body_cotainer{ 
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(1024px,1fr));
-    grid-template-rows: 1fr 1fr 1fr;
-   
+    grid-template-columns: repeat(3,minmax(300px,auto));
+    align-items: center;
+    justify-content: center;
 }
 
-.main_tema_body_cardList{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
-}
+
 img{ 
     max-width: 100%;
     object-fit: fill;
@@ -52,6 +51,29 @@ img{
     display: none;
 }
 
+.tema__img_Circle{ 
+    display: grid;
+    grid-template-columns: repeat(4,minmax(200px,auto));
+    justify-content: center;
+    align-items: center;
+    margin-top:10rem;
+    gap: 5rem;
+    position: relative;
+    left:auto;
+    right: auto;
+}
+
+.tema__Circle_comment{ 
+    
+    color: #0066FF;
+    font-weight: bold;
+    position: absolute;
+    right: 17.5%;
+    left: auto;
+    height: auto;
+    
+
+}
 
 
 /* 배경 */
@@ -90,3 +112,6 @@ img{
       transform: translate(-50%, -50%) rotate(360deg)
     }
   }
+.img_DefaultMode{
+    display: flex;
+}
