@@ -17,16 +17,14 @@
 
 .main_tema_body_cotainer{ 
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(1024px,1fr));
-    grid-template-rows: 1fr 1fr 1fr;
-   
+    grid-template-columns: repeat(3,minmax(300px,auto));
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .main_tema_body_cardList{ 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     
 }
 img{ 
@@ -90,3 +88,6 @@ img{
       transform: translate(-50%, -50%) rotate(360deg)
     }
   }
+.img_DefaultMode{
+    display: flex;
+}
