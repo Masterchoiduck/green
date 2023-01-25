@@ -23,11 +23,22 @@ body, * {
 .main_tema_body_cotainer{ 
     display: grid;
     grid-template-columns: repeat(3,minmax(300px,auto));
+<<<<<<< HEAD
+=======
+    justify-items: center;
+>>>>>>> origin/main
     align-items: center;
     justify-content: center;
 }
 
+<<<<<<< HEAD
 
+=======
+.main_tema_body_cardList{ 
+    display: flex;
+    
+}
+>>>>>>> origin/main
 img{ 
     max-width: 100%;
     object-fit: fill;
@@ -114,4 +125,8 @@ img{
   }
 .img_DefaultMode{
     display: flex;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main
