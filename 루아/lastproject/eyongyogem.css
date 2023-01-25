@@ -1,3 +1,10 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color:#fff; */
+}
 .body__title{
     display: flex;
     flex-direction: column;
@@ -14,9 +21,9 @@
 }
 .titel__name {
     margin-top: 80px;
-    font-family: 'Inter';
+    font-family: 'Noto Sans KR';
     font-style: normal;
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 50px;
     line-height: 61px;
     color: #FFFFFF;
@@ -35,9 +42,9 @@
 
     background: #3A73CC;
     color: #FFFFFF;
-    font-family: 'Inter';
+    font-family: 'Noto Sans KR';
     font-style: normal;
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 30px;
     line-height: 36px;
 }
@@ -52,9 +59,9 @@
 
     background: #fff;
     color: black;
-    font-family: 'Inter';
+    font-family: 'Noto Sans KR';
     font-style: normal;
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 30px;
     line-height: 36px;
 }
@@ -81,10 +88,12 @@
     flex-wrap: wrap;
 }
 .ticket__name{
-    width: 202px;
+    /* width: 202px; */
+    margin-top: 10px;
+    margin-left: 5px;
     height: 24px;
 
-    font-family: 'Inter';
+    font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -92,27 +101,40 @@
 
     color: #262424;
 }
-.test {
+.ticket__box {
+    height: 65px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.test2{
+.ticket__bottom{
+    border-bottom : 1px dashed #999999;
+}
+.ticket__centent{
     margin-top: 60px;
     margin-left: 160px;
+}
+.ticket__centent__centent{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 596px;
+    height: 193px;
+    justify-content: center;
 }
 .day {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 47px;
-    height: 24px;
+    width: 55px;
+    height: 27px;
     background-color: #f6f7f8;
-    border: #000 solid 1px;
-    font-family: 'Inter';
+    border: #AEAEAE solid 1px;
+    border-radius: 5px;
+    font-family: 'Noto Sans KR';
     font-style: normal;
-    font-weight: 400;
+    /* font-weight: bold; */
     font-size: 12px;
     line-height: 15px;
     /* identical to box height */
@@ -120,10 +142,41 @@
 }
 .ticket__text1{
     display: flex;
-    font-family: 'Inter';
+    font-family: 'Noto Sans KR';
     font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
+    /* font-weight: 400; */
+    font-size: 16px;
     line-height: 18px;
     color: #000000;
+}
+.ticket__btn{
+    border: #286BE1 solid;
+    border-radius: 30px;
+    background-color: #286BE1;
+    color: #FFF8F8;
+    width: 60px;
+    height: 30px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ticket__age{
+    font-size: 15px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* font-weight: bold; */
+}
+.ticket__money{
+    font-size: 15px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* font-weight: bold; */
+}
+.hidden{
+    font-family: "Apple SD Gothic Neo";
 }
