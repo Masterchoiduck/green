@@ -1,4 +1,4 @@
-.title{
+.body__title{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +26,7 @@
     font-size: 30px;
     color: #FFFFFF;
 }
-.test{
+.content__ticket{
     border:none;
     width: 200.32px;
     height: 57px;
@@ -42,7 +42,7 @@
     line-height: 36px;
 }
 
-.test1{
+.content__membership{
     margin-left: 63.26px;
     /* border:none; */
     width: 200.32px;
@@ -59,10 +59,71 @@
     line-height: 36px;
 }
 
-.test_1{
+.content{
     margin: 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+}
+.center{
+    display: grid;
+    gap: 93px;
+    justify-content: center;
+}
+.ticket{
+    background-image: url(./이용요금/ticket.png);
+    background-size: 845px 369px;
+    width: 845px;
+    height: 369px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.ticket__name{
+    width: 202px;
+    height: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #262424;
+}
+.test {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.test2{
+    margin-top: 60px;
+    margin-left: 160px;
+}
+.day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47px;
+    height: 24px;
+    background-color: #f6f7f8;
+    border: #000 solid 1px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #000000;
+}
+.ticket__text1{
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
 }
