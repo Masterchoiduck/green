@@ -147,34 +147,70 @@ header {
 .main_All{
     font-size: 15px;
     color: #2f2f2f;
+
 }
 
 
 .main_section_top{
+    
+    
     display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+    grid-template-columns: 16.8229vw 54.1667vw 108px 23.3854vw;
 
+    
+    /*
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;*/
+}
+.main_section_bottom{
+    margin: 0 auto;
+}
 
 
 /* 할인혜택 페이지 */
 
-
+.benefit{
+    text-align: start;
+    position: relative;
+    top: 190px;
+}
+.benefit2{
+    text-align: end;
+    position: relative;
+    top: 283px;
+}
 .benefit_content_total{
-    width: 1030px;
-    height: 510px;
+    width: 1040px;
+    height: 520px;
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    
 }
-
 .benefit3{
     width: 250px;
     height: 250px;
-    background-color: #000;
-    
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* 어트랙션 페이지 */
+.attraction{
+    text-align: start;
+    position: relative;
+    top: 190px;
+}
+.attraction2{
+    text-align: end;
+    position: relative;
+    top: 283px;
+}
+
+
+
 
 }
