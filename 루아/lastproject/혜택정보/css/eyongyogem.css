@@ -1,0 +1,114 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color:#fff; */
+}
+.body__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title__img{
+    background-image: url('../img/castle.png');
+    background-size: 1269px 597px;
+    width: 1269px;
+    height: 597px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titel__name {
+    margin-top: 80px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 50px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+.titel__search{
+    margin-top: 250px;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.center{
+    display: grid;
+    justify-content: center;
+    justify-items: center
+}
+
+.other{
+    width: 1209px;
+    height: 75px;
+    margin: 0 auto;
+    background: #F0F3FF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 93px;
+    margin-bottom: 93px;
+}
+.other_1{
+    width: 1118px;
+    height: 75px;
+    margin: 0 auto;
+    background: #F0F3FF;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+.other__text{
+    margin-left: 35px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+.flex{
+    display: flex;
+}
+.test{
+    box-sizing: border-box;
+    width: 227px;
+    height: 344px;
+    background: #FFFFFF;
+    border: 1px solid #C5B8B8;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.test_1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.center__box{
+    opacity:0.9;
+    box-sizing: border-box;
+    width: 1118px;
+    height: 551px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin-top: -75px;
+}
+.test_2{
+    display: flex;
+    width: 1117.97px;
+    justify-content: space-around;
+}

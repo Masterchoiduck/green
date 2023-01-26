@@ -18,4 +18,4 @@
         })
     // })
     console.log($ticket__money);
-})() 
+})()
