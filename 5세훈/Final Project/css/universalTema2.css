@@ -1,45 +1,56 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 *{ 
     list-style-type: none;
     margin:0;
+    box-sizing: border-box;
 }
     
-body, * {
+body, *{
 	font-family: 'Noto Sans KR', sans-serif;
+    
+    
 }
+.fa,.fab,.fad,.fal,.far,.fas{
+	font-weight: 900 !important;
+	}
 .main_tema_header{ 
     background-color: black;
     
-    height: 10rem;
+    height: 15rem;
 }
+
+.main_tema_body_intro{
+    margin: 10rem 22.5rem; 
+    
+    background-color: #222;
+    
+}
+
+
 .main_tema_top{ 
     color:#fff;
 }
 .main_tema_body_header{ 
-    margin: 10rem;
-    color:#ddd; 
+    color:#0066FF; 
 }
 
 .main_tema_body_cotainer{ 
     display: grid;
     grid-template-columns: repeat(3,minmax(300px,auto));
-<<<<<<< HEAD
-=======
     justify-items: center;
->>>>>>> origin/main
     align-items: center;
     justify-content: center;
+    
 }
 
-<<<<<<< HEAD
-
-=======
 .main_tema_body_cardList{ 
     display: flex;
     
 }
->>>>>>> origin/main
-img{ 
+
+img{
+    cursor: pointer; 
     max-width: 100%;
     object-fit: fill;
 }
@@ -67,11 +78,10 @@ img{
     grid-template-columns: repeat(4,minmax(200px,auto));
     justify-content: center;
     align-items: center;
-    margin-top:10rem;
+    margin-top: 10rem;
     gap: 5rem;
-    position: relative;
-    left:auto;
-    right: auto;
+    
+    
 }
 
 .tema__Circle_comment{
@@ -79,16 +89,52 @@ img{
     align-items: center;
     flex-direction: row;
     color: #0066FF;
-    font-weight: bold;
+    font-weight: bolder;
+    margin-top:2.5rem;
+    cursor: pointer;
 }
 
+.tema__imgCircle_filp{ 
+    width: 250px;
+    height: 250px;
+    position: relative;
+    perspective: 1100px;
+    
+}
+.tema__imgCircle_Card{ 
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: .4s;
+    transform-style: preserve-3d;
+    
+}
+.tema__imgCircle_Front, .tema__imgCircle_Back{ 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tema__imgCircle_Back{ 
+    transform: rotateY(180deg);
+    
+}
+.tema__imgCircle_filp:hover .tema__imgCircle_Card{ 
+    transform: rotateY(180deg);
+}
 
 /* 배경 */
 .backSky {
     width: 100vw;
     height: 100vh;
+    position: relative;
     background: linear-gradient(to right, #111, #0e0f19);  
     overflow: hidden;
+    z-index: 0;
   }
   
   /* 별을 감싼 부모 */
@@ -100,6 +146,9 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
     animation: moveStar 240s linear infinite;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
   }
   
   /* 별 */
@@ -107,6 +156,8 @@ img{
     fill: #fff;
     stroke: none;
     stroke-width: 0;
+    float: left;
+    pointer-events: none;
   }
   
   /* 별 이동효과 */
@@ -122,11 +173,37 @@ img{
 .img_DefaultMode{
     display: flex;
 }
-.test{
+.tema__imgCircleContainer{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
+}
+.tema__video_container{ 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.main_tema_body_text{
+    display: inline; vertical-align: middle;
+    border-right: .05em solid black;
+    animation:  cursor 0.2s ease infinite;
+  }
+
+.tema__video_header{ 
+    text-align: left;
+    
+    font-family: 'Noto Sans KR';
+    font-weight: bolder;
+    color: #0066FF;
+    background-color: #222;
+    font-size: 2rem;
+    margin:10rem;
+}
+.footer{
+    margin-top: 10rem;
+    background-color: #0066FF;
 }

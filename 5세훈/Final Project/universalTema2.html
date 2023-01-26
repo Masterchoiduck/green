@@ -8,31 +8,31 @@
     <link rel="stylesheet" href="css/universalTema2.css">
     <link rel="stylesheet" href="css/universalTemaMediaquery.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/eb18fbeea9.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div>
-        <header class="main_tema_header">
-            <h1 class="main_tema_top">Universal</h1>
-        </header>
-    </div>
-    <div class="main_tema_body">
         <div class="backsky">
-        <svg class="sky"></svg>
+                <svg class="sky"></svg>
         </div>
-        <div>
-            <h1 class="main_tema_body_header">Universal Studio KOREA 다양한 테마</h1>       
-        </div>
+    </div>
+            
+            <header class="main_tema_header">
+                <h1 class="main_tema_top">Universal</h1>
+            </header>
+            <!-- 메인테마 -->
+            <div class="main_tema_body_intro">
+                <h1 class="main_tema_body_text main_tema_body_header"></h1>
+            </div>
+
+        <div class="main_tema_body">
+
+        <!-- 메인테마 6가지  -->
         <div class="main_tema_body_cotainer">
             <div class="tema__img_1">
                 <img src="img/img_colorMode_Harry_Default.png" alt="" class="grayscale img_DefaultMode">
                 <img src="img/img_TabletMode_Harry.png" alt="" class="grayscale main_tema_body_cardList_noneMode">
                 <img src="img/img_MobileMode_Harry.png" alt="" class="grayscale main_tema_body_cardList_MobileMode">
-<<<<<<< HEAD
-=======
-                
->>>>>>> b5b06f5044434768178b0c5dceb187616a8ccad9
             </div>    
             <div class="tema__img_2">
                 <img src="img/img_colorMode_Jurrasic_Default.png" alt="" class="grayscale img_DefaultMode">
@@ -60,15 +60,64 @@
                 <img src="img/img_MobileMode_Squid.png" alt="" class="grayscale main_tema_body_cardList_MobileMode">
             </div>
         </div>
-        
-        <div class="test">
+
+
+
+        <!-- circle tema 영역 -->
+
+
+
+        <div class="tema__imgCircleContainer">
             <div class="tema__img_Circle animate__animated animate__zoomInLeft">
-                <div><img src="img/img_Default_Wonderland.png" alt=""></div>
-                <div><img src="img/img_Default_Hollywood.png" alt=""></div>
-                <div><img src="img/img_Default_Newyork.png" alt=""></div>
-                <div><img src="img/img_Default_Sanffrancisco.png" alt=""></div>
+                <div class ='tema__imgCircle_filp'>
+                    <div class="tema__imgCircle_Card">
+                        <div class="tema__imgCircle_Front">
+                            <img src="img/img_Default_Wonderland.png" alt="">  <!-- 앞면 1 -->
+                        </div>
+                        <div class="tema__imgCircle_Back">
+                            <img src="img/img_BackCircle_Wonderland.png" alt="" class="tema_imgCircle_Back_color"> <!-- 뒷면 1-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class ='tema__imgCircle_filp'>
+                    <div class="tema__imgCircle_Card">
+                        <div class="tema__imgCircle_Front">
+                            <img src="img/img_Default_Hollywood.png" alt="">  <!-- 앞면2 -->
+                        </div>
+                        <div class="tema__imgCircle_Back">
+                            <img src="img/img_BackCircle_Hollywood.png"  alt="" class="tema_imgCircle_Back_color"> <!-- 뒷면2 -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class ='tema__imgCircle_filp'>
+                    <div class="tema__imgCircle_Card">
+                        <div class="tema__imgCircle_Front">
+                            <img src="img/img_Default_Newyork.png" alt="" >  <!-- 앞면3 -->
+                        </div>
+                        <div class="tema__imgCircle_Back">
+                            <img src="img/img_BackCircle_Newyork.png" alt="" class="tema_imgCircle_Back_color"> <!-- 뒷면3 -->
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class ='tema__imgCircle_filp'>
+                    <div class="tema__imgCircle_Card">
+                        <div class="tema__imgCircle_Front">
+                            <img src="img/img_Default_Sanffrancisco.png" alt="" >  <!-- 앞면4 -->
+                        </div>
+                        <div class="tema__imgCircle_Back">
+                            <img src="img/img_BackCircle_Sanffrancisco.png" alt="" class="tema_imgCircle_Back_color"> <!-- 뒷면4 -->
+                        </div>
+                    </div>
+                </div>
+                
+                
+               
             </div>
-            <div>
+            
                 <div class="tema__Circle_comment">
                     <div>더 보기</div>
                     <i class="fa-solid fa-plus"></i>
@@ -76,11 +125,34 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
-=======
-        
->>>>>>> b5b06f5044434768178b0c5dceb187616a8ccad9
-<script src="js/universalTema.js"></script>
+
+<!-- 비디오 영역 -->
+
+
+
+    <div>
+        <p class="tema__video_header">홍보 영상</p>
+    </div>
+    <div class="tema__video_container">
+        <iframe width="1000" height="500" 
+        src="https://www.youtube.com/embed/0LVFQ_wHoaw" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen class='tema__video'>
+
+
+        </iframe>
+    </div>
+    
+    <div>
+        <div class="footer">
+            <span>푸터</span>
+        </div>
+    </div>
+    
+
+<script src="js/universalTemaStar.js"></script>
 <script src="https://kit.fontawesome.com/eb18fbeea9.js" crossorigin="anonymous"></script>
+<script src="js/universalTemaTyping.js"></script>
 </body>
 </html>

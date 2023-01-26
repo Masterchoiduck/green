@@ -14,6 +14,9 @@
         grid-template-columns: repeat(4,minmax(1px,auto));
         gap: 2rem;
     }
+    .tema__Circle_comment{ 
+        margin-right:0;
+    }
     
 }
 
@@ -34,6 +37,8 @@
     .tema__img_Circle{ 
         grid-template-columns: repeat(2,minmax(1px,auto));
         gap:5rem;
-        
+    }
+    .tema__Circle_comment{ 
+        margin-right:0;
     }
 }
