@@ -130,6 +130,8 @@ header {
 }
 .full3{
     background-color: #EEF5FB;
+    display: grid;
+    grid-template-rows: 320px 1600px;
 }
 .footer{
     background-color: #000;
@@ -152,8 +154,6 @@ header {
 
 
 .main_section_top{
-    
-    
     display: grid;
     grid-template-columns: 16.8229vw 54.1667vw 108px 23.3854vw;
 
@@ -198,7 +198,7 @@ header {
     align-items: center;
 }
 
-/* 어트랙션 페이지 */
+/* 베스트 어트랙션 페이지 */
 .attraction{
     text-align: start;
     position: relative;
@@ -209,8 +209,19 @@ header {
     position: relative;
     top: 283px;
 }
-
-
+.attraction_content_total{
+    display: grid;
+    grid-template-columns: 410px 850px;
+    grid-template-rows: 530px;
+}
+.main_attraction_big{ margin-right: 20px; }
+.main_attraction_small{
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    grid-template-rows: 255px 255px;
+    align-content: space-between;
+    justify-content: space-between;
+}
 
 
 }
