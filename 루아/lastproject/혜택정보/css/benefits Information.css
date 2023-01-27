@@ -1,0 +1,216 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Noto Sans KR';
+    /* background-color:#fff; */
+}
+.body__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title__img{
+    background-image: url('../img/castle.png');
+    background-size: 1269px 597px;
+    width: 1269px;
+    height: 597px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titel__name {
+    margin-top: 80px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 50px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+.titel__search{
+    margin-top: 250px;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.center{
+    display: grid;
+    justify-content: center;
+    justify-items: center
+}
+
+.other{
+    width: 1209px;
+    height: 75px;
+    margin: 0 auto;
+    background: #F0F3FF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 93px;
+    margin-bottom: 93px;
+}
+.other_1{
+    width: 1118px;
+    height: 75px;
+    margin: 0 auto;
+    background: #F0F3FF;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+.other__text{
+    margin-left: 35px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+.flex{
+    display: flex;
+}
+.test{
+    gap: 30px;
+    box-sizing: border-box;
+    width: 227px;
+    height: 325px;
+    background: #FFFFFF;
+    border: 1px solid #C5B8B8;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.test_1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.center__box{
+    opacity:0.9;
+    box-sizing: border-box;
+    width: 1118px;
+    height: 551px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin-top: -75px;
+}
+.test_2{
+    display: flex;
+    width: 1117.97px;
+    justify-content: space-around;
+}
+.item2{
+    width: 150px;
+    height: 95px;
+}
+.item1{
+    font-size: 16px;
+    font-weight: 700;
+}
+.item4{
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.item3{
+    margin-top: -12px;
+    font-size: 12px;
+    font-weight: 300;
+}
+.img1{
+    background-image: url('../img/현대카드.png');
+    background-size: 150px 95px;
+    /* transform: rotate(0deg); */
+}
+.img2{
+    background-image: url('../img/KT멤버십카드.png');
+    background-size: 150px 95px;
+}
+.img3{
+    background-image: url('../img/T멤버십카드.png');
+    background-size: 150px 95px;
+}
+.img4{
+    background-image: url('../img/LGU+멤버십카드.png');
+    background-size: 150px 95px;
+}
+.img5{
+    background-image: url('../img/토끼.png');
+    background-size: 150px 95px;
+}
+.img6{
+    background-image: url('../img/교복할인심슨.jpg');
+    background-size: 150px 95px;
+}
+.img7{
+    background-image: url('../img/군인할인심슨.jpg ');
+    background-size: 150px 95px;
+}
+.img8{
+    background-image: url('../img/문화누리카드.png ');
+    background-size: 150px 95px;
+}
+.img9{
+    background-image: url('../img/최대50할인.png ');
+    background-size: 150px 95px;
+}
+.img10{
+    background-image: url('../img/장애인할인.png ');
+    background-size: 150px 95px;
+}
+.img11{
+    background-image: url('../img/국가유공자할인.jpg ');
+    background-size: 150px 95px;
+}
+.img12{
+    background-image: url('../img/임산부우대.png ');
+    background-size: 150px 95px;
+}
+.img13{
+    background-image: url('../img/다둥이\ 행복카드\ 우대.png ');
+    background-size: 150px 95px;
+}
+.img14{
+    background-image: url('../img/문화누리카드_로고마크.png');
+    background-size: 150px 95px;
+}
+.img15{
+    background-image: url('../img/카카오페이.png');
+    background-size: 150px 95px;
+}
+.img16{
+    background-image: url('../img/누구나\ 온라인\ 예매.png');
+    background-size: 150px 95px;
+}
+.item__btn{
+    border: #286BE1 solid;
+    border-radius: 30px;
+    background-color: #286BE1;
+    color: #FFF8F8;
+    width: 57px;
+    height: 23.8px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
