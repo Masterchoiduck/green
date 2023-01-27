@@ -31,9 +31,9 @@
   .grid2 div {
     display: flex;
     justify-content: center;
-    align-items: center;
     font-size: .9rem;
     cursor: pointer;
+    flex-direction: column;
   }
   
   .dateBoard div {
@@ -73,8 +73,11 @@
   }
   
   .dateBoard div p {
-    font-weight: normal;
-    margin-top: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 1rem;
   }
   
   /* ------------- */

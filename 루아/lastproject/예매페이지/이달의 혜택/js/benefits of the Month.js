@@ -20,21 +20,21 @@ if((minutes+"").length < 2){
 var today = year + "" + month + "" + day;
 const test1 = `${year}-${month}-${day}`
 const test=[
-  {date: test1, content: 'today'},
-  {date: '2023-01-01', content: 'newYearSDay'},
-  {date: '2023-01-02', content: 'seollal'},
-  {date: '2023-03-01', content: 'samiljeol'},
-  {date: '2023-05-05', content: 'childrenSDay'},
-  {date: '2023-04-08', content: 'buddhaSBirthday'},
-  {date: '2023-06-06', content: 'memorialDay'},
-  {date: '2023-08-15', content: 'nationalLiberationDay'},
-  {date: '2023-08-20', content: 'chuseok'},
-  {date: '2023-10-03', content: 'theNationalFoundationDayOfKorea'},
-  {date: '2023-10-09', content: 'hangulProclamationDay'},
-  {date: '2023-12-25', content: 'christmas'}
+  {date: test1, content: 'today', text: '오늘'},
+  {date: '2023-01-01', content: 'newYearSDay', text: '신정'},
+  {date: '2023-01-22', content: 'seollal', text: '설날'},
+  {date: '2023-03-01', content: 'samiljeol', text: '삼일절'},
+  {date: '2023-05-05', content: 'childrenSDay', text: '어린이날'},
+  {date: '2023-05-27', content: 'buddhaSBirthday', text: '석가탄신일'},
+  {date: '2023-06-06', content: 'memorialDay', text: '현충일'},
+  {date: '2023-08-15', content: 'nationalLiberationDay', text: '광복절'},
+  {date: '2023-08-28', content: 'chuseok', text: '추석'},
+  {date: '2023-10-03', content: 'theNationalFoundationDayOfKorea', text: '개천절'},
+  {date: '2023-10-09', content: 'hangulProclamationDay', text: '한글날'},
+  {date: '2023-12-25', content: 'christmas', text: '크리스마스'}
 ]
 // { date: '2022-10-15', content: '테스트1' }
-// console.log(test);
+console.log(test);
 
 
 
@@ -45,9 +45,11 @@ const test=[
 // 데이터 가공
 const calendarList = test.reduce(
   (acc, v) => 
-    ({ ...acc, [v.date]: [...(acc[v.date] || []), v.content] })
+    ({ ...acc, [v.date]: [...(acc[v.date] || []), v.content, v.text] })
   , {}
 );
+// console.log(calendarList['2023-01-01'][0]);
+
 
 // pad method
 Number.prototype.pad = function() {
@@ -77,16 +79,32 @@ const firstDay = new Date(date.setDate(1)).getDay();
   }
 
   // 이번달 날짜 표시하기
+  // console.log(calendarList);
+
+  function test_1(date){
+    if(calendarList[date]){
+      return(calendarList[date][1]);
+    }
+    return ''
+  }
+
+  function test_2(date){
+    if(calendarList[date]){
+      return(calendarList[date][0]);
+    }
+    return ''
+  }
 
   for (let i = 1; i <= lastDay; i++) {
     const date = `${currentYear}-${currentMonth.pad()}-${i.pad()}`
     // console.log(date);
+    // console.log(`${currentMonth.pad()} // ${i.pad()}`);
     
     htmlDummy += `
-      <div class="${calendarList[date]?.join()||'number'}">
+      <div class="${test_2(date)||'number'}">
         ${i}
         <p>
-          <!-- ${calendarList[date] ?.join() || ''}-->
+          ${test_1(date)}
         </p>
       </div>
     `;
