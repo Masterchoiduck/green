@@ -126,12 +126,12 @@ header {
 .full2, .full4{
     background-color: #f7f7f7;
     display: grid;
-    grid-template-rows: 320px 1600px;
+    grid-template-rows: 290px 1fr;
 }
 .full3{
     background-color: #EEF5FB;
     display: grid;
-    grid-template-rows: 320px 1600px;
+    grid-template-rows: 290px 1fr;
 }
 .footer{
     background-color: #000;
@@ -144,6 +144,12 @@ header {
     font-size: 40px;
     font-weight: 900;
     color: #286BE1;
+
+    /* 원래 benefit 등 각 각 따로 줌 */
+    text-align: start;
+    position: relative;
+    top: 160px;
+
 }
 
 .main_All{
@@ -152,33 +158,31 @@ header {
 
 }
 
-
+/* 공용
 .main_section_top{
     display: grid;
-    grid-template-columns: 16.8229vw 54.1667vw 108px 23.3854vw;
+    grid-template-columns: 19.1146vw 52.0833vw 104px 23.3854vw;
 
     
-    /*
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-end;*/
+
 }
+*/
 .main_section_bottom{
     margin: 0 auto;
 }
 
 
 /* 할인혜택 페이지 */
-
-.benefit{
-    text-align: start;
-    position: relative;
-    top: 190px;
+.benefit_title_total{
+    display: grid;
+    grid-template-columns: 19.1146vw 52.0833vw 104px 23.3854vw;
 }
+
+
 .benefit2{
     text-align: end;
     position: relative;
-    top: 283px;
+    top: 265px;
 }
 .benefit_content_total{
     width: 1040px;
@@ -199,29 +203,89 @@ header {
 }
 
 /* 베스트 어트랙션 페이지 */
-.attraction{
-    text-align: start;
-    position: relative;
-    top: 190px;
+.attraction_title_total{
+    display: grid;
+    grid-template-columns: 19.1146vw 52.0833vw 180px 19.4271vw;
 }
+
+
 .attraction2{
     text-align: end;
     position: relative;
-    top: 283px;
+    top: 265px;
 }
 .attraction_content_total{
     display: grid;
-    grid-template-columns: 410px 850px;
-    grid-template-rows: 530px;
+    grid-template-columns: 405px 780px;
+    grid-template-rows: 515px;
 }
-.main_attraction_big{ margin-right: 20px; }
+
 .main_attraction_small{
     display: grid;
-    grid-template-columns: 270px 270px 270px;
-    grid-template-rows: 255px 255px;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px;
     align-content: space-between;
     justify-content: space-between;
 }
+.att_b1{
+    width: 390px;
+    height: 515px;
+    border-radius: 20px;
+    background-color: #286BE1;
+}
+.att_s1 {
+    width: 250px;
+    height: 250px;
+    background-image: url(img/web/어트랙션_해리포터\ 앤드\ 포비든저니_큰.png);
+    background-size: cover;
+    border-radius: 20px;
+}
+.att_s2 {
+    width: 250px;
+    height: 250px;
+    background-image: url(img/web/어트랙션_쥬라기월드_큰.png);
+    background-size: cover;
+    border-radius: 20px;
+}
+.att_s3 {
+    width: 250px;
+    height: 250px;
+    background-image: url(img/web/어트랙션_미니언즈1_큰.png);
+    background-size: cover;
+    border-radius: 20px;
+}
+.att_s4 {
+    width: 250px;
+    height: 250px;
+    background-image: url(img/web/어트랙션_미니언즈2_큰.png);
+    background-size: cover;
+    border-radius: 20px;
+}
+.att_s5 {
+    width: 250px;
+    height: 250px;
+    background-image: url(img/web/어트랙션_마리오카트_큰.png);
+    background-size: cover;
+    border-radius: 20px;
+}
+.att_s6 {
+    width: 250px;
+    height: 250px;
+    background-image: url(img/web/어트랙션_다이너소어_큰.png);
+    background-size: cover;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
