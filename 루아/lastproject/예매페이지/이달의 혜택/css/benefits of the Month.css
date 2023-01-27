@@ -86,6 +86,79 @@
     box-sizing: border-box;  
   }
 
+  /* 달력 이미지  오늘 + 공휴일*/
+  .today{/* 오늘 */
+    background-image: url('../img/오늘.png');
+    background-size: 8vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .newYearSDay{/* 신정 */
+    background-image: url('../img/신정.png');
+    background-size: 8vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .seollal{/* 설날 */
+    background-image: url('../img/설날.png');
+    background-size: 8vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .samiljeol{/* 삼일절 */
+    background-image: url('../img/삼일절.png');
+    background-size: 8vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .childrenSDay{/* 어린이날 */
+    background-image: url('../img/어린이날.png');
+    background-size: 8vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .buddhaSBirthday{/* 석가탄신일 */
+    background-image: url('../img/석가탄신일.png');
+    background-size: 8vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .memorialDay{/* 현충일 */
+    background-image: url('../img/현충일.png');
+    background-size: 8vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .nationalLiberationDay{/* 광복절 */
+    background-image: url('../img/광복절.png');
+    background-size: 8vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .chuseok{/* 추석 */
+    background-image: url('../img/추석.png');
+    background-size: 8vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .theNationalFoundationDayOfKorea{/* 개천절 */
+    background-image: url('../img/개천절.png');
+    background-size: 8vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hangulProclamationDay{/* 한글날 */
+    background-image: url('../img/한글날.png');
+    background-size: 8vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .christmas{/* 크리스마스 */
+    background-image: url('../img/크리스마스.png');
+    background-size: 8vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
 
 

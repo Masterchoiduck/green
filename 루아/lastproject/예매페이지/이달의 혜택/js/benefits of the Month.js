@@ -19,9 +19,22 @@ if((minutes+"").length < 2){
 //오늘 날짜 완성.
 var today = year + "" + month + "" + day;
 const test1 = `${year}-${month}-${day}`
-const test=[{date: test1, content: '오늘'}]
+const test=[
+  {date: test1, content: 'today'},
+  {date: '2023-01-01', content: 'newYearSDay'},
+  {date: '2023-01-02', content: 'seollal'},
+  {date: '2023-03-01', content: 'samiljeol'},
+  {date: '2023-05-05', content: 'childrenSDay'},
+  {date: '2023-04-08', content: 'buddhaSBirthday'},
+  {date: '2023-06-06', content: 'memorialDay'},
+  {date: '2023-08-15', content: 'nationalLiberationDay'},
+  {date: '2023-08-20', content: 'chuseok'},
+  {date: '2023-10-03', content: 'theNationalFoundationDayOfKorea'},
+  {date: '2023-10-09', content: 'hangulProclamationDay'},
+  {date: '2023-12-25', content: 'christmas'}
+]
 // { date: '2022-10-15', content: '테스트1' }
-console.log(test);
+// console.log(test);
 
 
 
@@ -64,14 +77,16 @@ const firstDay = new Date(date.setDate(1)).getDay();
   }
 
   // 이번달 날짜 표시하기
+
   for (let i = 1; i <= lastDay; i++) {
     const date = `${currentYear}-${currentMonth.pad()}-${i.pad()}`
+    // console.log(date);
     
     htmlDummy += `
-      <div>
+      <div class="${calendarList[date]?.join()||'number'}">
         ${i}
         <p>
-          ${calendarList[date]?.join('</p><p>') || ''}
+          <!-- ${calendarList[date] ?.join() || ''}-->
         </p>
       </div>
     `;
