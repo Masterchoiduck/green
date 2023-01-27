@@ -34,7 +34,7 @@ const test=[
   {date: '2023-12-25', content: 'christmas', text: '크리스마스'}
 ]
 // { date: '2022-10-15', content: '테스트1' }
-console.log(test);
+// console.log(test);
 
 
 
@@ -117,6 +117,30 @@ const firstDay = new Date(date.setDate(1)).getDay();
   
   document.querySelector(`.dateBoard`).innerHTML = htmlDummy;
   document.querySelector(`.dateTitle`).innerText = `${currentYear}년 ${currentMonth}월`;
+
+  const $Month=document.querySelectorAll('.grid2 div')
+  const $click__day=document.querySelector('.click__day')
+
+
+  let click__dayHtml=''
+  $Month.forEach(itme=>{
+    itme.addEventListener('click',e=>{
+    console.log(e.target.innerText);
+    $click__day.innerHTML=`
+      <div>
+      ${currentYear}년 ${currentMonth}월${e.target.innerText}일
+      </div>
+    `
+  })
+})
+
+
+
+
+
+
+
+
 }
 
 const date = new Date();
