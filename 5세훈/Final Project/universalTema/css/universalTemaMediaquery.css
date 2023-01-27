@@ -5,7 +5,6 @@
     }
     .img_DefaultMode{ 
         display:none;
-        
     }
     .main_tema_body_cardList_noneMode{ 
         display: block;
@@ -16,6 +15,12 @@
     }
     .tema__Circle_comment{ 
         margin-right:0;
+    }
+    .tema__imgCircle_size{ 
+        display:block;
+    }
+    .tema__imgCircle_Default{ 
+        display: none;
     }
     
 }

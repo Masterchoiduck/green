@@ -72,6 +72,10 @@ img{
 .main_tema_body_cardList_MobileMode{ 
     display: none;
 }
+.tema__imgCircle_size{ 
+    display: none;
+}
+
 
 .tema__img_Circle{ 
     display: grid;

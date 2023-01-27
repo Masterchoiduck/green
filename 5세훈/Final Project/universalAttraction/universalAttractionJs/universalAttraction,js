@@ -1,0 +1,17 @@
+ const btn = document.querySelector('.btn_select');
+ const icon = document.querySelector('.fa-caret-down');
+
+        const list = document.querySelector('.attraction_list_member');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('on');
+        });
+        list.addEventListener('click', (event) => {
+            if (event.target.nodeName === "li") {
+                btn.innerText = event.target.innerText;
+                btn.classList.remove('on');
+            }
+        });
+
+        icon.addEventListener('click',e => { 
+            icon.classList.toggle('fa-caret-down-rotate');
+        })
