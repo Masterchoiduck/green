@@ -79,6 +79,17 @@ input[id="chk1"] + label {
 	height: 20px;
 	border: 1px solid #bcbcbc;
 	cursor: pointer;
+}
+input[id="chk1"]:checked + label::after, input[id="chk1"]:checked + label::after{
+    content:'✔';
+    
+    font-size: 1.875rem;
+    font-weight: bolder;
+    color:#0368d9;
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+
     
 }
 
