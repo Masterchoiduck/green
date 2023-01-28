@@ -278,12 +278,23 @@ header {
 
 
 
+/*퍼레이드 페이지*/
 
+.parade_title_total{
+    display: grid;
+    grid-template-columns: 19.1146vw 52.0833vw 180px 19.4271vw;
+}
+.parade2{
+    text-align: end;
+    position: relative;
+    top: 265px;
+}
 
-
-
-
-
+.parade_content_total{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 26.0417vw 2.6042vw 1fr ;
+}
 
 
 
