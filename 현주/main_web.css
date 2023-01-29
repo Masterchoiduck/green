@@ -59,19 +59,8 @@ html, body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* 헤더 */
+/*
 #main_header{
     display: flex;
     justify-content: space-between;
@@ -108,6 +97,103 @@ header {
     right: 0;
     z-index: 100;
 }
+
+*/
+/* 메뉴드롭 수정분 */
+
+
+.logo{
+    margin: 13px 0px 0px 3.9063vw;
+}
+.top_menu{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.menu_bar{
+    font-size: 20px;
+    font-weight: bold;
+}
+.right_menu{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 60px;
+}
+.menu_icon{
+    margin: 0 0.9375vw;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+
+
+
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.top_menu{
+    width: 100vw;
+    overflow: hidden;
+}
+.top_menu a {
+    color: #fff;
+}
+.menu_bar_submenu {
+    height: 0;
+    margin-top: 40px;
+}
+.menu_bar_submenu li {
+    line-height: 20px;
+    font-size: 18px;
+
+}
+.top_menu:hover{
+    background-color: #286BE1;
+    transition-duration: 0.5s;
+    color: white;
+    height: 385px;
+    transition-duration: 0.5s;
+    box-shadow: #286ce17c 0px 3px 150px 1px;
+}
+
+.top_menu:hover .menu_bar_submenu {
+    height: 250px;
+    transition-duration: 0.5s;
+}
+
+
+.sss { 
+    width: 902px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 90px;
+}
+.sss li {
+    margin-top: 30px;
+}
+.menu_bar_submenu > li > a:hover {
+    color: #dddddd;
+    font-weight: bold;
+}
+.right_menu {
+    height: 90px;
+}
+
 
 
 
