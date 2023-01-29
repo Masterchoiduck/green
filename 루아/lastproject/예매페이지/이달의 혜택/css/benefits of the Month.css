@@ -197,6 +197,55 @@
 }
 
 .box{
-  height: 30px;
+  gap: 20px;
+  display: flex;
+  height: 109px;
   border: 1px solid black;
+  justify-content: space-between;
+}
+.click__day {
+  font-family: 'Noto Sans KR';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 36px;
+}
+.box .a{
+  flex: 1;
+  display: grid;
+  align-items: center;
+}
+.boxitem__1, .boxitem__2, .boxitem__3{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fontSize15{
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+}
+.fontSize25{
+  font-size: 25px;
+}
+
+.fontColerA6A0A0{
+  color: #a6a0a0;
+}
+
+.fontColer214FF2{
+  color: #214FF2;
+}
+
+.pmBtn{
+  display: flex;
+}
+.plusBtn, .minusBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.82px;
+  height: 31.21px;
+  font-size: 30px;
 }

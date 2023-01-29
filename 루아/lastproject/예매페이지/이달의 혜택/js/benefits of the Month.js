@@ -121,21 +121,65 @@ const firstDay = new Date(date.setDate(1)).getDay();
   const $Month=document.querySelectorAll('.grid2 div')
   const $click__day=document.querySelector('.click__day')
 
-
-  let click__dayHtml=''
+  $click__day.innerHTML=`
+      <div>
+      ${year}년 ${month}월 ${day}일
+      </div>
+    `
+  console.log(day);
   $Month.forEach(itme=>{
     itme.addEventListener('click',e=>{
     console.log(e.target.innerText);
     $click__day.innerHTML=`
       <div>
-      ${currentYear}년 ${currentMonth}월${e.target.innerText}일
+      ${currentYear}년 ${currentMonth}월 ${e.target.innerText}일
       </div>
     `
   })
 })
 
+const $plusBtn = document.querySelectorAll('.plusBtn')
+const $minusBtn = document.querySelectorAll('.minusBtn')
+const $num1 = document.querySelector('.num1')
+const $num2 = document.querySelector('.num2')
+const $num3 = document.querySelector('.num3')
 
+$plusBtn.forEach((item2,index)=>{
+  item2.addEventListener('click',e=>{
+    if(index===0){
+      $num1.innerText++
+      $num1.classList.add('fontColer214FF2')
+    }
+    if(index===1){
+      $num2.innerText++
+      $num2.classList.add('fontColer214FF2')
+    }
+    if(index===2){
+      $num3.innerText++
+      $num3.classList.add('fontColer214FF2')
+    }
+  })
+})
 
+$minusBtn.forEach((item2,index)=>{
+  item2.addEventListener('click',e=>{
+    if(index===0){
+      if($num1.innerText==='0'){return}
+      if($num1.innerText==='1'){$num1.classList.remove('fontColer214FF2')}
+      $num1.innerText--
+    }
+    if(index===1){
+      if($num2.innerText==='0'){return}
+      if($num2.innerText==='1'){$num2.classList.remove('fontColer214FF2')}
+      $num2.innerText--
+    }
+    if(index===2){
+      if($num3.innerText==='0'){return}
+      if($num3.innerText==='1'){$num3.classList.remove('fontColer214FF2')}
+      $num3.innerText--
+    }
+  })
+})
 
 
 
