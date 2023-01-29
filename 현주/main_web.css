@@ -159,23 +159,49 @@ a{
 .menu_bar_submenu li {
     line-height: 20px;
     font-size: 18px;
-
+}
+.menu_bar_submenu li a {
+    color: #2f2f2f;
 }
 .top_menu:hover{
-    background-color: #286BE1;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
     transition-duration: 0.5s;
-    color: white;
     height: 385px;
     transition-duration: 0.5s;
-    box-shadow: #286ce17c 0px 3px 150px 1px;
+    
+    box-shadow: #286ce13d 0px 1px 30px 1px;
+}
+.logo_gray, .search_icon_gray, .ticket_icon_gray, .user_icon_gray {
+    display: none;
+}
+
+.top_menu:hover .logo_white{
+    display: none;
+}
+.top_menu:hover .logo_gray{
+    display: inline-block;
+}
+.top_menu:hover .search_icon_white, .ticket_icon_white, .user_icon_white {
+    display: none;
+}
+.top_menu:hover .search_icon_gray, .ticket_icon_gray, .user_icon_gray{
+    display: inline-block;
 }
 
 .top_menu:hover .menu_bar_submenu {
     height: 250px;
     transition-duration: 0.5s;
+
 }
-
-
+.top_menu:hover .sss > li > a {
+    color: #2f2f2f;
+    font-weight: 800;
+}
+.top_menu:hover .menu_icon{
+    color: #2f2f2f;
+}
 .sss { 
     width: 902px;
     display: flex;
@@ -187,8 +213,8 @@ a{
     margin-top: 30px;
 }
 .menu_bar_submenu > li > a:hover {
-    color: #dddddd;
-    font-weight: bold;
+    color: #286BE1;
+    transition-duration: 0.3s;
 }
 .right_menu {
     height: 90px;
