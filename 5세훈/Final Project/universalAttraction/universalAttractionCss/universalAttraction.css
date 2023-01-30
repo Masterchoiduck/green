@@ -2,15 +2,18 @@
     box-sizing: border-box;
     margin:0;
     list-style-type: none;
+    border: 0;
 }
+body{ 
+    width:100%;
+}
+
 .universalAttraction__header{ 
     background-color: blue;
     width:100%;
     height: 10vh;
 }
-.attraction__container{ 
-    margin:10rem;
-}
+
 .attratcion__main_header{ 
     color:#333;
     font-weight: bolder;
@@ -18,20 +21,38 @@
 }
 .attraction__mainTop{ 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    
+    
+}
+.attraction__container{ 
+    margin: 7.5rem;
 }
 .attraction__reset{ 
     color: #036ce2;
     font-weight: 700;
     font-size: 0.8125rem;
+    cursor: pointer;
 }
 
+
+.select_title, .select_title2, .select_title3, .select_title4{ 
+    width: 20rem;
+}
+
+
+.btn_select_box_title{ 
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    
+}
 .btn_select{ 
-        width: 20%;
-        padding: 0.8125rem 1.875rem 0.8125rem 0.875rem;
+        width: 100%;
+        padding: 0.8125rem 0.8125rem 0.8125rem 0.875rem;
         font-size: 1rem;
-        line-height: 14px;
         background-color: #fff;
         border: 1px solid #C4C4C4;
         box-sizing: border-box;
@@ -39,68 +60,201 @@
         cursor: pointer;
         display:flex;
         justify-content: space-between;
+        align-items: center;
 }
+ul{
+    background-color: #fff;
+ }
+
 
 .btn_select:hover,
         .btn_select:focus {
             border: 1px solid #036ce2;
             outline: 3px solid #e3e6f8;
         }
-.attraction_list_member{ 
+.attraction_list_member, 
+.attraction_list_member2, 
+.attraction_list_member3,
+.attraction_list_member4{ 
     display: none;
     position: absolute;
-    width: 20%;
+    width:20rem;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
     border-radius: 0.625rem;
+    padding:12px;
 }
 
-.attraction_checkbox{ 
-    border: 1px solid #949494;
-    
+.attraction_list_member{ 
+    left:136px;
+    top: 356px;
+}
+
+.attraction_list_memberOn{ 
+    display:block;
+}
+
+
+.attraction__fillter{ 
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap:wrap;
 }
 
 .btn_select.on + .attraction_list_member {
     display: block;
 }
-
-.fa-caret-down-rotate{ 
-    transform: rotate(180deg);
+.fa-caret-down{ 
+    transform :rotate(0);
+    transition: transform .2s ease-in-out;
+    color : #036ce2;
 }
 
-input[id="chk1"] { 
+.fa-caret-down-rotate{ 
+    transform: rotate(-180deg);
+    transition: transform  .2s ease-in-out;
+}
+.attraction__area{ 
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+input[id="chk1"],
+input[id="chk2"],
+input[id="chk3"],
+input[id="chk4"],
+input[id="chk5"],
+input[id="chk6"],
+input[id="chk7"],
+input[id="chk8"],
+input[id="chk9"],
+input[id="chk10"],
+input[id="chk11"]
+ { 
     display: none;
 }
 
-input[id="chk1"] + label {
+
+
+input[id="chk1"] + label,
+input[id="chk2"] + label,
+input[id="chk3"] + label,
+input[id="chk4"] + label,
+input[id="chk5"] + label,
+input[id="chk6"] + label,
+input[id="chk7"] + label,
+input[id="chk8"] + label,
+input[id="chk9"] + label,
+input[id="chk10"] + label,
+input[id="chk11"] + label{
 	display: inline-block;
 	width: 20px;
 	height: 20px;
 	border: 1px solid #bcbcbc;
 	cursor: pointer;
 }
-input[id="chk1"]:checked + label::after, input[id="chk1"]:checked + label::after{
-    content:'✔';
-    
-    font-size: 1.875rem;
-    font-weight: bolder;
+
+
+
+
+input[id="chk1"]:checked + label::after, 
+input[id="chk1"]:checked + label::after
+{
+    content:"\f00c";
+    left:152px;
+    font-size: 1.125rem;
+    font-weight: 800;
     color:#0368d9;
     text-align: center;
     position: absolute;
     justify-content: center;
+    font-family: "Font Awesome 5 Free";
 
-    
+}
+input[id="chk2"]:checked + label::after, 
+input[id="chk2"]:checked + label::after{
+    content:"\f00c";
+    left: 13px;
+    font-size: 1.125rem;
+    font-weight: 800;
+    color:#0368d9;
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+    font-family: "Font Awesome 5 Free";
+}
+
+input[id="chk3"]:checked + label::after, 
+input[id="chk3"]:checked + label::after,
+input[id="chk4"]:checked + label::after, 
+input[id="chk4"]:checked + label::after,
+input[id="chk5"]:checked + label::after, 
+input[id="chk5"]:checked + label::after,
+input[id="chk6"]:checked + label::after, 
+input[id="chk7"]:checked + label::after,
+input[id="chk8"]:checked + label::after,
+input[id="chk9"]:checked + label::after,
+input[id="chk10"]:checked + label::after,
+input[id="chk11"]:checked + label::after
+{
+    content:"\f00c";
+    left: 45px;
+    font-size: 1.125rem;
+    font-weight: 800;
+    color:#0368d9;
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+    font-family: "Font Awesome 5 Free";
 }
 
 
-.attraction_list_member li {
+
+
+.attraction_checkbox,
+.attraction_checkbox3,
+.attraction_checkbox4,
+.attraction_checkbox5,
+.attraction_checkbox6,
+.attraction_checkbox7,
+.attraction_checkbox8,
+.attraction_checkbox9,
+.attraction_checkbox10,
+.attraction_checkbox11
+{ 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+}
+.attraction_checkbox3,
+.attraction_checkbox4,
+.attraction_checkbox5,
+.attraction_checkbox6,
+.attraction_checkbox7,
+.attraction_checkbox8,
+.attraction_checkbox9,
+.attraction_checkbox10,
+.attraction_checkbox11{ 
+    margin-left: 2rem;
+}
+
+
+
+
+
+.attraction_list_member li,
+.attraction_list_member2 li,
+.attraction_list_member3 li,
+.attraction_list_member4 li{
     height: 40px;
     padding: 5px 8px;
-    box-sizing: border-box;
-}
-
-.attraction_list_member li {
     width: 100%;
     padding: 7px 10px;
     border: none;
@@ -108,8 +262,135 @@ input[id="chk1"]:checked + label::after, input[id="chk1"]:checked + label::after
     border-radius: 8px;
     cursor: pointer;
     text-align: left;
+    z-index: 5;
 }
+
+
 .attraction_list_member li:hover,
-.attraction_list_member li:focus {
+.attraction_list_member li:focus,
+.attraction_list_member2 li:hover,
+.attraction_list_member2 li:focus,
+.attraction_list_member3 li:hover,
+.attraction_list_member3 li:focus
+{
     background-color: #036ce2;
 }
+
+.attraction__pass_title { 
+    color:#333;
+    font-weight: bolder;
+    font-size: 1.05rem;
+}
+
+.attraction__pass{ 
+    display: flex;
+    justify-content: flex-end;
+    margin-right:0;
+    align-items: center;
+    
+}
+
+.attraction__toggleSwitch {
+    width: 58px;
+    height: 29px;
+    display: block;
+    position: relative;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+    cursor: pointer;
+    margin: 15px;
+ }
+ .attraction__toggleSwitch .toggle_Btn{ 
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #0368d9;
+ }
+
+ #toggle:checked ~ .attraction__toggleSwitch {
+    background: #0368d9;
+  }
+
+  #toggle:checked ~ .attraction__toggleSwitch .toggle_Btn {
+    left: calc(100% - 25px);
+    background: #fff;
+  }
+  
+  .attraction__toggleSwitch, .toggle_Btn {
+    transition: all 0.2s ease-in;
+  }
+
+  .attraction__fouthDiv{ 
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+  .attraction__listHeader{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5rem;
+    
+  }
+  
+  .attraction__listHeaderNum{ 
+    font-size: 100px;
+    font-weight: 900;
+    color:#333;
+    letter-spacing: -15px;
+   
+    
+    
+  }
+  h1,h2,h3,h4 { 
+    color:#333;
+    font-weight: 900;
+  }
+
+  #attraction__bodyCotainer{ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1rem;
+  }
+  
+  .item{ 
+    border-radius: 15px 15px 10px 10px;
+    border:1px solid #ccc;
+    width:370px;
+    height: 247px;
+    background-image: url("https://www.usj.co.jp/tridiondata/usj/ko/kr/files/images/gds-images/usj-gds-harry-potter-and-the-forbidden-journey-c.jpg?imwidth=361");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+  .item_comment{ 
+    padding: 16px 16px 30px 16px;
+    width:370px;
+    height: 247px;
+    margin-top: 245px;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #ccc;
+    
+  }
+  .item__areaSection{ 
+    color:#333;
+    font-size: 14px;
+    display: block;
+    font-weight: 700;
+  }
+  .item__attractionName{ 
+    color:#0368d9;
+    font-weight: 700;
+    font-size: 19px;
+    display: block;
+    margin-top:10px;
+  }
+  

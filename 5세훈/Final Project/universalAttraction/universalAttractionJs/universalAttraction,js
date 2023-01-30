@@ -1,7 +1,12 @@
  const btn = document.querySelector('.btn_select');
  const icon = document.querySelector('.fa-caret-down');
-
+ const icon2 = document.querySelector('.fa-icon2');
+ const icon3 = document.querySelector('.fa-icon3');
+ const icon4 = document.querySelector('.fa-icon4');
         const list = document.querySelector('.attraction_list_member');
+        const list2 = document.querySelector('.attraction_list_member2');
+        const list3 = document.querySelector('.attraction_list_member3');
+        const list4 = document.querySelector('.attraction_list_member4');
         btn.addEventListener('click', () => {
             btn.classList.toggle('on');
         });
@@ -14,4 +19,17 @@
 
         icon.addEventListener('click',e => { 
             icon.classList.toggle('fa-caret-down-rotate');
+            list.classList.toggle('attraction_list_memberOn');
+        });
+        icon2.addEventListener('click',e =>{ 
+            icon2.classList.toggle('fa-caret-down-rotate');
+            list2.classList.toggle('attraction_list_memberOn');
+        });
+        icon3.addEventListener('click', e=>{ 
+            icon3.classList.toggle('fa-caret-down-rotate');
+            list3.classList.toggle('attraction_list_memberOn');
+        })
+        icon4.addEventListener('click', e=>{ 
+            icon4.classList.toggle('fa-caret-down-rotate');
+            list4.classList.toggle('attraction_list_memberOn');
         })
