@@ -1,5 +1,9 @@
 window.addEventListener('scroll', (e) => { 
-    //스크롤을 할 때마다 로그로 현재 스크롤의 위치가 찍혀나온다.
-    // console.log(window.scrollX, window.scrollY);
-    console.log(e);
+    // console.log(window.scrollY);
+    if (window.scrollY>100) {
+      console.log('변하기');
+    }
+    if (window.scrollY<100) {
+      console.log('안변하기');
+    }
   });

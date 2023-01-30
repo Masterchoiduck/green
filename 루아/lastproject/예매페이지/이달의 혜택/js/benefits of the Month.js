@@ -128,9 +128,6 @@ const firstDay = new Date(date.setDate(1)).getDay();
       ${currentYear}년 ${currentMonth}월 ${functionDay(e)}일
       </div>
     `
-      e.target.innerHTML=''
-      e.target.innerHTML=`<div class="number">"11"<p class="nomouse"></p></div>`
-    console.log(e.target);
   })
 })
 function functionDay(item){
