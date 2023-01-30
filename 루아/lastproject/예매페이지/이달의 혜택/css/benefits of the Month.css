@@ -249,3 +249,7 @@
   height: 31.21px;
   font-size: 30px;
 }
+
+.nomouse{
+  pointer-events : none;
+}

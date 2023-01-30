@@ -34,12 +34,6 @@ const test=[
   {date: '2023-12-25', content: 'christmas', text: '크리스마스'}
 ]
 // { date: '2022-10-15', content: '테스트1' }
-// console.log(test);
-
-
-
-
-
 
 
 // 데이터 가공
@@ -75,7 +69,7 @@ const firstDay = new Date(date.setDate(1)).getDay();
 
   // 한달전 날짜 표시하기
   for (let i = 0; i < firstDay; i++) {
-    htmlDummy += `<div class="noColor"></div>`;
+    htmlDummy += `<div class="noColor nomouse"></div>`;
   }
 
   // 이번달 날짜 표시하기
@@ -103,7 +97,7 @@ const firstDay = new Date(date.setDate(1)).getDay();
     htmlDummy += `
       <div class="${test_2(date)||'number'}">
         ${i}
-        <p>
+        <p class="nomouse">
           ${test_1(date)}
         </p>
       </div>
@@ -112,7 +106,7 @@ const firstDay = new Date(date.setDate(1)).getDay();
 
   // 다음달 날짜 표시하기
   for (let i = limitDay; i < nextDay; i++) {
-    htmlDummy += `<div class="noColor"></div>`;
+    htmlDummy += `<div class="noColor nomouse"></div>`;
   }
   
   document.querySelector(`.dateBoard`).innerHTML = htmlDummy;
@@ -126,17 +120,30 @@ const firstDay = new Date(date.setDate(1)).getDay();
       ${year}년 ${month}월 ${day}일
       </div>
     `
-  console.log(day);
+
   $Month.forEach(itme=>{
     itme.addEventListener('click',e=>{
-    console.log(e.target.innerText);
     $click__day.innerHTML=`
       <div>
-      ${currentYear}년 ${currentMonth}월 ${e.target.innerText}일
+      ${currentYear}년 ${currentMonth}월 ${functionDay(e)}일
       </div>
     `
+      e.target.innerHTML=''
+      e.target.innerHTML=`<div class="number">"11"<p class="nomouse"></p></div>`
+    console.log(e.target);
   })
 })
+function functionDay(item){
+  if((item.target.innerText+"").length === 5){
+      return item.target.innerText.substr(0,1);    
+  }
+  if((item.target.innerText+"").length > 3){
+    return item.target.innerText.substr(0,2);    
+}
+  return item.target.innerText
+}
+}
+
 
 const $plusBtn = document.querySelectorAll('.plusBtn')
 const $minusBtn = document.querySelectorAll('.minusBtn')
@@ -180,12 +187,6 @@ $minusBtn.forEach((item2,index)=>{
     }
   })
 })
-
-
-
-
-
-}
 
 const date = new Date();
 
