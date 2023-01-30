@@ -253,3 +253,113 @@
 .nomouse{
   pointer-events : none;
 }
+
+
+.event__box{
+  gap: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.event{
+  background-color: #214FF2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 77.74px;
+  width: 90%;
+}
+.event__P1{
+  height: 58px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.event__P2{
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.event__P2__1{
+  gap: 5%;
+  flex: 1.5;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.event__P2__2{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.event__P2__2__1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.event__P2__2__2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.event__title{
+  font-family: 'Noto Sans KR';
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.img__1{
+  width: 150px;
+  height: 95px;
+  background-image: url('../../../혜택정보/img/슬기로운\ 네이버페이\ 생활.png');
+  background-size: 150px 95px;
+}
+
+.img__2{
+  width: 150px;
+  height: 95px;
+  background-image: url('../../../혜택정보/img/카카오페이.png');
+  background-size: 150px 95px;
+}
+
+.img__3{
+  width: 150px;
+  height: 95px;
+  background-image: url('../../../혜택정보/img/누구나\ 온라인\ 예매.png');
+  background-size: 150px 95px;
+}
+
+
+.evnt__item__1{
+  display: flex;
+  align-items: center;
+  font-family: 'Noto Sans KR';
+  font-size: .8em;
+  font-weight: 700;
+}
+.event__Fcontent{
+  display: flex;
+  justify-content: center;
+}
+.event__content{
+  width: 80%;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
+.event__P1__1{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 57.99px;
+  flex: 1.5;
+  background-color: #F7F7F7;
+}
+.event__P1__2{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 57.99px;
+  flex: 1;
+  background-color: #EEEEEE;
+}
