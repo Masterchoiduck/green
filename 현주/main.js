@@ -8,10 +8,14 @@ const $user_icon_white=document.querySelector('.user_icon_white')
 const $user_icon_gray=document.querySelector('.user_icon_gray')
 const $logo_white=document.querySelector('.logo_white')
 const $logo_gray=document.querySelector('.logo_gray')
+const $ticket__img=document.querySelector('.ticket__img')
 
 window.addEventListener('scroll', (e) => { 
     // console.log(window.scrollY);
     $menu_bar.forEach(item=>{
+      if(window.screenY<50){
+        $ticket__img.style.display='flex'
+      }
       // 검정
       if (window.scrollY>890) {
         item.classList.add('csh__black')
