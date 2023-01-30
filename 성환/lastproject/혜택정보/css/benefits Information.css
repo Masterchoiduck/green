@@ -134,7 +134,7 @@
 }
 .item3{
     margin-top: -12px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
 }
 .img1{
@@ -156,7 +156,9 @@
 }
 .img5{
     background-image: url('../img/토끼.png');
-    background-size: 150px 95px;
+    background-size: 75px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .img6{
     background-image: url('../img/교복할인심슨.jpg');
@@ -176,7 +178,9 @@
 }
 .img10{
     background-image: url('../img/장애인할인.png ');
-    background-size: 150px 95px;
+    background-size: 95px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .img11{
     background-image: url('../img/국가유공자할인.jpg ');
@@ -191,7 +195,7 @@
     background-size: 150px 95px;
 }
 .img14{
-    background-image: url('../img/문화누리카드_로고마크.png');
+    background-image: url('../img/슬기로운\ 네이버페이\ 생활.png');
     background-size: 150px 95px;
 }
 .img15{
@@ -199,17 +203,19 @@
     background-size: 150px 95px;
 }
 .img16{
-    background-image: url('../img/누구나\ 온라인\ 예매.png');
-    background-size: 150px 95px;
+    background-image: url('../img/로고_블랙_최종.png');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .item__btn{
     border: #286BE1 solid;
     border-radius: 30px;
     background-color: #286BE1;
     color: #FFF8F8;
-    width: 57px;
-    height: 23.8px;
-    font-size: 12px;
+    width: 68px;
+    height: 33px;
+    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
