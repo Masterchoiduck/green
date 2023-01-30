@@ -101,7 +101,7 @@ header {
 */
 /* 메뉴드롭 수정분 */
 
-
+/* 헤더 */
 .logo{
     margin: 13px 0px 0px 3.9063vw;
 }
@@ -111,7 +111,6 @@ header {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-
 }
 .menu_bar{
     font-size: 20px;
@@ -138,7 +137,7 @@ header {
 
 
 
-
+/* 풀메뉴 드롭다운 */
 li{
     list-style: none;
 }
@@ -164,36 +163,58 @@ a{
     color: #2f2f2f;
 }
 .top_menu:hover{
-
     background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(20px);
     transition-duration: 0.5s;
     height: 385px;
     transition-duration: 0.5s;
-    
     box-shadow: #286ce13d 0px 1px 30px 1px;
 }
-.logo_gray, .search_icon_gray, .ticket_icon_gray, .user_icon_gray {
+
+/*유니버셜 로고 흰색에서 회색으로 변경*/
+.logo_gray {
     display: none;
 }
-
 .top_menu:hover .logo_white{
     display: none;
 }
 .top_menu:hover .logo_gray{
     display: inline-block;
 }
-.top_menu:hover .search_icon_white, .ticket_icon_white, .user_icon_white {
+
+/*상단 오른쪽 아이콘 흰색에서 회색으로 변경*/
+.search_icon_gray {
     display: none;
 }
-.top_menu:hover .search_icon_gray, .ticket_icon_gray, .user_icon_gray{
+.ticket_icon_gray{
+    display: none;
+}
+.user_icon_gray{
+    display: none;
+}
+.top_menu:hover .search_icon_white{
+    display: none;
+}
+.top_menu:hover .ticket_icon_white{
+    display: none;
+}
+.top_menu:hover .user_icon_white{
+    display: none;
+}
+.top_menu:hover .search_icon_gray{
     display: inline-block;
 }
+.top_menu:hover .ticket_icon_gray{
+    display: inline-block;
+}
+.top_menu:hover .user_icon_gray{
+    display: inline-block;
+}
+
 
 .top_menu:hover .menu_bar_submenu {
     height: 250px;
     transition-duration: 0.5s;
-
 }
 .top_menu:hover .sss > li > a {
     color: #2f2f2f;
