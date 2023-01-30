@@ -292,7 +292,7 @@ a{
     text-align: start;
     position: relative;
     top: 160px;
-
+    pointer-events: none;
 }
 
 .main_All{
@@ -344,6 +344,25 @@ a{
     justify-content: center;
     align-items: center;
 }
+.benefit_text {
+    display: none;
+}
+.benefit3:hover {
+    background-color: #EEF5FB; 
+    transition-duration: 0.3s;
+}
+.benefit3:hover img{
+    display: none;
+}
+.benefit3:hover .benefit_text{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #444545;
+    transition-duration: 0.3s;
+}
+
+
 
 /* 베스트 어트랙션 페이지 */
 .attraction_title_total{
@@ -376,10 +395,12 @@ a{
     border-radius: 20px;
     background-color: #286BE1;
 }
+
 .att_s1 {
     width: 250px;
     height: 250px;
     background-image: url(img/web/어트랙션_해리포터\ 앤드\ 포비든저니_큰.png);
+
     background-size: cover;
     border-radius: 20px;
 }
@@ -418,6 +439,14 @@ a{
     background-size: cover;
     border-radius: 20px;
 }
+
+
+
+
+
+
+
+
 
 
 
