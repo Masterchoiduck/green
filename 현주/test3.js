@@ -1,16 +1,26 @@
-//날짜 구하기
-    const date = new Date();
-    const year = date.getFullYear();
-    const month = date.getMonth() + 1;
-    const day = date.getDate();
-//시간 구하기
-    const hour = ('0' + date.getHours()).slice(-2);
-    const minutes = ('0' + date.getMinutes()).slice(-2);
-    const timeStr = hour + ':' + minutes;
 
-    document.getElementById("parade_now_date").innerHTML = year + '.' + month + '.' + day + ' ' + hour + ':' + minutes;
-
-
+      const interval = setInterval(function() {
+      var now = new Date();   //현재시간
+      var year = now.getFullYear();   //현재 연도
+      var month = now.getMonth()+1;   //현재 달 
+      if((month+"").length < 2){
+          month="0"+month;
+      }
+      var date = now.getDate();      //현재 날짜.
+      if((date+"").length < 2){
+          date="0"+date;      
+      }
+      var hour = now.getHours();   //현재 시간.
+      if((hour+"").length < 2){
+      hour="0"+hour;      
+      }
+      var minutes=now.getMinutes(); //현재 분
+      if((minutes+"").length < 2){
+          minutes="0"+minutes;
+      }
+      //오늘 날짜 완성.
+      document.getElementById("parade_now_date").innerHTML = year + '.' + month + '.' + date + ' ' + hour + ':' + minutes;
+  }, 100);
 
 
 //퍼레이드 캐러셀 슬라이드
