@@ -49,6 +49,7 @@
 
 
 
+
 @media (min-width:1025px){
 
 
@@ -176,10 +177,10 @@ a{
     display: none;
 }
 .top_menu:hover .logo_white{
-    display: none;
+    display: none !important;
 }
 .top_menu:hover .logo_gray{
-    display: inline-block;
+    display: inline-block !important;
 }
 
 /*상단 오른쪽 아이콘 흰색에서 회색으로 변경*/
@@ -192,23 +193,13 @@ a{
 .user_icon_gray{
     display: none;
 }
-.top_menu:hover .search_icon_white{
-    display: none;
+.top_menu:hover .search_icon_white,.top_menu:hover .ticket_icon_white,.top_menu:hover .user_icon_white{
+    display: none !important;
 }
-.top_menu:hover .ticket_icon_white{
-    display: none;
-}
-.top_menu:hover .user_icon_white{
-    display: none;
-}
-.top_menu:hover .search_icon_gray{
-    display: inline-block;
-}
-.top_menu:hover .ticket_icon_gray{
-    display: inline-block;
-}
-.top_menu:hover .user_icon_gray{
-    display: inline-block;
+
+.top_menu:hover .search_icon_gray,.top_menu:hover .ticket_icon_gray,.top_menu:hover .user_icon_gray
+{
+    display: inline-block !important;
 }
 
 
@@ -543,4 +534,8 @@ a{
 
 
 
+}
+
+.csh__black{
+    color: #2f2f2f !important;
 }
