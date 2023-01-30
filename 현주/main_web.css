@@ -462,7 +462,7 @@ a{
     margin: 0px auto;
 
     position: relative;
-    top: 35px;
+    top: 40px;
     display: grid;
     grid-template-columns: 650px 162px;
     justify-content: space-between;
