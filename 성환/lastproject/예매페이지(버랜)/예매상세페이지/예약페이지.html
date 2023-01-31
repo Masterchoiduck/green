@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cs/예약.css">
+</head>
+
+<body>
+    <section id="wrapCont">
+
+        <div class="viewCont">
+
+
+            <div class="prodInfo">
+                <div class="viewVisual">
+                    <p><img src="https://reservation.everland.com/web/img/menu_img/20221031091926.png" alt="이미지"></p>
+                </div>
+
+
+
+                <article class="viewInfo">
+                    <h3>오후권(3시입장)</h3>
+                    <div class="contBox wSpaceLine">오후 3시부터 입장~ 마감시간까지 자유롭게!
+
+                        [운영 기간]
+                        - ~2/28 (방문일 기준)
+
+                        [상품안내]<a href="https://www.everland.com/web/everland/now/news/1222689_10436.html"
+                            target="_blank">☞ 시즌 캘린더 보기</a>
+                        - 상품구성 : 오후권(3시입장) 1매
+                        - 가격: (C) 25,000원 (B) 28,000원 (A) 32,000원
+
+                        ※ 본 프로모션은 당사 사정에 의해 조기 종료될 수 있습니다.
+                        ※ 스마트줄서기 등 원활한 파크 이용을 위해 에버랜드 APP에 이용권을 등록해주세요. (구매 후 바로등록 가능)
+                        ※ 스마트줄서기 적용 기종은 에버랜드 APP 시설정보에서 확인 가능합니다.
+
+                    </div>
+                </article>
+
+
+            </div>
+
+            <div class="buyInfo el">
+
+                <div class="optBox">
+
+
+                    <p class="tit">예약옵션을 선택해주세요.</p>
+
+
+                    <dl class="itemOpt" id="opt1">
+                        <dt>방문예정일</dt>
+                        <dd class="choice"><button id="btn_visit" class="btnCal">2023.01.31</button></dd>
+                    </dl>
+
+                    <dl class="itemOpt" id="opt3" style="display: none;">
+                        <dt>제휴사</dt>
+                        <dd class="choice" id="lv6_1"><a class="cardChk"></a><em></em></dd>
+                    </dl>
+
+                    <div class="itemDet" id="opt3Det">
+                        <ul class="selType card" id="lv6_2">
+                        </ul>
+                    </div>
+
+                    <dl class="itemOpt" id="opt4" style="display: none;">
+                        <dt>제휴카드</dt>
+                        <dd class="choice" id="lv7_1"><em></em></dd>
+                    </dl>
+
+                    <div class="itemDet" id="opt4Det">
+                        <ul class="selType asso" id="lv7_2">
+                        </ul>
+                    </div>
+
+                    <dl class="itemOpt spotOpt" id="opt16" style="display: none;">
+                        <dt>자리선택</dt>
+                        <dd class="basic"><em>선택하세요</em></dd>
+                    </dl>
+
+                    <dl class="itemOpt" id="opt99" style="display:none">
+                        <dt>자리선택</dt>
+                        <dd class="basic"><em></em></dd>
+                    </dl>
+
+                    <dl class="itemOpt" id="opt5">
+                        <dt>상품선택</dt>
+                        <dd class="basic" id="base_prod_tit"><em>선택하세요</em><input id="base_prod_amt" type="hidden"
+                                value="0"></dd>
+                    </dl>
+
+                    <div class="itemDet open">
+                        <ul class="numType" id="base_prod_list">
+                            <li> <span class="txt">25,000원<b class="sign">x</b>오후권(3시입장)</span>
+                                <p class="number"> <input>
+                                    <button id="down_base_prod0" class="down">
+                                        인원빼기
+                                    </button> 
+                                    <button id="up_base_prod0" class="up">
+                                        인원추가
+                                    </button> 
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <dl class="itemOpt" id="opt7" style="display: none;">
+                        <dt>추가동반인</dt>
+                        <dd class="choice" id="add_partner_tit"><em>선택안함</em></dd>
+                    </dl>
+
+                    <div class="itemDet">
+                        <ul class="numType" id="add_partner_list">
+                        </ul>
+                    </div>
+
+                    <dl class="itemOpt" id="opt18" style="display:none">
+                        <dt>시간선택</dt>
+                        <dd class="basic" id="tier1_prod_tit"></dd>
+                    </dl>
+
+                    <div class="itemDet">
+                        <p class="txtType" id="t1Txt"></p>
+                        <ul class="numType Qpass tier1" id="tier1_prod_list">
+                        </ul>
+                    </div>
+
+                    <dl class="itemOpt" id="opt12" style="display: none;">
+                        <dt>시간선택</dt>
+                        <dd class="choice"><em></em></dd>
+                    </dl>
+
+                    <div class="itemDet">
+                        <ul class="selType time addType3" id="opt12_time"></ul>
+                    </div>
+
+                    <dl class="itemOpt" id="opt13" style="display: none;">
+                        <dt>시간선택</dt>
+                        <dd class="choice"><em></em></dd>
+                    </dl>
+
+                    <div class="itemDet">
+                        <ul class="selType time addType3" id="opt13_time"></ul>
+                    </div>
+
+                    <dl class="itemOpt rsvOpt" id="opt6" style="display: none;">
+                        <dt>예약인원</dt>
+                        <dd id="base_people_tit" class="basic">
+                            <em>―</em>
+                        </dd>
+                    </dl>
+
+                    <div class="itemDet">
+                        <ul class="numType">
+                            <li>
+                                <span class="txt">대인</span>
+                                <p class="number">
+                                    <button id="down_1" class="down">
+                                        인원빼기
+                                    </button>
+                                    <button id="up_1" class="up">
+                                        인원추가
+                                    </button>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="txt">소인</span>
+                                <p class="number">
+                                    <button id="down_2" class="down">
+                                        인원빼기
+                                    </button>
+                                    <button id="up_2" class="up">
+                                        인원추가
+                                    </button>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="txt">유아</span>
+                                <p class="number">
+                                    <button id="down_3" class="down">
+                                        인원빼기
+                                    </button>
+                                    <button id="up_3" class="up">
+                                        인원추가
+                                    </button>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                    <dl class="itemOpt rsvOpt" id="opt11" style="display: none;">
+                        <dt>예약인원</dt>
+                        <dd id="base_people_all_tit" class="basic">
+                            <em>―</em>
+                            >
+                        </dd>
+                    </dl>
+
+                    <div class="itemDet">
+                        <ul class="numType">
+                            <li>
+                                <span class="txt">총인원</span>
+                                <p class="number">
+                                    <button id="down_4" class="down">
+                                        인원빼기
+                                    </button>
+                                    <button id="up_4" class="up">
+                                        인원추가
+                                    </button>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <dl class="itemOpt partOpt" id="opt14" style="display: none;">
+                        <dt>참여자 정보</dt>
+                        <dd class="basic">
+                            <em>입력해주세요</em>
+                        </dd>
+                    </dl>
+
+                    <dl class="itemOpt" id="opt9" style="display: none;">
+                        <dt>36개월 동반 여부</dt>
+                        <dd class="choice">
+                            <em id="baby_tit">동반하지 않습니다.</em>
+                        </dd>
+                    </dl>
+
+                    <div class="itemDet">
+                        <ul class="selType baby">
+                            <li id="baby" value="Y"><span id="baby_y">동반합니다.</span></li>
+                            <li id="baby" value="N" class="on"><span id="baby_n">동반하지 않습니다.</span></li>
+                        </ul>
+                    </div>
+
+
+
+                    <p class="itemTit" id="opt17" style="display: none;">주소</p>
+                    <div class="itemDet" id="opt17Div">
+                        <div class="addrType">
+                            <label for="rcptzip" class="blind">우편번호</label>
+                            <a id="addr_search" pagediv="gift">
+                                <span class="btn">우편번호 검색</span>
+                            </a>
+                            <div class="margin_T8">
+                                <label for="rcptaddr1" class="blind">기본 주소</label>
+                            </div>
+                            <div class="margin_T8">
+                                <label for="rcptaddr2" class="blind">상세 주소</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <dl class="itemOpt" id="opt19" style="display:none">
+                        <dt>시간자유</dt>
+                        <dd class="basic" id="tier2_prod_tit"></dd>
+                    </dl>
+
+                    <div class="itemDet">
+                        <p class="txtType" id="t2Txt"></p>
+                        <ul class="numType Qpass" id="tier2_prod_list">
+                        </ul>
+                    </div>
+
+
+
+                    <dl class="itemOpt" id="opt98" style="display: none;">
+                        <dt>연간이용권 드림포인트 적립</dt>
+                        <dd class="basic" id="opt98_dream_dd">
+                            <em id="opt98_dream_text">
+                                선택하세요
+                            </em>
+                        </dd>
+                    </dl>
+
+                    <div class="itemDet">
+                        <ul class="selType prod addType1">
+                            <li id="dream_savePoint_li">
+                                <span>적립함</span>
+                            </li>
+                            <li id="dream_unsavePoint_li">
+                                <span>적립안함</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <p class="itemTit" id="opt10" style="display: none;"></p>
+                    <div class="itemDet">
+                        <textarea id="req_txt" class="request" maxlength="300" rows="8" cols="80"
+                            placeholder=" 을/를 입력해주세요">
+                        </textarea>
+                    
+                    </div>
+
+                </div>
+
+                <div class="amtBox">총 금액 <span><strong id="total_sum">0원</strong></span></div>
+
+                <div class="btnBox">
+                    <a class="cart" id="btn_cartInsert2">장바구니</a>
+                    <a class="elRes" id="btn_cartInsert1" data-link-area="에버랜드-옵션선택" data-link-name="바로예약">바로 예약</a>
+                </div>
+
+            </div>
+
+            <div id="popupDate" class="layerPopup">
+                <div class="intro">방문하실 날짜를 선택해 주세요.</div>
+                <div id="dateCalendar1" class="dateCalBox el">
+                    <div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+                        <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all">
+                            <a id="prevMonth" class="ui-datepicker-prev ui-corner-all ui-state-disabled" title="Prev"
+                                month="202212" style="display: none;">
+                                <span class="ui-icon ui-icon-circle-triangle-w">
+                                    Prev
+                                </span>
+                            </a>
+                            <a id="nextMonth" class="ui-datepicker-next ui-corner-all" data-handler="next"
+                                data-event="click" title="Next" month="202302">
+                                <span class="ui-icon ui-icon-circle-triangle-e">Next</span></a>
+                            <div class="ui-datepicker-title">
+                                <span class="ui-datepicker-month">
+                                    <i>01</i>
+                                    January
+                                </span>&nbsp;
+                                <span class="ui-datepicker-year">
+                                    2023
+                                </span>
+                            </div>
+                        </div>
+
+
+
+                        <table class="ui-datepicker-calendar">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class=" "><span title="Sunday">일</span></th>
+                                    <th scope="col"><span title="Monday">월</span></th>
+                                    <th scope="col"><span title="Tuesday">화</span></th>
+                                    <th scope="col"><span title="Wednesday">수</span></th>
+                                    <th scope="col"><span title="Thursday">목</span></th>
+                                    <th scope="col"><span title="Friday">금</span></th>
+                                    <th scope="col" class=" "><span title="Saturday">토</span></th>
+                                </tr>
+                            </thead>
+
+
+                            <tbody id="calendar_view">
+                                <tr>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled">
+                                        <span class="ui-state-default" date="1" name="" capafg="0">
+                                            1
+                                        </span>
+                                    </td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled">
+                                        <span class="ui-state-default" date="2" name="" capafg="0">
+                                            2
+                                        </span>
+                                    </td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled">
+                                        <span class="ui-state-default" date="3" name="" capafg="0">
+                                            3
+                                        </span>
+                                    </td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled">
+                                        <span class="ui-state-default" date="4" name="" capafg="0">
+                                            4
+                                        </span>
+                                    </td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled">
+                                        <span class="ui-state-default" date="5" name="" capafg="0">
+                                            5
+                                        </span>
+                                    </td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled">
+                                        <span class="ui-state-default" date="6" name="" capafg="0">
+                                            6
+                                        </span>
+                                    </td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled">
+                                        <span class="ui-state-default" date="7" name="" capafg="0">
+                                            7
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="8" name="" capafg="0">8</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="9" name="" capafg="0">9</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="10" name="" capafg="0">10</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="11" name="" capafg="0">11</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="12" name="" capafg="0">12</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="13" name="" capafg="0">13</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="14" name="" capafg="0">14</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="15" name="" capafg="0">15</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="16" name="" capafg="0">16</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="17" name="" capafg="0">17</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="18" name="" capafg="0">18</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="19" name="" capafg="0">19</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="20" name="" capafg="0">20</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="21" name="" capafg="0">21</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="22" name="" capafg="0">22</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="23" name="" capafg="0">23</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="24" name="" capafg="0">24</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="25" name="" capafg="0">25</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="26" name="" capafg="0">26</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="27" name="" capafg="0">27</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="28" name="" capafg="0">28</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="29" name="" capafg="0">29</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="30" name="" capafg="0">30</span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled able"><a
+                                            href="javascript:void(0);" class="el_on ui-state-active" date="31"
+                                            name="possible" capafg="1">31</a></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="" name="" capafg="0"></span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="" name="" capafg="0"></span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="" name="" capafg="0"></span></td>
+                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
+                                            class="ui-state-default" date="" name="" capafg="0"></span></td>
+                                </tr>
+                            </tbody>
+
+
+                        </table>
+
+                    </div>
+                </div>
+                <div id="oprTime" class="time active">
+                    운영시간 <b>10:00 - 19:00</b>
+                </div>
+
+                <ul class="legend  el">
+                    <li class="able">예약가능</li>
+                    <li class="off">잔여 수량 없음</li>
+                    <li class="disabled">미운영/준비중</li>
+                </ul>
+
+                <div class="btnBox el">
+                    <a id="btnCalCancel" href="javascript:fn_layerCalCancel();">
+                        취소
+                    </a>
+                    <a id="btnCalConfirm" href="javascript:fn_layerCalConfirm();">
+                        <span id="spanCalConfirm">
+                            확인
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="viewRelateBox">
+            <ul class="tab">
+                <li class="on"><a href="#relate1">안내 및 주의사항</a></li>
+                <li><a href="#relate2">취소 및 환불</a></li>
+                <li><a href="#relate3">상품 세부 표시</a></li>
+            </ul>
+
+
+            <div id="relate1" class="viewRelate open">
+                <h4>안내 및 주의 사항</h4>
+
+                <dl class="intro wSpaceLine">[구매 및 사용]
+                    - 오후 3시부터 입장 가능합니다.
+                    - 2매 이상 구매하더라도 QR코드는 1개만 발송되므로 반드시 함께 입장하셔야 합니다.
+                    - 방문예정일 기준 30일 전부터 방문 당일까지 예약 가능합니다.
+                    - 중고생/대학(원)생 오후권 입장 시 에버랜드 APP에 등록하신 이용권 QR코드와 함께 중/고/대학(원)생임을 증명할 수 있는 증빙 서류(학생증 등)를 근무자에게 제시해 주세요.
+                    (증명서류 미지참 시 입장 불가 / 촬영본 가능)
+                    - 타 제휴카드 및 쿠폰 등과 중복 우대되지 않습니다.
+                    - 예약 문자를 받지 못한 경우, 에버랜드 APP 스마트예약 페이지 또는 홈페이지 &gt; 마이 페이지 &gt; 예매 조회의 상세 보기를 조회하면, QR코드 및 이용안내/유의사항을
+                    확인하실 수 있습니다.</dl>
+
+            </div>
+
+
+
+            <div id="relate2" class="viewRelate">
+                <h4>취소 및 환불</h4>
+
+                <dl class="intro wSpaceLine">- 방문 예정일 변경은 예약 취소 후 재예약하여 주십시오. (변경 및 부분 취소 불가)
+                    - 구성 상품은 당일에만 사용 가능하며, 부분 사용 및 부분 환불 불가합니다.
+                    - 방문예정일까지 미사용 시 익일 자동 취소 됩니다.
+                    ※ 온라인(스마트예약) 구매 상품은, 카드사별 정책에 따라 청구할인 혜택에서 제외될수 있습니다.<p></p>
+                </dl>
+
+            </div>
+
+
+
+            <div id="relate3" class="viewRelate">
+                <h4>상품 세부 표시</h4>
+
+                <dl class="intro wSpaceLine">전자상거래 상품정보제공 고시
+
+                    [이용권 발행자]
+                    삼성물산(주)
+
+                    [유효기간 및 이용조건]
+                    방문 예정일에만 사용 가능하며 예약 완료 후에는 날짜/인원/결제수단 등 예약사항 변경 불가
+
+                    방문 전날까지 홈페이지를 통하여 취소수수료 없이 결제취소 가능
+
+                    사용하지 않고 방문예정일이 지난 경우, 위약금을 제외한 금액이 익일자동 취소됨
+                    단, 계좌이체/체크카드로 구매 시, 금융사별 정산시간에 따라 23:30 ~ 01:00 사이에는 예약 및 취소가 불가할 수 있습니다.
+
+                    * KB국민은행 23:30~00:30 (단, 22:00~00:30에는 취소만 불가)
+                    * NH농협은행 23:30~00:30 (월 23:30~04:00)
+                    * 우체국 23:40~00:30,04:00~05:00
+                    * 씨티은행 23:30~08:00
+                    * 경남은행 23:00~08:00
+                    * 광주은행 24:00~05:00 (예약 및 취소 불가)
+                    * SC제일은행 주중 구매건은 주말 취소 불가. 주말 구매건 주중 취소 불가
+
+                    [이용가능매장]
+                    에버랜드 리조트
+
+                    [소비자상담 전화번호]
+                    031-320-5000<p></p>
+                </dl>
+
+            </div>
+
+        </div>
+
+        
+
+    </section>
+</body>
+
+</html>
