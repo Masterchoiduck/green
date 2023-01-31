@@ -361,9 +361,9 @@ ul{
 
   #attraction__bodyCotainer{ 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(306px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     gap: 1rem;
-
+    max-width: 75rem;
     align-items: center;
     justify-content: center;
     justify-items: center;
@@ -372,7 +372,7 @@ ul{
   
   
   .item{ 
-    max-width:370px;
+    
     height: 247px;
     background-image: url("https://www.usj.co.jp/tridiondata/usj/ko/kr/files/images/gds-images/usj-gds-harry-potter-and-the-forbidden-journey-c.jpg?imwidth=361");
     background-repeat: no-repeat;
