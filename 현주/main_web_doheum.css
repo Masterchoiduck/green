@@ -1,0 +1,571 @@
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
+
+@font-face {
+    font-family: "Apple SD Gothic Neo";
+    src: url("../fonts/AppleSDGothicNeoR.woff2") format("woff2"), url("../fonts/AppleSDGothicNeoR.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: "Apple SD Gothic Neo";
+    src: url("../fonts/AppleSDGothicNeoM.woff2") format("woff2"), url("../fonts/AppleSDGothicNeoM.woff") format("woff");
+    font-weight: 500;
+    font-style: medium;
+  }
+@font-face {
+    font-family: "Apple SD Gothic Neo";
+    src: url("../fonts/AppleSDGothicNeoSB.woff2") format("woff2"), url("../fonts/AppleSDGothicNeoSB.woff") format("woff");
+    font-weight: 600;
+  }
+ @font-face {
+    font-family: "Apple SD Gothic Neo";
+    src: url("../fonts/AppleSDGothicNeoB.woff2") format("woff2"), url("../fonts/AppleSDGothicNeoB.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
+    unicode-range: U+0041-005A, U+0061-007A;
+  }
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR';
+}
+
+
+
+
+@media (min-width:1025px){
+
+    html, body{
+        width: 100%;
+        height: 100%;        
+        scroll-snap-type: y mandatory;
+    }
+
+    /* 헤더 */
+    /*
+    #main_header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        margin: 13px 0px 0px 3.9063vw;
+    }
+    .top_menu{
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 902px;
+    }
+    .menu_bar{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .right_menu{
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 60px;
+    }
+    .menu_icon{
+        margin: 0 0.9375vw;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+    */
+    /* 메뉴드롭 수정분 */
+
+    /* 헤더 */
+    .logo{
+        margin: 13px 0px 0px 3.9063vw;
+    }
+    .top_menu{
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .menu_bar{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .right_menu{
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 60px;
+    }
+    .menu_icon{
+        margin: 0 0.9375vw;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+
+
+
+    /* 풀메뉴 드롭다운 */
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .top_menu{
+        width: 100vw;
+        overflow: hidden;
+    }
+    .top_menu a {
+        color: #fff;
+    }
+    .menu_bar_submenu {
+        height: 0;
+        margin-top: 40px;
+    }
+    .menu_bar_submenu li {
+        line-height: 20px;
+        font-size: 18px;
+    }
+    .menu_bar_submenu li a {
+        color: #2f2f2f;
+    }
+    .top_menu:hover{
+        background-color: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(20px);
+        transition-duration: 0.5s;
+        height: 385px;
+        transition-duration: 0.5s;
+        box-shadow: #286ce13d 0px 1px 30px 1px;
+    }
+
+    /*유니버셜 로고 흰색에서 회색으로 변경*/
+    .logo_gray {
+        display: none;
+    }
+    .top_menu:hover .logo_white{
+        display: none !important;
+    }
+    .top_menu:hover .logo_gray{
+        display: inline-block !important;
+    }
+
+    /*상단 오른쪽 아이콘 흰색에서 회색으로 변경*/
+    .search_icon_gray {
+        display: none;
+    }
+    .ticket_icon_gray{
+        display: none;
+    }
+    .user_icon_gray{
+        display: none;
+    }
+    .top_menu:hover .search_icon_white,.top_menu:hover .ticket_icon_white,.top_menu:hover .user_icon_white{
+        display: none !important;
+    }
+
+    .top_menu:hover .search_icon_gray,.top_menu:hover .ticket_icon_gray,.top_menu:hover .user_icon_gray
+    {
+        display: inline-block !important;
+    }
+
+
+    .top_menu:hover .menu_bar_submenu {
+        height: 250px;
+        transition-duration: 0.5s;
+    }
+    .top_menu:hover .sss > li > a {
+        color: #2f2f2f;
+        font-weight: 800;
+    }
+    .top_menu:hover .menu_icon{
+        color: #2f2f2f;
+    }
+    .sss { 
+        width: 902px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 90px;
+    }
+    .sss li {
+        margin-top: 30px;
+    }
+    .menu_bar_submenu > li > a:hover {
+        color: #286BE1;
+        transition-duration: 0.3s;
+    }
+    .right_menu {
+        height: 90px;
+    }
+
+
+
+
+
+    /* 사이드바 */
+    .guide_map_icon {
+        position: fixed;
+        bottom: 60px;
+        right: 0;
+    }
+
+
+
+    /* 풀페이지 전체 */
+    /*
+    #main_fullPage{
+        overflow: auto;
+    }
+    */
+    .main_section{
+        width: 100%;
+        height: 100vh;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+    }
+
+    .full1 {
+        position: relative; 
+        width: 100%; 
+        height: 140vh;
+        scroll-snap-align: end;
+        scroll-snap-stop: always;
+    }
+
+    .full2, .full4{
+        background-color: #f7f7f7;
+        display: grid;
+        grid-template-rows: 290px 1fr;
+    }
+    .full3{
+        background-color: #EEF5FB;
+        display: grid;
+        grid-template-rows: 290px 1fr;
+    }
+
+
+
+    .main_title{
+
+        font-size: 40px;
+        font-weight: 900;
+        color: #286BE1;
+
+        /* 원래 benefit 등 각 각 따로 줌 */
+        text-align: start;
+        position: relative;
+        top: 160px;
+        pointer-events: none;
+    }
+
+    .main_All{
+        font-size: 15px;
+        color: #2f2f2f;
+
+    }
+
+    /* 공용
+    .main_section_top{
+        display: grid;
+        grid-template-columns: 19.1146vw 52.0833vw 104px 23.3854vw;
+
+        
+
+    }
+    */
+    .main_section_bottom{
+        margin: 0 auto;
+    }
+
+
+    /* 할인혜택 페이지 */
+    .benefit_title_total{
+        display: grid;
+        grid-template-columns: 19.1146vw 52.0833vw 104px 23.3854vw;
+    }
+
+
+    .benefit2{
+        text-align: end;
+        position: relative;
+        top: 265px;
+    }
+    .benefit_content_total{
+        width: 1040px;
+        height: 520px;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .benefit3{
+        width: 250px;
+        height: 250px;
+        background-color: #fff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .benefit_text {
+        display: none;
+    }
+    .benefit3:hover {
+        background-color: #EEF5FB; 
+        transition-duration: 0.3s;
+    }
+    .benefit3:hover img{
+        display: none;
+    }
+    .benefit3:hover .benefit_text{
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 700;
+        color: #444545;
+        transition-duration: 0.3s;
+    }
+
+
+
+    /* 베스트 어트랙션 페이지 */
+    .attraction_title_total{
+        display: grid;
+        grid-template-columns: 19.1146vw 52.0833vw 180px 19.4271vw;
+    }
+
+
+    .attraction2{
+        text-align: end;
+        position: relative;
+        top: 265px;
+    }
+    .attraction_content_total{
+        display: grid;
+        grid-template-columns: 405px 780px;
+        grid-template-rows: 515px;
+    }
+
+    .main_attraction_small{
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 250px 250px;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+    .att_b1{
+        width: 390px;
+        height: 515px;
+        border-radius: 20px;
+        background-color: #286BE1;
+    }
+
+    .att_s1 {
+        width: 250px;
+        height: 250px;
+        background-image: url(img/web/어트랙션_해리포터\ 앤드\ 포비든저니_큰.png);
+
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .att_s2 {
+        width: 250px;
+        height: 250px;
+        background-image: url(img/web/어트랙션_쥬라기월드_큰.png);
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .att_s3 {
+        width: 250px;
+        height: 250px;
+        background-image: url(img/web/어트랙션_미니언즈1_큰.png);
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .att_s4 {
+        width: 250px;
+        height: 250px;
+        background-image: url(img/web/어트랙션_미니언즈2_큰.png);
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .att_s5 {
+        width: 250px;
+        height: 250px;
+        background-image: url(img/web/어트랙션_마리오카트_큰.png);
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .att_s6 {
+        width: 250px;
+        height: 250px;
+        background-image: url(img/web/어트랙션_다이너소어_큰.png);
+        background-size: cover;
+        border-radius: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*퍼레이드 페이지*/
+
+    .parade_title_total{
+        display: grid;
+        grid-template-columns: 19.1146vw 52.0833vw 180px 19.4271vw;
+    }
+    .parade2{
+        text-align: end;
+        position: relative;
+        top: 265px;
+    }
+
+    .parade_content_total{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 26.0417vw 2.6042vw 1fr ;
+        height: 650px;
+    }
+    .blank2{
+        background-color: #f7f7f7;
+        height: 100px;
+    }
+
+
+
+
+
+    /* 푸터 */
+    .footer{
+        color: #fff;
+        width: 100%;
+        height: 230px;
+        background-color: #000;
+    }
+    .footer_section_total{
+        width: 946px;
+        height: 160px;
+
+        margin: 0px auto;
+
+        position: relative;
+        top: 40px;
+        display: grid;
+        grid-template-columns: 650px 162px;
+        justify-content: space-between;
+    }
+    .footer_content_top{
+        display: flex;
+    }
+    .footer_US_logo{
+        display: flex;
+        align-items: center;
+    }
+    .footer_US_logo img{
+        height: 28px;
+        margin-right: 2px;
+    }
+    .footer_US_title{
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .footer_content_right{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer_sns{
+        display: inline-block;
+    }
+    .footer_sns > i {
+        font-size: 24px ;
+        margin-top: 31px;
+    }
+
+    .footer_content_left{
+        display: grid;
+        align-content: space-evenly;
+    }
+
+    .footer_use_content, .footer_use_import{
+        margin-bottom: 5px;
+    } 
+    .footer_use_content span, .footer_copyright {
+        font-size: 15px;
+        margin-right: 29px;
+    }
+    .footer_use_import{
+        color: #286BE1;
+        font-weight: bold;
+    }
+
+    /* 이용권티켓 */
+    .ticket__img {        
+        position: absolute;        
+        /*
+        transform: translate(-50%, 37%);
+        */
+        width: 100%;
+        height: 100%;
+        background-image: url('./img/web/이용권티켓_웹\,탭.png');
+        
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        z-index: 10;
+    }
+
+}
+
+
+
+
+
+
+
+/* 성환초이 건듦 */
+.csh__black{
+    color: #2f2f2f !important;
+}
+.earth_video{
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -999;
+}
