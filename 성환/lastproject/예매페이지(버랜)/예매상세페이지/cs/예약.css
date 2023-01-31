@@ -24,7 +24,7 @@ table {
 
 table caption {
     text-align: left;
-    display: none;
+    /* display: none; */
 }
 
 form,
@@ -369,14 +369,13 @@ a:hover {
     padding: 39px 0 0 0;
 }
 
-.viewVisual {
+/* .viewVisual {
     position: relative;
     font-size: 0;
     line-height: 0;
-}
+} */
 
 .viewVisual p {
-    height: 420px;
     text-align: center;
     overflow: hidden;
 }
@@ -641,6 +640,7 @@ a:hover {
 }
 
 .buyInfo {
+    padding-right: 3rem;
     position: sticky;
     z-index: 10;
     float: right;

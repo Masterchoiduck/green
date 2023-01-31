@@ -602,3 +602,24 @@ a:hover {
         margin-right: 0;
     }
 }
+
+.choi_1{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choi_1 .choi_2{
+    background-color: #286BE1;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    border: 1px solid;
+    border-radius: 50px;
+    width: 200px;
+    height: 53px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="cs/달력.css">
     <link rel="stylesheet" href="cs/예약.css">
 </head>
 
@@ -16,10 +17,31 @@
 
 
             <div class="prodInfo">
-                <div class="viewVisual">
-                    <p><img src="https://reservation.everland.com/web/img/menu_img/20221031091926.png" alt="이미지"></p>
+                <div class="choi_2">
+                    <div class="header">
+                        <div class="toMonth">
+                            <div class="btn prevDay"></div>
+                            <h2 class='dateTitle'></h2>
+                            <div class="btn nextDay"></div>
+                        </div>
+                    </div>
+                    <div class="viewVisual">
+                        <p>
+                            <div>
+                                <div class="grid1 dateHead">
+                                    <div>Sun</div>
+                                    <div>Mon</div>
+                                    <div>Tue</div>
+                                    <div>Wed</div>
+                                    <div>Thu</div>
+                                    <div>Fri</div>
+                                    <div>Sat</div>
+                                </div>
+                                <div class="grid2 dateBoard"></div>
+                            </div>
+                        </p>
+                    </div>
                 </div>
-
 
 
                 <article class="viewInfo">
@@ -339,127 +361,7 @@
 
 
 
-                        <table class="ui-datepicker-calendar">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class=" "><span title="Sunday">일</span></th>
-                                    <th scope="col"><span title="Monday">월</span></th>
-                                    <th scope="col"><span title="Tuesday">화</span></th>
-                                    <th scope="col"><span title="Wednesday">수</span></th>
-                                    <th scope="col"><span title="Thursday">목</span></th>
-                                    <th scope="col"><span title="Friday">금</span></th>
-                                    <th scope="col" class=" "><span title="Saturday">토</span></th>
-                                </tr>
-                            </thead>
-
-
-                            <tbody id="calendar_view">
-                                <tr>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled">
-                                        <span class="ui-state-default" date="1" name="" capafg="0">
-                                            1
-                                        </span>
-                                    </td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled">
-                                        <span class="ui-state-default" date="2" name="" capafg="0">
-                                            2
-                                        </span>
-                                    </td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled">
-                                        <span class="ui-state-default" date="3" name="" capafg="0">
-                                            3
-                                        </span>
-                                    </td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled">
-                                        <span class="ui-state-default" date="4" name="" capafg="0">
-                                            4
-                                        </span>
-                                    </td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled">
-                                        <span class="ui-state-default" date="5" name="" capafg="0">
-                                            5
-                                        </span>
-                                    </td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled">
-                                        <span class="ui-state-default" date="6" name="" capafg="0">
-                                            6
-                                        </span>
-                                    </td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled">
-                                        <span class="ui-state-default" date="7" name="" capafg="0">
-                                            7
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="8" name="" capafg="0">8</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="9" name="" capafg="0">9</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="10" name="" capafg="0">10</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="11" name="" capafg="0">11</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="12" name="" capafg="0">12</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="13" name="" capafg="0">13</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="14" name="" capafg="0">14</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="15" name="" capafg="0">15</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="16" name="" capafg="0">16</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="17" name="" capafg="0">17</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="18" name="" capafg="0">18</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="19" name="" capafg="0">19</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="20" name="" capafg="0">20</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="21" name="" capafg="0">21</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="22" name="" capafg="0">22</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="23" name="" capafg="0">23</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="24" name="" capafg="0">24</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="25" name="" capafg="0">25</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="26" name="" capafg="0">26</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="27" name="" capafg="0">27</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="28" name="" capafg="0">28</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="29" name="" capafg="0">29</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="30" name="" capafg="0">30</span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled able"><a
-                                            href="javascript:void(0);" class="el_on ui-state-active" date="31"
-                                            name="possible" capafg="1">31</a></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="" name="" capafg="0"></span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="" name="" capafg="0"></span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="" name="" capafg="0"></span></td>
-                                    <td class="ui-datepicker-unselectable ui-state-disabled"><span
-                                            class="ui-state-default" date="" name="" capafg="0"></span></td>
-                                </tr>
-                            </tbody>
-
-
-                        </table>
+                        
 
                     </div>
                 </div>
@@ -562,6 +464,7 @@
         
 
     </section>
+    <script src="./js/예약.js"></script>
 </body>
 
 </html>
