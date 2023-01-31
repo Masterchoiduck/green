@@ -532,22 +532,35 @@ a{
     font-weight: bold;
 }
 
-
+/* 이용권티켓 */
 .ticket__img{
     display: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    bottom: -17px;
+    /*
     transform: translate(-50%, 37%);
-    width: 1015px;
-    height: 360px;
+    */
+    width: 100vw;
+    height: 100vh;
     background-image: url('./img/web/이용권티켓_웹\,탭.png');
     background-size: 1015px 360px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
     z-index: 10;
 }
 
+
+
+
 }
 
+
+
+
+
+
+
+/* 성환초이 건듦 */
 .csh__black{
     color: #2f2f2f !important;
 }
