@@ -458,8 +458,10 @@
 
     }
 
+    .d-none {
+        display: none;
+    }
 .att_box{
-    display: none;
 }
 
 

@@ -1,6 +1,7 @@
  'use strict'
 
-
+const $btn_select_box_title=document.querySelector('.btn_select_box_title')
+console.log($btn_select_box_title.chdcked);
 
 
 

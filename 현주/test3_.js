@@ -59,62 +59,81 @@
 //어트랙션 호버 - 이미지 변경
 
 
-// const blurImg1 = document.querySelectorAll('.att_s');
-// const blurImg2 = document.querySelector('.att_s2');
-// const blurImg3 = document.querySelector('.att_s3');
-// const blurImg4 = document.querySelector('.att_s4');
-// const blurImg5 = document.querySelector('.att_s5');
-// const blurImg6 = document.querySelector('.att_s6');
+const blurImg1 = document.querySelectorAll('.att_s');
+const blurImg2 = document.querySelector('.att_s2');
+const blurImg3 = document.querySelector('.att_s3');
+const blurImg4 = document.querySelector('.att_s4');
+const blurImg5 = document.querySelector('.att_s5');
+const blurImg6 = document.querySelector('.att_s6');
 
+// const attTitle = document.querySelector('.att_box');
+/* 1 */
+// blurImg1.addEventListener('mouseover', (event)=> {
+//   attTitle.style.display = "block";
+//   blurImg1.style.backgroundImage ="url('./img/web/어트_해리포터 앤드 포비든 저니 블러.png')";
+// })
+// blurImg1.addEventListener('mouseout', (event)=> {
+//   attTitle.style.display = "none";
+//   blurImg1.style.backgroundImage ="url('./img/web/어트_해리포터 앤드 포비든 저니.png')";
+// })
+/* 2 */
+// blurImg2.addEventListener('mouseover', (event)=> {
+//   attTitle.style.display = "block";
+//   blurImg2.style.backgroundImage ="url('./img/web/어트_쥬라기월드 더 라이드 블러.png')";
+// })
+// blurImg2.addEventListener('mouseout', (event)=> {
+//   attTitle.style.display = "none";
+//   blurImg2.style.backgroundImage ="url('./img/web/어트_쥬라기월드 더 라이드.png')";
+// })
 
 
 
 const $att_s=document.querySelectorAll('.att_s')
 const $att_box = document.querySelectorAll('.att_box')
 const $att_title = document.querySelectorAll('.att_title')
-
+// $att_s.forEach(item1=>{
+//   $att_box.forEach(item2=>{
+//     console.log(item1);
+//     item2.addEventListener('mouseover',e=>{
+//       item2.style.display = "none"
+//       item2.style.backgroundImage ="url('./img/web/어트_해리포터 앤드 포비든 저니 블러.png')";
+//     })
+//     item1.addEventListener('mouseout',e=>{
+//       item1.style.display = "block"
+//     })
+//   })
+// })
 const test_title1 =[]
 const test_title2 = []
 $att_title.forEach(item=>{
-    test_title1.push(item.childNodes[1].textContent)
-    test_title2.push(item.childNodes[3].textContent)
+  test_title1.push(item.childNodes[1].textContent)
+  test_title2.push(item.childNodes[3].textContent)
+  if(item.childNodes[3].textContent==='ㅇㅇㅇㅇㅇ'){
+    console.log('찾았다');
+    console.log(item.childNodes[3].textContent);
+  }
 })
-console.log('어트_해리포터 앤드  더 포비든 저니.png');
+
 function test(num,aa){
   if(aa){
-    console.log(`url('./img/web/어트_${test_title1[num]} ${test_title2[num]} 블러.png')`);
     return `url('./img/web/어트_${test_title1[num]} ${test_title2[num]} 블러.png')`
   } else {
     return `url('./img/web/어트_${test_title1[num]} ${test_title2[num]}.png')`
   }
 }
 
-
+console.log(test2());
+// console.log(test(1));
+console.log("이거야됨 : url('./img/web/어트_쥬라기월드 더 라이드 블러.png')");
 $att_s.forEach((item,index)=>{
-  $att_box.forEach((ite,idx)=>{
-    item.addEventListener('mouseover',e=>{
-      if(index===idx){
-        console.log(test(index,1));
-        item.style.backgroundImage =test(index,1);
-        ite.style.display = 'block'
-      }
+
+    const att_box = item.querySelector('.att_box');
+    item.addEventListener('mouseover', e => {
+      att_box.classList.remove('d-none');
+    });
+
+    item.addEventListener('mouseout', e => {
+      att_box.classList.add('d-none');
     })
-    item.addEventListener('mouseout',e=>{
-      if(index===idx){
-        console.log(test(index,0));
-        item.style.backgroundImage =test(index,0);
-        ite.style.display = 'none'
-      }
-    })
-  })
 })
         
-
-
-
-/*
-attTitle.addEventListener('mouseover', (event)=> {
-  attTitle.style.display="none";
-})
-
-*/
