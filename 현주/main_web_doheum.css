@@ -438,14 +438,15 @@
 
 
     /* 호버했을때 텍스트 */
-    
+
     .att_title{
         font-size: 30px;
         font-weight: 800;
         text-align: center;
         color: #2f2f2f;
         margin-top: 50px;
-
+        line-height: 40px;
+        height: 80px;
     }
 
     .att_content{
@@ -458,11 +459,11 @@
 
     }
 
+
+
     .d-none {
         display: none;
     }
-.att_box{
-}
 
 
 
