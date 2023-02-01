@@ -13,10 +13,29 @@ const $ticket__img=document.querySelector('.ticket__img')
 const $full2 = document.querySelector('.full2');
 const full2TopY = $full2.offsetTop;
 
+console.log(full2TopY);
 
 let scrollTimer = null;
-window.addEventListener('scroll', (e) => { 
 
+
+// window.onload = function(){
+//   console.log('윈도우 새로고침할때 발생');
+//   console.log(scrollY);
+//   if(scrollY>0){
+//     function scrollToTop() {
+//           window.scrollBy(0,-50);
+//           timeOut=setTimeout('scrollToTop()',10);
+//       clearTimeout(timeOut);
+//   }
+//   }
+// }
+
+
+
+
+window.addEventListener('scroll', (e) => {
+  // console.log(scrollY);
+  
     if(!scrollTimer) {
       scrollTimer = setTimeout(function() {
         scrollTimer = null;
