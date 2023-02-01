@@ -69,7 +69,25 @@
             //     }
             //     return ''
             // }
-             
+            let attractionlist = ''
+            if (item.attraction==='playlandEtc') {
+                attractionlist ='플레이랜드 기타';
+            }
+            if(item.attraction==='showAttraction'){ 
+                attractionlist = '쇼 어트랙션';
+            }
+            if(item.attraction==='rideAttraction'){ 
+                attractionlist = '라이드 어트랙션';
+            }
+            if(item.attraction==='streetShow'){ 
+                attractionlist = '스트리트 쇼';
+            }
+            if(item.attraction==='game'){ 
+                attractionlist = '게임';
+            }
+
+
+
             $div.innerHTML=`
                 
                 <img src="./universalAttractionImage/${item.area}_${item.id}.jpg" class="item_choi_img">
@@ -77,7 +95,7 @@
                 <div class="item_comment">
                     <div class="item_topComment">
                         <span class="item__areaSection">${item.area}</span>
-                        <button class="item_comment_btn_${item.attraction}">${item.attraction}</button>
+                        <button class="item_comment_btn_${item.attraction}">${attractionlist}</button>
                     </div>
                     <div>
                         <span class="item__attractionName">${item.id}</span>
