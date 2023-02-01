@@ -172,7 +172,6 @@ input[id="chk1"]:checked + label::after,
 input[id="chk1"]:checked + label::after
 {
     content:"\f00c";
-    
     font-size: 1.125rem;
     font-weight: 800;
     color:#0368d9;
@@ -452,54 +451,72 @@ ul{
     align-items: center;
   }
  
-  .item_comment_btn{ 
-    border-radius: 20px;
-    background-color: #fff;
-    border: 2.5px solid #a9c4f8;
-    padding: 5px 15px;
-    color:#a9c4f8;
-    font-weight: bold;
-  }
+ 
   
   .item_comment_btn_streetShow{ 
     border-radius: 20px;
-    background-color: #fff;
-    border: 2.5px solid #c7e5f8;
+    background-color: #fcd404;;
     padding: 5px 15px;
-    color:#c7e5f8;
+    color:#fff;
     font-weight: bold;
   }
   .item_comment_btn_rideAttraction{ 
     border-radius: 20px;
-    background-color: #fff;
-    border: 2.5px solid #f1c4e9;
+    background-color: #8444fc;
     padding: 5px 15px;
-    color:#f1c4e9;
+    color:#fff;
     font-weight: bold;
   }
   .item_comment_btn_showAttraction{ 
     border-radius: 20px;
-    background-color: #fff;
-    border: 2.5px solid #c5eee2;
+    background-color: #fe0b81;
     padding: 5px 15px;
-    color:#c5eee2;
+    color:#fff;
     font-weight: bold;
   }
   .item_comment_btn_playlandEtc{ 
     border-radius: 20px;
-    background-color: #fff;
-    border: 2.5px solid #f1d477;
+    background-color: #f56300;
     padding: 5px 15px;
-    color:#f1d477;
+    color:#fff;
     font-weight: bold;
   }
   .item_comment_btn_game{ 
     border-radius: 20px;
-    background-color: #fff;
-    border: 2.5px solid #d4c3e9;
+    background-color: #51dbff;
     padding: 5px 15px;
-    color:#d4c3e9;
+    color:#fff;
     font-weight: bold;
+  }
+  .show_more{ 
+    width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+  .text_right{ 
+    text-align: right;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .show_moreBox{ 
+    padding: 15px 10px 0 0
+  }
+  .show_moreBtn{ 
+    cursor: pointer;
+    color: #036ce2;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 30px;
+  }
+  .text_box{ 
+    padding:0 10px 48px 15px;
+    margin-bottom: 1rem;
+    line-height: 1.6;
   }
   
   

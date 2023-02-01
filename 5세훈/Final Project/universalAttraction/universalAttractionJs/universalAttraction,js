@@ -1,4 +1,4 @@
- 'use strict'
+'use strict'
 
 const $btn_select_box_title=document.querySelector('.btn_select_box_title')
 console.log($btn_select_box_title.chdcked);
@@ -108,3 +108,11 @@ console.log($btn_select_box_title.chdcked);
 
     
         const $attractionContainer = document.querySelector("#attraction__bodyCotainer");
+
+        function selectAll(selectAll){ 
+            const checkBox = document.querySelectorAll('input[type="checkbox"]');
+
+            checkBox.forEach((checkbox)=>{ 
+                checkbox.checked =selectAll.checked;
+            })
+        }
