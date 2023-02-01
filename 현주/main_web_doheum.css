@@ -291,6 +291,7 @@
     }
 
     .main_All{
+        pointer-events: none;
         font-size: 15px;
         color: #2f2f2f;
 
@@ -395,7 +396,7 @@
     .att_s1 {
         width: 250px;
         height: 250px;
-        background-image: url(img/web/어트_해리포터\ 앤드\ 포비든\ 저니.png);
+        background-image: url(img/web/어트_해리포터\ 앤드\ 더\ 포비든\ 저니.png);
 
         background-size: cover;
         border-radius: 20px;
@@ -410,28 +411,28 @@
     .att_s3 {
         width: 250px;
         height: 250px;
-        background-image: url(img/web/어트_미니언\ 메이헴.png);
+        background-image: url(img/web/어트_\ 미니언\ 메이헴.png);
         background-size: cover;
         border-radius: 20px;
     }
     .att_s4 {
         width: 250px;
         height: 250px;
-        background-image: url(img/web/어트_미니언즈\ 프리즈\ 레이\ 슬라이더.png);
+        background-image: url(img/web/어트_프리즈\ 레이\ 슬라이더.png);
         background-size: cover;
         border-radius: 20px;
     }
     .att_s5 {
         width: 250px;
         height: 250px;
-        background-image: url(img/web/어트_마리오\ 카트_\ 쿠파의\ 도전장.png);
+        background-image: url(img/web/어트_마리오\ 카트\ 쿠파의\ 도전장.png);
         background-size: cover;
         border-radius: 20px;
     }
     .att_s6 {
         width: 250px;
         height: 250px;
-        background-image: url(img/web/어트_쥬라기월드\ 플라잉다이너소어.png);
+        background-image: url(img/web/어트_쥬라기월드\ 더\ 라이드.png);
         background-size: cover;
         border-radius: 20px;
     }
@@ -578,21 +579,15 @@
         z-index: 10;
     }
 
-}
+    /* 성환초이 건듦 */
+    .csh__black{
+        color: #2f2f2f !important;
+    }
+    .earth_video{
+        min-width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: -999;
+    }
 
-
-
-
-
-
-
-/* 성환초이 건듦 */
-.csh__black{
-    color: #2f2f2f !important;
-}
-.earth_video{
-    min-width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: -999;
 }
