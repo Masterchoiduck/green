@@ -424,17 +424,18 @@ ul{
 
  .item_comment{ 
     width: auto;
-    height: auto;
+    
     padding:1rem 1rem 2.5rem;
+    min-height: 150px;
  }
 
 
 
   .item__areaSection{ 
     color:#333;
-    font-size: 14px;
-    display: block;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: bolder;
+    
   }
 
   
@@ -450,49 +451,55 @@ ul{
     justify-content: space-between;
     align-items: center;
   }
+ 
   .item_comment_btn{ 
-    box-shadow:inset 0px 1px 0px 0px #dcecfb;
-	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
-	background-color:#bddbfa;
-	border-radius:6px;
-	border:1px solid #84bbf3;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #528ecc;
-    padding: 5.5px;
-
+    border-radius: 20px;
+    background-color: #fff;
+    border: 2.5px solid #a9c4f8;
+    padding: 5px 15px;
+    color:#a9c4f8;
+    font-weight: bold;
   }
   
   .item_comment_btn_streetShow{ 
-    border-radius: 10px;
-    font-size: 1rem;
-    margin-right: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 2.5px solid #c7e5f8;
+    padding: 5px 15px;
+    color:#c7e5f8;
+    font-weight: bold;
   }
   .item_comment_btn_rideAttraction{ 
-    border-radius: 10px;
-    font-size: 1rem;
-    margin-right: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 2.5px solid #f1c4e9;
+    padding: 5px 15px;
+    color:#f1c4e9;
+    font-weight: bold;
   }
   .item_comment_btn_showAttraction{ 
-    border-radius: 10px;
-    font-size: 1rem;
-    margin-right: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 2.5px solid #c5eee2;
+    padding: 5px 15px;
+    color:#c5eee2;
+    font-weight: bold;
   }
   .item_comment_btn_playlandEtc{ 
-    border-radius: 10px;
-    font-size: 1rem;
-    margin-right: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 2.5px solid #f1d477;
+    padding: 5px 15px;
+    color:#f1d477;
+    font-weight: bold;
   }
   .item_comment_btn_game{ 
-    border-radius: 10px;
-    font-size: 1rem;
-    margin-right: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 2.5px solid #d4c3e9;
+    padding: 5px 15px;
+    color:#d4c3e9;
+    font-weight: bold;
   }
   
   

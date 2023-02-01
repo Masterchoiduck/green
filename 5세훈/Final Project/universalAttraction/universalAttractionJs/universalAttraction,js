@@ -62,8 +62,13 @@
         function makeItem(item,index){ 
             const $div = document.createElement('div');
             $div.classList.add('item__box');
-
-            
+            console.log(item.id.length);
+            // function test(){
+            //     if(item.id.length<=25){
+            //         return 'item_topComment_space'
+            //     }
+            //     return ''
+            // }
              
             $div.innerHTML=`
                 
@@ -72,7 +77,7 @@
                 <div class="item_comment">
                     <div class="item_topComment">
                         <span class="item__areaSection">${item.area}</span>
-                        <button class="item_comment_btn">쇼 어트랙션</button>
+                        <button class="item_comment_btn_${item.attraction}">${item.attraction}</button>
                     </div>
                     <div>
                         <span class="item__attractionName">${item.id}</span>
