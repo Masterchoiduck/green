@@ -66,9 +66,9 @@
             
              
             $div.innerHTML=`
-                <div class="">
-                    <img src="./universalAttractionImage/${item.area}_${item.id}.jpg">
-                </div>                
+                
+                <img src="./universalAttractionImage/${item.area}_${item.id}.jpg" class="item_choi_img">
+                                
                 <div class="item_comment">
                     <div class="item_topComment">
                         <span class="item__areaSection">${item.area}</span>

@@ -395,16 +395,17 @@ ul{
 .item__box{
     display: flex;
     flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0 1px 8px #0003;
 }
-<<<<<<< HEAD
+
  .item_comment{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between; 
-    width:23.125rem;
-=======
 
+ }
 .item{
     display: flex;
 }
@@ -422,13 +423,9 @@ ul{
 
 
  .item_comment{ 
-    /* width:23.125rem; */
->>>>>>> a5cb45a660a40c81bf1aa40b5d5f711ffc992a79
+    width: auto;
     height: auto;
-    border:1px solid #ccc;
-    border-radius: 0 0 10px 10px;
     padding:1rem 1rem 2.5rem;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
  }
 
 
@@ -471,7 +468,7 @@ ul{
     padding: 5.5px;
 
   }
-  .im
+  
   .item_comment_btn_streetShow{ 
     border-radius: 10px;
     font-size: 1rem;
