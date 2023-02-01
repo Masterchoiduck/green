@@ -1,3 +1,7 @@
+.dsNone {
+  display: none !important;
+}
+
 .rap {
     max-width: 1268px;
     padding: 0 1.4rem;

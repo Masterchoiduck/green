@@ -57,7 +57,7 @@ const makeCalendar = (date) => {
   const currentMonth = new Date(date).getMonth() + 1;
 
   // 한달전의 마지막 요일
-const firstDay = new Date(date.setDate(1)).getDay();
+  const firstDay = new Date(date.setDate(1)).getDay();
   // 현재 월의 마지막 날 구하기
   const lastDay = new Date(currentYear, currentMonth, 0).getDate();
 
@@ -89,16 +89,25 @@ const firstDay = new Date(date.setDate(1)).getDay();
     return ''
   }
 
+  function test_3(date){
+    if(`${year}-${month}-${day}`===date){
+      return 'clickDay'
+    }
+    if(`${year}-${month}-${day}`>date){
+      return 'todayBefore'
+    }
+  }
+
   for (let i = 1; i <= lastDay; i++) {
     const date = `${currentYear}-${currentMonth.pad()}-${i.pad()}`
-    // console.log(date);
+    console.log(date);
     // console.log(`${currentMonth.pad()} // ${i.pad()}`);
-    
+
     htmlDummy += `
-      <div class="${test_2(date)||'number'}">
+      <div class="${test_3(date)||'number'}">
         ${i}
-        <p class="nomouse">
-            <!-- ${test_1(date)} -->
+        <p class="nomouse dsNone">
+          ${currentMonth.pad()}
         </p>
       </div>
     `;
@@ -115,8 +124,15 @@ const firstDay = new Date(date.setDate(1)).getDay();
 
 }
 
+const $dateBoard = document.querySelector('.dateBoard')
+const $dateMonth = document.querySelector('.dsNone')
+$dateBoard.addEventListener('click',e=>{
+  console.log(e.target.innerText);
+  
+})
 
-
+//오늘 날자 표시
+document.querySelector('.btnCal').innerHTML=`${year}.${month}.${day}`
 
 const date = new Date();
 
