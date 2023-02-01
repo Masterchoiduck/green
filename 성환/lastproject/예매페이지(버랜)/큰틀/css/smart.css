@@ -163,21 +163,25 @@ a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 39px;
+    
 }
 
 .mainRecom h3 {
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 45px;
-    color: #000;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 55px;
+    color: #286BE1;
     text-align: center;
     display: block;
+    padding-bottom: 55px;
 }
 
 .mainRecom h3 small {
     margin-bottom: -3px;
-    font-weight: 100;
+    font-weight: 500;
     display: block;
+    font-size: 25px;
+    color: #2f2f2f;
 }
 
 .mainRecom .word {
@@ -237,9 +241,11 @@ a:hover {
 .mainRecom .wordList .txt {
     padding: 26px 10px 0 10px;
     font-size: 15px;
+    font-weight: 500;
     word-wrap: break-word;
     word-break: keep-all;
     display: block;
+    text-align: center;
 }
 
 .mainRecom .wordList .txt i {
@@ -250,8 +256,8 @@ a:hover {
 .mainRecom .wordList .txt strong {
     margin: 21px 0 9px 0;
     font-size: 22px;
-    font-weight: 500;
-    color: #000 !important;
+    font-weight: 900;
+    color: #2f2f2f !important;
     line-height: 25px;
     display: block;
 }
@@ -278,7 +284,10 @@ a:hover {
     height: 100%;
     margin-left: -100%;
 }
-
+.mainRecom .wordList .mario img{
+    height: 230px;
+    margin-top: 65px;
+}
 .mainRecom .wordList .bx-prev,
 .mainRecom .wordList .bx-next {
     position: absolute;
@@ -608,18 +617,20 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .choi_1 .choi_2{
-    background-color: #286BE1;
-    color: #fff;
-    font-size: 22px;
+    background-color: none;
+    border: 2px solid #286be1;
+    color: #286BE1;
+    font-size: 20px;
     font-weight: 700;
     display: flex;
-    border: 1px solid;
-    border-radius: 50px;
-    width: 200px;
+    border-radius: 100px;
+    width: 183px;
     height: 53px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 40px 0 100px;
 }
