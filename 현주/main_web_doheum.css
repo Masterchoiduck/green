@@ -389,12 +389,13 @@
         height: 515px;
         border-radius: 20px;
         background-color: #286BE1;
+        background-image: url(img/web/어트랙션_해리포터\ 앤드\ 포비든저니_큰.png);
     }
 
     .att_s1 {
         width: 250px;
         height: 250px;
-        background-image: url(img/web/어트랙션_해리포터\ 앤드\ 포비든저니_큰.png);
+        background-image: url(img/web/어트_해리포터\ 앤드\ 포비든\ 저니.png);
 
         background-size: cover;
         border-radius: 20px;
@@ -402,41 +403,64 @@
     .att_s2 {
         width: 250px;
         height: 250px;
-        background-image: url(img/web/어트랙션_쥬라기월드_큰.png);
+        background-image: url(img/web/어트_쥬라기월드\ 더\ 라이드.png);
         background-size: cover;
         border-radius: 20px;
     }
     .att_s3 {
         width: 250px;
         height: 250px;
-        background-image: url(img/web/어트랙션_미니언즈1_큰.png);
+        background-image: url(img/web/어트_미니언\ 메이헴.png);
         background-size: cover;
         border-radius: 20px;
     }
     .att_s4 {
         width: 250px;
         height: 250px;
-        background-image: url(img/web/어트랙션_미니언즈2_큰.png);
+        background-image: url(img/web/어트_미니언즈\ 프리즈\ 레이\ 슬라이더.png);
         background-size: cover;
         border-radius: 20px;
     }
     .att_s5 {
         width: 250px;
         height: 250px;
-        background-image: url(img/web/어트랙션_마리오카트_큰.png);
+        background-image: url(img/web/어트_마리오\ 카트_\ 쿠파의\ 도전장.png);
         background-size: cover;
         border-radius: 20px;
     }
     .att_s6 {
         width: 250px;
         height: 250px;
-        background-image: url(img/web/어트랙션_다이너소어_큰.png);
+        background-image: url(img/web/어트_쥬라기월드\ 플라잉다이너소어.png);
         background-size: cover;
         border-radius: 20px;
     }
 
 
+    /* 호버했을때 텍스트 */
+    
+    .att_title{
+        font-size: 30px;
+        font-weight: 800;
+        text-align: center;
+        color: #2f2f2f;
+        margin-top: 50px;
 
+    }
+
+    .att_content{
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        color: #2f2f2f;
+        line-height: 20px;
+        margin-top: 10px;
+
+    }
+
+.att_box{
+    display: none;
+}
 
 
 
