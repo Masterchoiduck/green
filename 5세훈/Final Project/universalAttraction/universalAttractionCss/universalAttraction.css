@@ -18,13 +18,15 @@ body{
     color:#333;
     font-weight: bolder;
     font-size:2.5rem;
+    
 }
 .attraction__mainTop{ 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    
+    padding-left:0.9375rem;
+    padding-right: 0.9375rem;
     
 }
 .attraction__container{ 
@@ -104,6 +106,7 @@ ul{
     margin-left: auto;
     margin-right: auto;
     flex-wrap:wrap;
+    padding:0.938rem;
 }
 
 .btn_select.on + .attraction_list_member {
@@ -294,6 +297,8 @@ ul{
     justify-content: flex-end;
     margin-top:0.9375rem;
     align-items: center;
+    padding-left:0.9375rem;
+    padding-right: 0.9375rem;
 }
 
 .attraction__toggleSwitch {
@@ -342,6 +347,8 @@ ul{
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 5rem;
+    padding-left:0.9375rem;
+    padding-right: 0.9375rem;
     
   }
   
@@ -361,27 +368,33 @@ ul{
 
   #attraction__bodyCotainer{ 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px,auto));
+    gap:0.9375rem;
     max-width: 75rem;
     align-items: center;
     justify-content: center;
     justify-items: center;
+    margin: 0 auto;
+    padding-left:0.9375rem;
+    padding-right: 0.9375rem;
   }
   
   
   
-  .item{ 
-    
+  .item{
+    min-width:300px; 
+    max-width: 23.125rem;
     height: 247px;
     background-image: url("https://www.usj.co.jp/tridiondata/usj/ko/kr/files/images/gds-images/usj-gds-harry-potter-and-the-forbidden-journey-c.jpg?imwidth=361");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    
 }
  .item_comment{ 
-    max-width:370px;
-    height: 106px;
+    width:23.125rem;
+    height: auto;
     border:1px solid #ccc;
     border-radius: 0 0 10px 10px;
     padding:1rem 1rem 2.5rem;
