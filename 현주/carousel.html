@@ -151,6 +151,16 @@
       object-fit: cover;
     }
   }
+  
+  .bigImg {
+    max-width: 450px !important;
+    width: auto !important;
+
+  }
+  .SImg {
+    max-width: 400px !important;
+
+  }
 
 
 
@@ -165,10 +175,15 @@
   <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="img/web/퍼레이드_마리오.png" alt=""></div>
+      <!-- 1 -->
+      <div class="swiper-slide"><img src="img/web/퍼레이드_마리오.png" alt=""></div> 
+      <!-- 2 -->
       <div class="swiper-slide"><img src="img/web/퍼레이드_트랜스포머.png" alt=""></div>
+      <!-- 3 -->
       <div class="swiper-slide"><img src="img/web/퍼레이드_미니언즈.png" alt=""></div>
+      <!-- 4 -->
       <div class="swiper-slide"><img src="img/web/퍼레이드_트랜스포머.png" alt=""></div>
+      <!-- 5 -->
       <div class="swiper-slide"><img src="img/web/퍼레이드_해리포터.png" alt=""></div>
 
     </div>
@@ -180,6 +195,9 @@
 
   <!-- Initialize Swiper -->
   <script>
+    // slideChange: function e() {
+    //   alert('슬라이드 변경');
+    // }
     var swiper = new Swiper(".mySwiper", {
       /*
       slidesPerView: '4',
@@ -209,9 +227,67 @@
             slidesOffsetBefore:10,
             slidesOffsetAfter:30,
         },
-    }
+    },
+    on: {
+    init: function () {
+      console.log('swiper initialized');
+    },
+  },
       
     });
+    const $swiperSlide=document.querySelectorAll('.swiper-slide')
+    function test(num){
+      $swiperSlide.forEach((item,index)=>{
+        const $Img= item.querySelector('img')
+        if(num===index){
+          item.classList.add('bigImg')
+          $Img.classList.add('bigImg')
+        } else{
+          item.classList.remove('bigImg')
+          $Img.classList.remove('bigImg')
+        }
+      })
+    }
+    swiper.on('slideChange', function () {
+      // console.log(swiper.activeIndex);
+      if(swiper.activeIndex===4){
+        test(3)
+        console.log('0');
+        return
+      }
+      if(swiper.activeIndex===5){
+        test(4)
+        console.log('1');
+        return
+      }
+      if(swiper.activeIndex===6){
+        test(5)
+        console.log('2');
+        return
+      }
+      if(swiper.activeIndex===7){
+        test(6)
+        console.log('3');
+        return
+      }
+      if(swiper.activeIndex===8){
+        test(7)
+        console.log('4');
+        return
+      }
+      if(swiper.activeIndex===9){
+        test(3)
+        console.log('0--9');
+        return
+      }
+      if(swiper.activeIndex===3){
+        test(3)
+        console.log('0--3');
+        return
+      }
+      console.log(`넌뭐니${swiper.activeIndex}`);
+      return
+  })
   </script>
 </body>
 
