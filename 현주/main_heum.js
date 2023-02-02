@@ -17,6 +17,22 @@ console.log(full2TopY);
 
 let scrollTimer = null;
 
+const box= document.querySelector('.box111');
+
+window.addEventListener("click", function(e){
+    console.log(e.clientX, e.clientY);
+    let XX = 0
+    let YY = -310
+    box.style.transform = 'translate(' +XX + 'px,' + YY + 'px)';
+});
+
+box.addEventListener('transitionend', function(e){
+  box.classList.add('end');
+  console.log(e.e.apsedTime); 
+  // transition delay time이 찍힌다.
+})
+
+
 
 // window.onload = function(){
 //   console.log('윈도우 새로고침할때 발생');

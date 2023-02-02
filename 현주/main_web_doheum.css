@@ -259,7 +259,8 @@
     .full1 {
         position: relative; 
         width: 100%; 
-        height: 140vh;
+        height: 100vh;
+        /* height: 140vh; */
         scroll-snap-align: end;
         scroll-snap-stop: always;
     }
@@ -582,6 +583,7 @@
         /*
         transform: translate(-50%, 37%);
         */
+        bottom: -300px;
         width: 100%;
         height: 100%;
         background-image: url('./img/web/이용권티켓_웹\,탭.png');
@@ -589,6 +591,7 @@
         background-repeat: no-repeat;
         background-position: bottom center;
         z-index: 10;
+        transition:5s;
     }
 
     /* 성환초이 건듦 */
@@ -651,3 +654,5 @@
 
 
 }
+
+
