@@ -83,6 +83,7 @@ function test(num,aa){
 }
 
 const att_b1 = document.querySelector('.att_b1')
+const $att_mouse_account = document.querySelector('.att_mouse_account')
 $att_s.forEach((item,index)=>{
 
     const att_box = item.querySelector('.att_box');
@@ -90,12 +91,14 @@ $att_s.forEach((item,index)=>{
       item.style.backgroundImage =test(index,1);
       att_box.classList.remove('d-none');
       att_b1.style.backgroundImage = test(index,3)
+      $att_mouse_account.classList.add('d-none')
     });
 
     item.addEventListener('mouseout', e => {
       item.style.backgroundImage =test(index,0);
       att_box.classList.add('d-none');
       att_b1.style.backgroundImage = 'none'
+      $att_mouse_account.classList.remove('d-none')
     })
 })
         
