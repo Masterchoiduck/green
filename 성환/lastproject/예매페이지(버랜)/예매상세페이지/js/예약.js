@@ -122,33 +122,17 @@ const makeCalendar = (date) => {
   document.querySelector(`.dateTitle`).innerText = `${currentYear}년 ${currentMonth}월`;
 
 
-  const $dateBoard = document.querySelector('.dateBoard')
-  const $dateMonth = document.querySelector('.dsNone')
-
-  
-  
-  $dateBoard.addEventListener('click',e=>{
-    console.log(`${currentMonth}`);
-    console.log(`${e.target.innerText}`);
-    var $month = currentMonth
-      if((`${currentMonth}`).length < 2){
-          $month="0"+`${currentMonth}`;
-      }
-    var $day = e.target.innerText
-      if((`${e.target.innerText}`).length < 2){
-          $day="0"+`${e.target.innerText}`;      
-      }
-
-
-    console.log(`${currentYear}__${currentMonth}__${e.target.innerText}`);
-    
-    //오늘 날자 표시
-    document.querySelector('.btnCal').innerHTML=`${currentYear}.${$month}.${$day}`
-  })
 }
 
-document.querySelector('.btnCal').innerHTML=`${year}.${month}.${day}`
+const $dateBoard = document.querySelector('.dateBoard')
+const $dateMonth = document.querySelector('.dsNone')
+$dateBoard.addEventListener('click',e=>{
+  console.log(e.target.innerText);
+  
+})
 
+//오늘 날자 표시
+document.querySelector('.btnCal').innerHTML=`${year}.${month}.${day}`
 
 const date = new Date();
 
