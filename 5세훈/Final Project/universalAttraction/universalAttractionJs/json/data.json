@@ -5,7 +5,7 @@
         "area": "슈퍼 닌텐도 월드",
         "special": "",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"playlandEtc"
     },
@@ -14,7 +14,7 @@
         "area": "슈퍼 닌텐도 월드",
         "special": "어린이에게 추천",
         "limit": "122cm 이상",
-        "express": "true",
+        "express": true,
         "align":"운영중",
         "attraction":"rideAttraction" 
     },
@@ -23,7 +23,7 @@
         "area": "슈퍼 닌텐도 월드",
         "special": "어린이에게 추천",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"streetShow"
     },
@@ -32,7 +32,7 @@
         "area": "슈퍼 닌텐도 월드",
         "special": "절규/스릴 만점",
         "limit": "122cm 이상",
-        "express": "true",
+        "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
     },
@@ -41,7 +41,7 @@
         "area": "위저딩 월드 오브 해리포터",
         "special": "절규/스릴 만점",
         "limit": "122cm 이상",
-        "express": "true",
+        "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
     },
@@ -50,7 +50,7 @@
         "area": "위저딩 월드 오브 해리포터",
         "special": "절규/스릴 만점",
         "limit": "122cm 이상 및 195cm 이하",
-        "express": "true",
+        "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
     },
@@ -59,7 +59,7 @@
         "area": "위저딩 월드 오브 해리포터",
         "special": "",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"streetShow"
     },
@@ -68,7 +68,7 @@
         "area": "위저딩 월드 오브 해리포터",
         "special": "",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"streetShow"
     },
@@ -77,7 +77,7 @@
         "area": "위저딩 월드 오브 해리포터",
         "special": "",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"showAttraction"
     },
@@ -86,7 +86,7 @@
         "area": "위저딩 월드 오브 해리포터",
         "special": "",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"streetShow"
     },
@@ -95,7 +95,7 @@
         "area": "미니언 파크",
         "special": "물에 젖을 수 있음",
         "limit": "122cm 이상",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"rideAttraction"
     },
@@ -104,7 +104,7 @@
         "area": "미니언 파크",
         "special": "",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"game"
     },
@@ -113,7 +113,7 @@
         "area": "미니언 파크",
         "special": "",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"game"
     },
@@ -122,7 +122,7 @@
         "area": "미니언 파크",
         "special": "절규/스릴 만점",
         "limit": "122cm 이상",
-        "express": "true",
+        "express": true,
         "align":"운영중",
         "attraction":"rideAttraction" 
     },
@@ -131,7 +131,7 @@
         "area": "미니언 파크",
         "special": "",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"game" 
     },
@@ -140,7 +140,7 @@
         "area": "미니언 파크",
         "special": "어린이와 함께 즐기기",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"streetShow" 
     },
@@ -149,7 +149,7 @@
         "area": "원더랜드",
         "special": "어린이와 함께 즐기기",
         "limit": "122cm 이상",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"rideAttraction" 
     },
@@ -158,7 +158,7 @@
         "area": "원더랜드",
         "special": "어린이와 함께 즐기기",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"playlandEtc" 
     },
@@ -167,7 +167,7 @@
         "area": "원더랜드",
         "special": "어린이에게 추천",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc" 
     },
@@ -176,7 +176,7 @@
         "area": "원더랜드",
         "special": "물에 젖을 수 있음",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc"
     },
@@ -185,7 +185,7 @@
         "area": "원더랜드",
         "special": "물에 젖을 수 있음",
         "limit": "122cm 이상",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"rideAttraction"
     },
@@ -194,7 +194,7 @@
         "area": "원더랜드",
         "special": "어린이에게 추천",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"rideAttraction"
     },
@@ -203,7 +203,7 @@
         "area": "원더랜드",
         "special": "어린이에게 추천",
         "limit": "122cm 이상",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"rideAttraction"   
     },
@@ -212,7 +212,7 @@
         "area": "원더랜드",
         "special": "물에 젖을 수 있음",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc"   
     },
@@ -221,7 +221,7 @@
         "area": "원더랜드",
         "special": "어린이에게 추천",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc"   
     },
@@ -230,7 +230,7 @@
         "area": "원더랜드",
         "special": "어린이에게 추천",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc"   
     },
@@ -239,7 +239,7 @@
         "area": "원더랜드",
         "special": "어린이에게 추천",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"playlandEtc"   
     },
@@ -248,7 +248,7 @@
         "area": "원더랜드",
         "special": "어린이에게 추천",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"rideAttraction"   
     },
@@ -257,7 +257,7 @@
         "area": "원더랜드",
         "special": "어린이에게 추천",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc"   
     },
@@ -266,7 +266,7 @@
         "area": "원더랜드",
         "special": "어린이와 함께 즐기기",
         "limit": "122cm 이상",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"rideAttraction"   
     },
@@ -275,7 +275,7 @@
         "area": "원더랜드",
         "special": "어린이와 함께 즐기기",
         "limit": "122cm 이상",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"game"   
     },
@@ -284,7 +284,7 @@
         "area": "원더랜드",
         "special": "어린이에게 추천",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc"   
     },
@@ -293,7 +293,7 @@
         "area": "원더랜드",
         "special": "어린이와 함께 즐기기",
         "limit": "122cm 이상",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"rideAttraction"
     },
@@ -302,7 +302,7 @@
         "area": "원더랜드",
         "special": "어린이에게 추천",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"playlandEtc"
     },
@@ -311,7 +311,7 @@
         "area": "원더랜드",
         "special": "어린이와 함께 즐기기",
         "limit": "122cm 이상",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"rideAttraction"
     },
@@ -320,7 +320,7 @@
         "area": "원더랜드",
         "special": "어린이에게 추천",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc"
     },
@@ -329,7 +329,7 @@
         "area": "할리우드",
         "special": "",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"showAttraction"
     },
@@ -338,7 +338,7 @@
         "area": "할리우드",
         "special": "절규/스릴 만점",
         "limit": "132cm 이상",
-        "express": "true",
+        "express": true,
         "align":"운휴중",
         "attraction":"rideAttraction"
     },
@@ -347,7 +347,7 @@
         "area": "할리우드",
         "special": "절규/스릴 만점",
         "limit": "132cm 이상",
-        "express": "true",
+        "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
     },
@@ -356,7 +356,7 @@
         "area": "할리우드",
         "special": "어린이와 함께 즐기기",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"showAttraction"
     },
@@ -365,7 +365,7 @@
         "area": "할리우드",
         "special": "어린이와 함께 즐기기",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"showAttraction"
     },
@@ -374,7 +374,7 @@
         "area": "할리우드",
         "special": "",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"showAttraction"
     },
@@ -383,7 +383,7 @@
         "area": "할리우드",
         "special": "어린이에게 추천",
         "limit": "제한 없음",
-        "express": "true",
+        "express": true,
         "align":"운영중",
         "attraction":"showAttraction"
     },
@@ -392,7 +392,7 @@
         "area": "할리우드",
         "special": "절규/스릴 만점",
         "limit": "122cm 이상",
-        "express": "true",
+        "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
     },
@@ -401,7 +401,7 @@
         "area": "할리우드",
         "special": "3D & 4D",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"showAttraction"
     },
@@ -410,7 +410,7 @@
         "area": "할리우드",
         "special": "3D & 4D",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"showAttraction"
     },
@@ -419,7 +419,7 @@
         "area": "뉴욕",
         "special": "",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"game"
     },
@@ -428,7 +428,7 @@
         "area": "뉴욕",
         "special": "3D & 4D",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"showAttraction"
     },
@@ -437,7 +437,7 @@
         "area": "뉴욕",
         "special": "",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"showAttraction"
     },
@@ -446,7 +446,7 @@
         "area": "뉴욕",
         "special": "3D & 4D",
         "limit": "122cm 이상",
-        "express": "true",
+        "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
     },
@@ -455,7 +455,7 @@
         "area": "뉴욕",
         "special": "어린이와 함께 즐기기",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"showAttraction"
     },
@@ -464,7 +464,7 @@
         "area": "할리우드",
         "special": "어린이에게 추천",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"showAttraction"
     },
@@ -473,7 +473,7 @@
         "area": "샌프란시스코",
         "special": "",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운휴중",
         "attraction":"showAttraction"
     },
@@ -482,7 +482,7 @@
         "area": "쥬라기 공원",
         "special": "물에 젖을 수 있음",
         "limit": "122cm 이상",
-        "express": "true",
+        "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
     },
@@ -491,7 +491,7 @@
         "area": "쥬라기 공원",
         "special": "절규/스릴 만점",
         "limit": "132cm 이상",
-        "express": "true",
+        "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
     },
@@ -500,7 +500,7 @@
         "area": "워터월드",
         "special": "물에 젖을 수 있음",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영중",
         "attraction":"showAttraction"
     },
@@ -509,7 +509,7 @@
         "area": "오징어 게임",
         "special": "",
         "limit": "제한 없음",
-        "express": "false",
+        "express": false,
         "align":"운영 예정",
         "attraction":"game"
     }
