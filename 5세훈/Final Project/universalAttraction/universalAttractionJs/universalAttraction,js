@@ -1,7 +1,6 @@
 'use strict'
 
-const $btn_select_box_title=document.querySelector('.btn_select_box_title')
-// console.log($btn_select_box_title.chdcked);
+
 
 
 const dropdownBtnList = document.querySelectorAll('.btn_select');
@@ -28,14 +27,8 @@ dropdownBtnList.forEach(item => {
 
 })
 
-const list1 = document.querySelector('.attraction_list_member');
 
-list1.addEventListener('click', (event) => {
-    if (event.target.nodeName === "li") {
-        btn.innerText = event.target.innerText;
-        btn.classList.remove('on');
-    }
-});
+
 const $attraction_list_member = document.querySelector('.attraction_specialList');
 const $list = $attraction_list_member.querySelectorAll('li');
 const $boxTittle = document.querySelector('.btn_select_box1');
@@ -148,7 +141,7 @@ $list3.forEach(item=>{
         })
         
         const arr = [];
-        let selectedArea = '슈퍼 닌텐도 월드';
+        let selectedArea = '원더랜드';
         let selectedSpecial = '어린이에게 추천';
         let selectedLimit = '제한 없음';
         let selectedExpress = false;
@@ -180,10 +173,10 @@ $list3.forEach(item=>{
             });
             console.log(result);
             result.forEach((ff)=>{
-                makeItem(ff)
+                makeItem(ff);
             })
 
-            $attraction__listHeaderNum.innerHTML= result.length
+            $attraction__listHeaderNum.innerHTML= result.length;
         }
 
         
@@ -197,6 +190,7 @@ $list3.forEach(item=>{
         }
         function test_choi(item){
             test1(item);
+            $attractionContainer.innerHTML='';
         }
 
         function makeItem(item,index){ 
@@ -204,7 +198,6 @@ $list3.forEach(item=>{
             console.log(item);
             
             const $div = document.createElement('div');
-            $attractionContainer.innerHTML=''
             $div.classList.add('item__box');
             // console.log(item.id.length);
             // function test(){
@@ -213,7 +206,7 @@ $list3.forEach(item=>{
             //     }
             //     return ''
             // }
-            let attractionlist = ''
+            let attractionlist = '';
             if (item.attraction==='playlandEtc') {
                 attractionlist ='플레이랜드 기타';
             }
@@ -254,22 +247,21 @@ $list3.forEach(item=>{
 
 
 
-
-
-
-
-
-
-
         const $attractionContainer = document.querySelector("#attraction__bodyCotainer");
 
-        function selectAll(selectAll){ 
-            const checkBox = document.querySelectorAll('input[type="checkbox"]');
-            console.log('input[type="checkbox"]');
-            checkBox.forEach((checkbox)=>{ 
-                checkbox.checked =selectAll.checked;
-            })
-        }
+        
+        
+        
+        document.querySelector('input[id=chk2]').addEventListener('change',function (e){ 
+            e.preventDefault();
+            let list = document.querySelectorAll('input[type=checkbox]');
+                for(let i=0; i<list.length; i++){
+                    if(i!==12){
+                    list[i].checked = this.checked;
+                }
+            }
+        })
+        
         
         
         
