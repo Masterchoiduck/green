@@ -158,52 +158,53 @@ $list3.forEach(item=>{
             arr.push(test);
         }
         
+        const $attraction__listHeaderNum = document.querySelector('.attraction__listHeaderNum')
         console.log(arr);
         function filterFn(){
             setTimeout(function(){ 
-                let result = arr.filter(item=>{ 
-                    
-                    const condition_1 = (item.area === selectedArea);
-
-                    const condition_2 = (item.special === selectedSpecial);
-
-                    const condition_3 = (item.limit === selectedLimit);
-
-                    const condition_4 = (item.express === selectedExpress);
-
-                    const condition_5 = (item.align === selectedAlign);
-
-
-
-                    
-
-                    return condition_1 && condition_2 && condition_3 && condition_4 && condition_5; 
-                });
-                console.log(result);
-
+                late()
             },100) 
         }
         filterFn();
-        
                 
-       
+    //    0.1초지난 후 함수
+        function late(){
+            let result = arr.filter(item=>{ 
+                const condition_1 = (item.area === selectedArea);
+                const condition_2 = (item.special === selectedSpecial);
+                const condition_3 = (item.limit === selectedLimit);
+                const condition_4 = (item.express === selectedExpress);
+                const condition_5 = (item.align === selectedAlign);
+
+                return condition_1 && condition_2 && condition_3 && condition_4 && condition_5; 
+            });
+            console.log(result);
+            result.forEach((ff)=>{
+                makeItem(ff)
+            })
+
+            $attraction__listHeaderNum.innerHTML= result.length
+        }
 
         
 
         function makeList(items){
             $attractionContainer.innerHTML = null;
             items.forEach((item,index)=>{ 
-                const result = makeItem(item);
-                $attractionContainer.appendChild(result);
+                makeItem(item);
+                test_choi(item)
             });
-
+        }
+        function test_choi(item){
+            test1(item);
         }
 
         function makeItem(item,index){ 
-            test1(item);
-            
+            // test1(item);
+            console.log(item);
             
             const $div = document.createElement('div');
+            $attractionContainer.innerHTML=''
             $div.classList.add('item__box');
             // console.log(item.id.length);
             // function test(){
@@ -246,7 +247,7 @@ $list3.forEach(item=>{
                 </div>
                 </a>
             `;
-            return $div; 
+            $attractionContainer.appendChild($div);
         }
 
         
@@ -269,6 +270,9 @@ $list3.forEach(item=>{
                 checkbox.checked =selectAll.checked;
             })
         }
+        
+        
+        
 
 
 
