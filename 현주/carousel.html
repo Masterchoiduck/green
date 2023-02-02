@@ -10,6 +10,7 @@
 
   <!-- Demo styles -->
   <style>
+    @media (min-width:1025px){
     html,
     body {
       position: relative;
@@ -17,17 +18,13 @@
     }
 
     body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
       margin: 0;
       padding: 0;
     }
 
     .swiper {
       width: 100%;
-      height: 100%;
+      height: 550px;
     }
 
     .swiper-slide {
@@ -52,10 +49,115 @@
 
     .swiper-slide img {
       display: block;
-      width: 100%;
-      height: 100%;
+      max-width: 400px;
+      max-height: 400px;
+      min-width: 250px;
+      min-height: 250px;
       object-fit: cover;
     }
+  }
+
+  @media (min-width:769px) and (max-width:1024px){
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 550px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      max-width: 350px;
+      max-height: 350px;
+      min-width: 250px;
+      min-height: 250px;
+
+      object-fit: cover;
+    }
+  }
+  @media (min-width:320px) and (max-width:768px){
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 550px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      max-width: 350px;
+      max-height: 350px;
+      min-width: 250px;
+      min-height: 250px;
+
+      object-fit: cover;
+    }
+  }
+
+
+
+
+
+
+
   </style>
 </head>
 
@@ -63,11 +165,11 @@
   <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide"><img src="img/web/퍼레이드_마리오.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/web/퍼레이드_트랜스포머.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/web/퍼레이드_미니언즈.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/web/퍼레이드_트랜스포머.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/web/퍼레이드_해리포터.png" alt=""></div>
 
     </div>
     <div class="swiper-pagination"></div>
@@ -79,12 +181,36 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 5,
+      /*
+      slidesPerView: '4',
       spaceBetween: 35,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+      slidesOffsetBefore:500,
+      slidesOffsetAfter:500,
+      */
+      centeredSlides: true,
+      loop: true,
+      breakpoints: {
+
+        1024 : {
+            slidesPerView: 4,
+            spaceBetween: 35,
+            slidesOffsetBefore:500,
+            slidesOffsetAfter:500,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+            slidesOffsetBefore:30,
+            slidesOffsetAfter:30,
+        },
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 100,
+            slidesOffsetBefore:10,
+            slidesOffsetAfter:30,
+        },
+    }
+      
     });
   </script>
 </body>
