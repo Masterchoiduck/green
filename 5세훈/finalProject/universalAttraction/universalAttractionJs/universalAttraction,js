@@ -77,11 +77,12 @@ $list2.forEach(item=>{
     })
 })
 
-
+let alignComment = '전체';
 $list3.forEach(item=>{ 
     item.addEventListener('click',e =>{ 
-        comment = e.target.textContent;
-        $boxTittle3.textContent = comment;
+        alignComment = e.target.textContent;
+        $boxTittle3.textContent = alignComment;
+        choi();
         if($btn_select_mode3.classList.contains('on'))
         { 
             $btn_select_mode3.classList.remove('on');
@@ -174,7 +175,7 @@ $list3.forEach(item=>{
                 let condition_1 = false;
                 let condition_2 = false;
                 let condition_3 = false;
-                let condition_4 = false;
+                let condition_4 = false;  //스위치 토글
                 let condition_5 = false;
 
 
@@ -201,11 +202,14 @@ $list3.forEach(item=>{
                     condition_3 = true;
                 }
 
-                if(selectedExpress===''){
-                    condition_4 = true;
+                condition_4 = !item.express
+
+                if(selectedAlign==='전체'){
+                    console.log('전체');
+                    condition_5 = true;
                 }
 
-                if(selectedAlign===''){
+                if(selectedAlign===item.align){
                     condition_5 = true;
                 }
                 testNum ++
@@ -432,7 +436,7 @@ $list3.forEach(item=>{
         selectedSpecial = comment;
         selectedLimit = limitComment;
         selectedExpress = '';
-        selectedAlign = '';
+        selectedAlign = alignComment;
         console.log(selectedArea);
         $attractionContainer.innerHTML='';
         console.log(selectedSpecial);
@@ -449,7 +453,10 @@ $list3.forEach(item=>{
     // console.log(attraction_areaArr);
         
         
-
+    const reset_btn = document.querySelector('.attraction__reset');
+    reset_btn.addEventListener('click',e=>{
+        location.reload();
+    })
 
 
 
