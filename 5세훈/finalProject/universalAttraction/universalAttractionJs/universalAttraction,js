@@ -22,9 +22,6 @@ dropdownBtnList.forEach(item => {
             //     arrowIcon.classList.remove('fa-caret-down-rotate');
                 
             // })
-     
-    
-
 })
 
 
@@ -49,7 +46,7 @@ const $list3 = $attraction_list_member3.querySelectorAll('li');
 const $boxTittle3 = document.querySelector('.btn_select_box3');
 const $btn_select_mode3 = document.querySelector('.btn_select_mode3');
 
-let comment = ''
+let comment = '전부'
 $list.forEach(item=>{ 
     item.addEventListener('click',e =>{ 
         comment = e.target.textContent;
@@ -65,7 +62,7 @@ $list.forEach(item=>{
 
 $list2.forEach(item=>{ 
     item.addEventListener('click',e =>{ 
-        const comment = e.target.textContent;
+        comment = e.target.textContent;
         $boxTittle2.textContent = comment;
        
         if($btn_select_mode2.classList.contains('on'))
@@ -81,7 +78,7 @@ $list2.forEach(item=>{
 
 $list3.forEach(item=>{ 
     item.addEventListener('click',e =>{ 
-        const comment = e.target.textContent;
+        comment = e.target.textContent;
         $boxTittle3.textContent = comment;
         if($btn_select_mode3.classList.contains('on'))
         { 
@@ -163,6 +160,7 @@ $list3.forEach(item=>{
     //    0.1초지난 후 함수
 
         function late(){
+            let testNum = 0
             let result = arr.filter(item=>{ 
         // const condition_1 = (item.area === selectedArea);
                 // const condition_1 = selectedArea.includes(item.area)
@@ -202,10 +200,14 @@ $list3.forEach(item=>{
                 if(selectedAlign===''){
                     condition_5 = true;
                 }
-                console.log(`condition_1 : ${condition_1}`);
-                console.log(`condition_2 : ${condition_2}`);
+                testNum ++
+                console.log(`${item.id}`);
+                console.log(`(${item.area}) : ${condition_1} // ${selectedArea}`);
+                console.log(`(${item.special}) : ${condition_2} // ${selectedSpecial}`);
                 return condition_1 && condition_2 && condition_3 && condition_4 && condition_5; 
+                
             });
+            console.log('----------------');
             // console.log(result);
             result.forEach((item)=>{
                 makeItem(item);
@@ -221,6 +223,7 @@ $list3.forEach(item=>{
             $attractionContainer.innerHTML = null;
             items.forEach((item,index)=>{ 
                 test_choi(item)
+                $attractionContainer.innerHTML='';
             });
         }
         function test_choi(item){
@@ -311,7 +314,7 @@ $list3.forEach(item=>{
             list.forEach((item, idx)=>{
                 if(idx !== list.length-1){                   
                     item.checked = this.checked;
-                    console.log(item.checked);
+                    // console.log(item.checked);
                 }
             })
         }
@@ -320,7 +323,7 @@ $list3.forEach(item=>{
     let checkList = document.querySelector('input[id=chk1]');
     let checkListTwo = document.querySelector('input[id=chk2]');
     let checkAll = document.getElementsByName('area');
-    let attraction_areaArr = [];
+    let attraction_areaArr = ['위저딩 월드 오브 해리포터', '슈퍼 닌텐도 월드','쥬라기 공원','미니언 파크','뉴욕','할리우드','샌프란시스코','워터 월드','원더랜드','오징어 게임'];
     
    
 
@@ -408,9 +411,9 @@ $list3.forEach(item=>{
         // let selectedAlign = 'f';
 
 
-    console.log(attraction_areaArr);
+    // console.log(attraction_areaArr);
 
-    let selectedArea = ['위저딩 월드 오브 해리포터', '슈퍼 닌텐도 월드','쥬라기 공원','미니언 파크','뉴욕','할리우드','샌프란시스코','워터 월드','원더랜드','오징어 게임']
+        let selectedArea = ['위저딩 월드 오브 해리포터', '슈퍼 닌텐도 월드','쥬라기 공원','미니언 파크','뉴욕','할리우드','샌프란시스코','워터 월드','원더랜드','오징어 게임']
         let selectedSpecial = '전부';
         let selectedLimit = '';
         let selectedExpress = '';
