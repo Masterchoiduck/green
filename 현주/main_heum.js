@@ -1,3 +1,9 @@
+// const $Html = document.querySelector('html')
+//   setTimeout(()=>{
+//     console.log('1111');
+//     $Html.classList.remove('d-none')
+//   },1000)
+
 const $header = document.querySelector('header')
 const $menu_bar =document.querySelectorAll('.menu_bar')
 const $search_icon_gray=document.querySelector('.search_icon_gray')
