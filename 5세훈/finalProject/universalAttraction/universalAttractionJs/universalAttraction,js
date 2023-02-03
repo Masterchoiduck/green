@@ -46,13 +46,14 @@ const $list3 = $attraction_list_member3.querySelectorAll('li');
 const $boxTittle3 = document.querySelector('.btn_select_box3');
 const $btn_select_mode3 = document.querySelector('.btn_select_mode3');
 
-let comment = '전부'
+let comment = '전부';
+
 $list.forEach(item=>{ 
     item.addEventListener('click',e =>{ 
         comment = e.target.textContent;
         $boxTittle.textContent = comment;
         console.log(comment);
-        choi()
+        choi();
         if($btn_select_mode1.classList.contains('on'))
         { 
             $btn_select_mode1.classList.remove('on');
@@ -60,11 +61,12 @@ $list.forEach(item=>{
     })
 });
 
+let limitComment = '전체';
 $list2.forEach(item=>{ 
     item.addEventListener('click',e =>{ 
-        comment = e.target.textContent;
-        $boxTittle2.textContent = comment;
-       
+        limitComment = e.target.textContent;
+        $boxTittle2.textContent = limitComment;
+        choi();
         if($btn_select_mode2.classList.contains('on'))
         { 
             $btn_select_mode2.classList.remove('on');
@@ -188,8 +190,14 @@ $list3.forEach(item=>{
                 if(selectedSpecial===item.special){
                     condition_2 = true;
                 }
+                if(selectedLimit === '전체'){
+                    console.log(selectedLimit);
+                    console.log('전체');
+                    condition_3 = true;
+                    console.log(item.limit);
+                }
 
-                if(selectedLimit===''){
+                if(selectedLimit===item.limit){
                     condition_3 = true;
                 }
 
@@ -222,7 +230,7 @@ $list3.forEach(item=>{
         function makeList(items){
             $attractionContainer.innerHTML = null;
             items.forEach((item,index)=>{ 
-                test_choi(item)
+                test_choi(item);
                 $attractionContainer.innerHTML='';
             });
         }
@@ -349,7 +357,7 @@ $list3.forEach(item=>{
                     // console.log(test__choi);
                 // console.log('ture');
             })
-            choi()
+            choi();
             if(value<checkAll.length){
                 checkList.checked = false;
                 checkListTwo.checked = false;
@@ -415,20 +423,20 @@ $list3.forEach(item=>{
 
         let selectedArea = ['위저딩 월드 오브 해리포터', '슈퍼 닌텐도 월드','쥬라기 공원','미니언 파크','뉴욕','할리우드','샌프란시스코','워터 월드','원더랜드','오징어 게임']
         let selectedSpecial = '전부';
-        let selectedLimit = '';
-        let selectedExpress = '';
-        let selectedAlign = '';
+        let selectedLimit = '전체';
+        let selectedExpress = false;
+        let selectedAlign = '전체';
 
     function choi(){
         selectedArea = attraction_areaArr;
         selectedSpecial = comment;
-        selectedLimit = '';
+        selectedLimit = limitComment;
         selectedExpress = '';
         selectedAlign = '';
         console.log(selectedArea);
         $attractionContainer.innerHTML='';
         console.log(selectedSpecial);
-        late()
+        late();
     }
 
 

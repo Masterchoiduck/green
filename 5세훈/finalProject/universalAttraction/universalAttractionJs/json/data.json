@@ -4,7 +4,7 @@
         "id":"파워 업 밴드 키 챌린지",
         "area": "슈퍼 닌텐도 월드",
         "special": "",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"playlandEtc"
@@ -13,7 +13,7 @@
         "id":"요시 어드벤처",
         "area": "슈퍼 닌텐도 월드",
         "special": "어린이에게 추천",
-        "limit": "122cm 이상",
+        "limit": "신장 제한 122cm 이상",
         "express": true,
         "align":"운영중",
         "attraction":"rideAttraction" 
@@ -22,7 +22,7 @@
         "id":"만나기",
         "area": "슈퍼 닌텐도 월드",
         "special": "어린이에게 추천",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"streetShow"
@@ -31,7 +31,7 @@
         "id":"마리오카트 쿠파의 도전장",
         "area": "슈퍼 닌텐도 월드",
         "special": "절규/스릴 만점",
-        "limit": "122cm 이상",
+        "limit": "신장 제한 122cm 이상",
         "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
@@ -40,7 +40,7 @@
         "id":"해리포터 앤드 더 포비든 저니",
         "area": "위저딩 월드 오브 해리포터",
         "special": "절규/스릴 만점",
-        "limit": "122cm 이상",
+        "limit": "신장 제한 122cm 이상",
         "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
@@ -49,7 +49,7 @@
         "id":"플라이트 오브 더 히포그리프",
         "area": "위저딩 월드 오브 해리포터",
         "special": "절규/스릴 만점",
-        "limit": "122cm 이상 및 195cm 이하",
+        "limit": "신장 제한 122cm 이상 및 195cm 이하",
         "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
@@ -58,7 +58,7 @@
         "id":"프로그 콰이어",
         "area": "위저딩 월드 오브 해리포터",
         "special": "",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운휴중",
         "attraction":"streetShow"
@@ -67,7 +67,7 @@
         "id":"트리위저드 스피릿 랠리",
         "area": "위저딩 월드 오브 해리포터",
         "special": "",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"streetShow"
@@ -76,7 +76,7 @@
         "id":"지팡이 마법",
         "area": "위저딩 월드 오브 해리포터",
         "special": "",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"showAttraction"
@@ -85,7 +85,7 @@
         "id":"완드 스터디",
         "area": "위저딩 월드 오브 해리포터",
         "special": "",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"streetShow"
@@ -94,7 +94,7 @@
         "id":"프리즈 레이 슬라이더",
         "area": "미니언 파크",
         "special": "물에 젖을 수 있음",
-        "limit": "122cm 이상",
+        "limit": "신장 제한 122cm 이상",
         "express": false,
         "align":"운영중",
         "attraction":"rideAttraction"
@@ -103,7 +103,7 @@
         "id":"스페이스 킬러",
         "area": "미니언 파크",
         "special": "",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"game"
@@ -112,7 +112,7 @@
         "id":"바나나 카바나",
         "area": "미니언 파크",
         "special": "",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"game"
@@ -121,7 +121,7 @@
         "id":"미니언 메이헴",
         "area": "미니언 파크",
         "special": "절규/스릴 만점",
-        "limit": "122cm 이상",
+        "limit": "신장 제한 122cm 이상",
         "express": true,
         "align":"운영중",
         "attraction":"rideAttraction" 
@@ -130,7 +130,7 @@
         "id":"미니언 랠리",
         "area": "미니언 파크",
         "special": "",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"game" 
@@ -139,7 +139,7 @@
         "id":"미니언 그리팅",
         "area": "미니언 파크",
         "special": "어린이와 함께 즐기기",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"streetShow" 
@@ -148,7 +148,7 @@
         "id":"헬로키티 컵케이크 드림",
         "area": "원더랜드",
         "special": "어린이와 함께 즐기기",
-        "limit": "122cm 이상",
+        "limit": "신장 제한 122cm 이상",
         "express": false,
         "align":"운영중",
         "attraction":"rideAttraction" 
@@ -157,7 +157,7 @@
         "id":"헬로키티 리본 컬렉션",
         "area": "원더랜드",
         "special": "어린이와 함께 즐기기",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"playlandEtc" 
@@ -166,7 +166,7 @@
         "id":"쿠키 몬스터 슬라이드",
         "area": "원더랜드",
         "special": "어린이에게 추천",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc" 
@@ -175,7 +175,7 @@
         "id":"워터 가든",
         "area": "원더랜드",
         "special": "물에 젖을 수 있음",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc"
@@ -184,7 +184,7 @@
         "id":"엘모의 버블버블",
         "area": "원더랜드",
         "special": "물에 젖을 수 있음",
-        "limit": "122cm 이상",
+        "limit": "신장 제한 122cm 이상",
         "express": false,
         "align":"운휴중",
         "attraction":"rideAttraction"
@@ -193,7 +193,7 @@
         "id":"엘모의 리틀 드라이브",
         "area": "원더랜드",
         "special": "어린이에게 추천",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"rideAttraction"
@@ -202,7 +202,7 @@
         "id":"엘모의 고 고 스케이트보드",
         "area": "원더랜드",
         "special": "어린이에게 추천",
-        "limit": "122cm 이상",
+        "limit": "신장 제한 122cm 이상",
         "express": false,
         "align":"운휴중",
         "attraction":"rideAttraction"   
@@ -211,7 +211,7 @@
         "id":"어니의 러버 덕 레이스",
         "area": "원더랜드",
         "special": "물에 젖을 수 있음",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc"   
@@ -220,7 +220,7 @@
         "id":"애비의 매지컬 파티",
         "area": "원더랜드",
         "special": "어린이에게 추천",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc"   
@@ -229,7 +229,7 @@
         "id":"애비의 매지컬 트리",
         "area": "원더랜드",
         "special": "어린이에게 추천",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc"   
@@ -238,7 +238,7 @@
         "id":"스누피 사운드 스테이지 어드벤처",
         "area": "원더랜드",
         "special": "어린이에게 추천",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"playlandEtc"   
@@ -247,7 +247,7 @@
         "id":"세서미 빅 드라이브",
         "area": "원더랜드",
         "special": "어린이에게 추천",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운휴중",
         "attraction":"rideAttraction"   
@@ -256,7 +256,7 @@
         "id":"빅 버드 빅 네스트",
         "area": "원더랜드",
         "special": "어린이에게 추천",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc"   
@@ -265,7 +265,7 @@
         "id":"빅 버드 비드 탑 서커스",
         "area": "원더랜드",
         "special": "어린이와 함께 즐기기",
-        "limit": "122cm 이상",
+        "limit": "신장 제한 122cm 이상",
         "express": false,
         "align":"운영중",
         "attraction":"rideAttraction"   
@@ -274,7 +274,7 @@
         "id":"버트와 어니의 프로숍 게임 플레이스",
         "area": "원더랜드",
         "special": "어린이와 함께 즐기기",
-        "limit": "122cm 이상",
+        "limit": "신장 제한 122cm 이상",
         "express": false,
         "align":"운영중",
         "attraction":"game"   
@@ -283,7 +283,7 @@
         "id":"버트와 애니의 원더 더 시",
         "area": "원더랜드",
         "special": "어린이에게 추천",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc"   
@@ -292,7 +292,7 @@
         "id":"몹피의 벌룬 여행",
         "area": "원더랜드",
         "special": "어린이와 함께 즐기기",
-        "limit": "122cm 이상",
+        "limit": "신장 제한 122cm 이상",
         "express": false,
         "align":"운영중",
         "attraction":"rideAttraction"
@@ -301,7 +301,7 @@
         "id":"몹피의 럭키 댄스 파티",
         "area": "원더랜드",
         "special": "어린이에게 추천",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"playlandEtc"
@@ -310,7 +310,7 @@
         "id":"날아라 스누피",
         "area": "원더랜드",
         "special": "어린이와 함께 즐기기",
-        "limit": "122cm 이상",
+        "limit": "신장 제한 122cm 이상",
         "express": false,
         "align":"운영중",
         "attraction":"rideAttraction"
@@ -319,7 +319,7 @@
         "id":"그로버 콘스트럭션 컴퍼니",
         "area": "원더랜드",
         "special": "어린이에게 추천",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운휴중",
         "attraction":"playlandEtc"
@@ -328,7 +328,7 @@
         "id":"헬로키티 해피니스 브라스밴드",
         "area": "할리우드",
         "special": "",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"showAttraction"
@@ -337,7 +337,7 @@
         "id":"할리우드 드림 더 라이드 백드롭",
         "area": "할리우드",
         "special": "절규/스릴 만점",
-        "limit": "132cm 이상",
+        "limit": "신장 제한 132cm 이상",
         "express": true,
         "align":"운휴중",
         "attraction":"rideAttraction"
@@ -346,7 +346,7 @@
         "id":"할리우드 드림 더 라이드",
         "area": "할리우드",
         "special": "절규/스릴 만점",
-        "limit": "132cm 이상",
+        "limit": "신장 제한 132cm 이상",
         "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
@@ -355,7 +355,7 @@
         "id":"플레잉 위드 원숭이 조지",
         "area": "할리우드",
         "special": "어린이와 함께 즐기기",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"showAttraction"
@@ -364,7 +364,7 @@
         "id":"유니버설 스펙터클 나이트 퍼레이드 베스트 오브 할리우드",
         "area": "할리우드",
         "special": "어린이와 함께 즐기기",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운휴중",
         "attraction":"showAttraction"
@@ -373,7 +373,7 @@
         "id":"유니버설 몬스터 라이브 록큰롤 쇼",
         "area": "할리우드",
         "special": "",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"showAttraction"
@@ -382,7 +382,7 @@
         "id":"씽 온 투어",
         "area": "할리우드",
         "special": "어린이에게 추천",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": true,
         "align":"운영중",
         "attraction":"showAttraction"
@@ -391,7 +391,7 @@
         "id":"스페이스 판타지 더 라이드",
         "area": "할리우드",
         "special": "절규/스릴 만점",
-        "limit": "122cm 이상",
+        "limit": "신장 제한 122cm 이상",
         "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
@@ -400,7 +400,7 @@
         "id":"슈렉 4-D 어드벤처",
         "area": "할리우드",
         "special": "3D & 4D",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운휴중",
         "attraction":"showAttraction"
@@ -409,7 +409,7 @@
         "id":"세서미 스트리트 4-D 무비 매직",
         "area": "할리우드",
         "special": "3D & 4D",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운휴중",
         "attraction":"showAttraction"
@@ -418,7 +418,7 @@
         "id":"페스티발 인 더 파크",
         "area": "뉴욕",
         "special": "",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"game"
@@ -427,7 +427,7 @@
         "id":"터미네이터 3-D",
         "area": "뉴욕",
         "special": "3D & 4D",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운휴중",
         "attraction":"showAttraction"
@@ -436,7 +436,7 @@
         "id":"에볼루션 댄스 위드 세서미 스트리트",
         "area": "뉴욕",
         "special": "",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"showAttraction"
@@ -445,7 +445,7 @@
         "id":"어메이징 어드벤처 오브 스파이더맨 더 라이드 4k3D",
         "area": "뉴욕",
         "special": "3D & 4D",
-        "limit": "122cm 이상",
+        "limit": "신장 제한 122cm 이상",
         "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
@@ -454,7 +454,7 @@
         "id":"42nd 스트리트 스튜디오 그리팅 갤러리",
         "area": "뉴욕",
         "special": "어린이와 함께 즐기기",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"showAttraction"
@@ -463,7 +463,7 @@
         "id":"백드래프트",
         "area": "샌프란시스코",
         "special": "",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운휴중",
         "attraction":"showAttraction"
@@ -472,7 +472,7 @@
         "id":"쥬라기 공원 더 라이드",
         "area": "쥬라기 공원",
         "special": "물에 젖을 수 있음",
-        "limit": "122cm 이상",
+        "limit": "신장 제한 122cm 이상",
         "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
@@ -481,7 +481,7 @@
         "id":"더 플라잉 다이너소어",
         "area": "쥬라기 공원",
         "special": "절규/스릴 만점",
-        "limit": "132cm 이상",
+        "limit": "신장 제한 132cm 이상",
         "express": true,
         "align":"운영중",
         "attraction":"rideAttraction"
@@ -490,7 +490,7 @@
         "id":"워터 월드",
         "area": "워터 월드",
         "special": "물에 젖을 수 있음",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영중",
         "attraction":"showAttraction"
@@ -499,7 +499,7 @@
         "id":"숨바꼭질",
         "area": "오징어 게임",
         "special": "",
-        "limit": "제한 없음",
+        "limit": "신장 제한 없음",
         "express": false,
         "align":"운영 예정",
         "attraction":"game"
