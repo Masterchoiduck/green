@@ -721,83 +721,93 @@
 
     .ticket_left {
         display: grid;
-        grid-template-rows: 100px 100px 100px ;
+        grid-template-rows: 100px 100px 100px;
         justify-content: start;
         justify-items: start;
     }
 
-    .fast_buy_title{
+    .fast_buy_title {
         margin-top: 20px;
         font-size: 30px;
-        color:#444545;
+        color: #444545;
         font-weight: 900;
-        
+
     }
-    .fast_buy_content{
+
+    .fast_buy_content {
         display: grid;
         grid-template-rows: 1fr 1fr;
     }
 
-.fast_buy_content_1, .fast_buy_content_2{
-    display: grid;
-    grid-template-columns: 150px 150px 145px;
-    margin-left: 20px;
+    .fast_buy_content_1,
+    .fast_buy_content_2 {
+        display: grid;
+        grid-template-columns: 150px 150px 145px;
+        margin-left: 20px;
 
-}
-.fast_buy_coc{
-    display: flex;
-}
-.fast_buy_coc div{
-    margin-right: 10px;
-    color: #444545;
-    font-size: 17px;
-    vertical-align: middle;
-}
+    }
 
-.fast_buy_coc .buy_icon {
-    color: #286BE1;
-    font-size: 20px;
-    vertical-align: middle;
+    .fast_buy_coc {
+        display: flex;
+    }
 
-}
-.fast_buy_coc .arrow_small {
-    color: #444545;
-    font-size: 14px;
-}
-.ticket_buy_btn{
-    font-size: 17px;
-    width: 100px;
-    height: 40px;
-    border-radius: 50px;
-    background-color: #286BE1;
-    color: #fff;
-    text-align: center;
-    line-height: 40px;
-    margin-top: 10px;
-    margin-left: 310px;
-}
-#ticket_now_time{
-    z-index: 100;
-    color: #444545;
-    font-size: 22px;
-    font-weight: 600;
+    .fast_buy_coc div {
+        margin-right: 10px;
+        color: #444545;
+        font-size: 17px;
+        vertical-align: middle;
+    }
 
-    position: relative;
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 18PX;
-}
+    .fast_buy_coc .buy_icon {
+        color: #286BE1;
+        font-size: 20px;
+        vertical-align: middle;
+
+    }
+
+    .fast_buy_coc .arrow_small {
+        color: #444545;
+        font-size: 14px;
+    }
+
+    .ticket_buy_btn {
+        font-size: 17px;
+        width: 100px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: #286BE1;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        margin-top: 10px;
+        margin-left: 310px;
+    }
+
+    #ticket_now_time {
+        z-index: 100;
+        color: #444545;
+        font-size: 22px;
+        font-weight: 600;
+
+        position: relative;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 18PX;
+    }
 
 
 
 
-/* 빠른구매 클릭했을때 */
-.choice_none{
-    display: none;
-}
+    /* 빠른구매 클릭했을때 */
+    .choice_none {
+        display: none;
+    }
+
+
+
 
 
 
