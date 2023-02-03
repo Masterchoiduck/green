@@ -460,15 +460,6 @@
         "attraction":"showAttraction"
     },
     { 
-        "id":"씽 온 투어",
-        "area": "할리우드",
-        "special": "어린이에게 추천",
-        "limit": "제한 없음",
-        "express": false,
-        "align":"운영중",
-        "attraction":"showAttraction"
-    },
-    { 
         "id":"백드래프트",
         "area": "샌프란시스코",
         "special": "",
@@ -496,8 +487,8 @@
         "attraction":"rideAttraction"
     },
     { 
-        "id":"워터월드",
-        "area": "워터월드",
+        "id":"워터 월드",
+        "area": "워터 월드",
         "special": "물에 젖을 수 있음",
         "limit": "제한 없음",
         "express": false,

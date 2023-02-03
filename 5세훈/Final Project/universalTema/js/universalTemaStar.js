@@ -1,6 +1,9 @@
 const $sky = document.querySelector(".sky");
 
 // 브라우저 창 크기에 따른 별 생성
+window.onload = () => {
+  makeStars();
+}
 window.onresize = () => {
   makeStars();
 }
