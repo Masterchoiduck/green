@@ -19,12 +19,12 @@
         * {
   margin: 0;
   padding: 0;
-  background-color: bisque;
 }
-
+/*
 body {
   overflow: hidden;
 }
+*/
     </style>
 
 </head>
@@ -114,12 +114,13 @@ body {
         <div id="main_fullPage">
             <!--메인 첫 페이지-->
 
-            <div class="full1">
+            <div class="main_section full1">
                 <!--캔버스의(화면에 구현할) 사이즈 정하기-->
-                <div>
-                    <canvas id="canvas" width="700" height="700"></canvas>
-                    
-                </div>
+                
+                    <canvas id="canvas" width="800" height="800"></canvas>
+
+
+
                 <div class="ticket__img"></div>
             </div>
 
@@ -374,6 +375,16 @@ body {
         let scene = new THREE.Scene();
         scene.background = new THREE.Color('black');
     
+        //캔버스에 이미지 지정 실시    		
+        const imgElem = new Image();
+
+        imgElem.src = 'img/web/밤하늘배경.jpg';
+        imgElem.addEventListener('load', () => {
+        // 이미지 로드 후, 캔버스에 그리기
+        context.drawImage(imgElem, 200, 200);
+        });
+    	
+
         //카메라 세팅하기-->
         let camera = new THREE.PerspectiveCamera(30, 1);
         camera.position.set(0, 0, 10);
