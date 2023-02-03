@@ -711,22 +711,23 @@
 
     .ticket_total_content {
         display: grid;
-        grid-template-columns: 400px 240px;
-        justify-content: space-evenly;
-        background-color: aquamarine;
+        grid-template-columns: 445px 215px;
+        justify-content: center;
+
         z-index: 99;
+        margin-top: 600px;
 
     }
 
     .ticket_left {
         display: grid;
         grid-template-rows: 100px 100px 100px ;
-        justify-content: center;
-        grid-template-columns: 500px;
+        justify-content: start;
+        justify-items: start;
     }
 
     .fast_buy_title{
-
+        margin-top: 20px;
         font-size: 30px;
         color:#444545;
         font-weight: 900;
@@ -739,8 +740,8 @@
 
 .fast_buy_content_1, .fast_buy_content_2{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 30px;
+    grid-template-columns: 150px 150px 145px;
+    margin-left: 20px;
 
 }
 .fast_buy_coc{
@@ -750,7 +751,7 @@
     margin-right: 10px;
     color: #444545;
     font-size: 17px;
-        vertical-align: middle;
+    vertical-align: middle;
 }
 
 .fast_buy_coc .buy_icon {
@@ -772,10 +773,31 @@
     color: #fff;
     text-align: center;
     line-height: 40px;
-    margin-left: 353px;
+    margin-top: 10px;
+    margin-left: 310px;
+}
+#ticket_now_time{
+    z-index: 100;
+    color: #444545;
+    font-size: 22px;
+    font-weight: 600;
+
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 18PX;
 }
 
 
+
+
+/* 빠른구매 클릭했을때 */
+.choice_none{
+    display: none;
+}
 
 
 

@@ -124,29 +124,44 @@
                             <div class="fast_buy_content_1">
                                 <div class="fast_buy_coc">
                                     <div><i class="fa-regular fa-calendar-days buy_icon"></i></div>
-                                    <div>날짜</div>
+                                    <div class="ticket_buy_choice">날짜</div>
                                     <div><i class="fa-solid fa-angle-down arrow_small"></i></div>
                                 </div>
                                 <div class="fast_buy_coc">
                                     <div><i class="fa-regular fa-user buy_icon"></i></div>
-                                    <div>성인</div> 
+                                    <div>
+                                        <div class="ticket_buy_choice_age">성인</div>
+                                        <div class="ticket_buy_choice_age choice_none">어린이</div>
+                                    </div>
                                     <div><i class="fa-solid fa-angle-down arrow_small"></i></div>
                                 </div>
                                 <div class="fast_buy_coc">
                                     <div><i class="fa-solid fa-users buy_icon"></i></div>
-                                    <div>인원수</div>
+                                    <div>
+                                        <div class="ticket_buy_choice">1명</div>
+                                        <div class="ticket_buy_choice choice_none">2명</div>
+                                    </div>
                                     <div><i class="fa-solid fa-angle-down arrow_small"></i></div>
                                 </div>
                             </div>
                             <div class="fast_buy_content_2">
                                 <div class="fast_buy_coc">
                                     <div><i class="fa-solid fa-ticket buy_icon"></i></div>
-                                    <div>입장권</div>
+                                    <div>
+                                        <div class="ticket_buy_choice">입장권</div>
+                                        <div class="ticket_buy_choice choice_none">1일권</div>
+                                        <div class="ticket_buy_choice choice_none">1.5일권</div>
+                                        <div class="ticket_buy_choice choice_none">2일권</div>
+                                    </div>
                                     <div><i class="fa-solid fa-angle-down arrow_small"></i></div>
                                 </div>
                                 <div class="fast_buy_coc">
                                     <div><i class="fa-regular fa-square-plus buy_icon"></i></div>
-                                    <div>프리패스권</div>
+                                    <div>
+                                        <div class="ticket_buy_choice">익스프레스</div>
+                                        <div class="ticket_buy_choice choice_none">패스 추가</div>
+                                        <div class="ticket_buy_choice choice_none">패스 제외</div>
+                                    </div>
                                     <div><i class="fa-solid fa-angle-down arrow_small"></i></div>
                                 </div>
                             </div>
@@ -156,7 +171,7 @@
                         </div>
                     </div>
                     <div class="ticket_right">
-                        <div class="ticket_now_time">dddddddd</div>
+                        <div id="ticket_now_time"></div>
                     </div>
                 </div>
             </div>
@@ -412,9 +427,9 @@
     </div>
 
     
-
-    <!--퍼레이드 캐러셀 슬라이드 JS-->
     <script src="main_heum.js"></script>
+    
+    <!--퍼레이드 캐러셀 슬라이드 JS-->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick.min.js"></script>

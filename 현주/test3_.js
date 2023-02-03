@@ -18,9 +18,19 @@
       if((minutes+"").length < 2){
           minutes="0"+minutes;
       }
+      var seconds=now.getSeconds(); //현재 분
+      if((seconds+"").length < 2){
+          seconds="0"+seconds;
+      }
       //오늘 날짜 완성.
-      document.getElementById("parade_now_date").innerHTML = year + '.' + month + '.' + date + ' ' + hour + ':' + minutes;
+      document.getElementById("parade_now_date").innerHTML = year + '.' + month + '.' + date + ' ' + hour + ':' + minutes + ':' + seconds;
+      document.getElementById("ticket_now_time").innerHTML = year + '-' + month + '-' + date;
   }, 100);
+
+
+
+  
+      
 
 
 //퍼레이드 캐러셀 슬라이드
