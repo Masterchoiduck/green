@@ -54,15 +54,29 @@
     justify-content: center;
     color: #222;
     font-weight: bold;
-    min-height: 70px;
+    min-height: 61.28px;
     padding: 0.6rem 0.8rem;
     border-radius: 0.6rem;
     flex-direction: row;
     /* border: 1px solid #eee; */
   }
   
-  .noColor {
-    /* background: #eee; */
+  .number {
+    color: #286BE1 !important;
+  }
+  .todayBefore {
+    color: #c9c9c9 !important;
+  }
+  .clickDay { 
+    display: flex !important;
+    width: 61.28px !important;
+    height: 50px !important;
+    background: #286BE1 !important;
+    border-radius: 50% !important;
+    border: solid 0 !important;
+
+    justify-content: center !important;
+    align-items: center !important;
   }
   
   .header {

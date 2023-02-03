@@ -55,7 +55,7 @@ const makeCalendar = (date) => {
   // 현재의 년도와 월 받아오기
   const currentYear = new Date(date).getFullYear();
   const currentMonth = new Date(date).getMonth() + 1;
-
+  console.log(currentYear);
   // 한달전의 마지막 요일
   const firstDay = new Date(date.setDate(1)).getDay();
   // 현재 월의 마지막 날 구하기
@@ -151,7 +151,7 @@ document.querySelector('.btnCal').innerHTML=`${year}.${month}.${day}`
 
 
 const date = new Date();
-
+console.log(date);
 makeCalendar(date);
 
 
