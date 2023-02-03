@@ -51,48 +51,6 @@
     }
 
     /* 헤더 */
-    /*
-    #main_header{
-        display: flex;
-        justify-content: space-between;
-    }
-    .logo{
-        margin: 13px 0px 0px 3.9063vw;
-    }
-    .top_menu{
-        color: white;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 902px;
-    }
-    .menu_bar{
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .right_menu{
-        color: white;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-right: 60px;
-    }
-    .menu_icon{
-        margin: 0 0.9375vw;
-    }
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 100;
-    }
-
-    */
-    /* 메뉴드롭 수정분 */
-
-    /* 헤더 */
     .logo{
         margin: 13px 0px 0px 3.9063vw;
     }
@@ -116,6 +74,7 @@
     }
     .menu_icon{
         margin: 0 0.9375vw;
+        cursor: pointer;
     }
     header {
         position: fixed;
@@ -165,6 +124,7 @@
     /*유니버셜 로고 흰색에서 회색으로 변경*/
     .logo_gray {
         display: none;
+        cursor: pointer;
     }
     .top_menu:hover .logo_white{
         display: none !important;
@@ -232,6 +192,7 @@
         bottom: 60px;
         right: 0;
         z-index: 999;
+        cursor: pointer;
     }
 
 
@@ -292,7 +253,6 @@
         pointer-events: none;
         font-size: 15px;
         color: #2f2f2f;
-
     }
 
     /* 공용
@@ -337,6 +297,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
     .benefit_text {
         display: none;
@@ -447,7 +408,9 @@
         position: relative;
         padding-top: 120px;
     }
-
+    .att_s{
+        cursor: pointer;
+    }
     .att_s1 {
         width: 250px;
         height: 250px;
@@ -613,7 +576,6 @@
         display: grid;
         align-content: space-evenly;
     }
-
     .footer_use_content, .footer_use_import{
         margin-bottom: 5px;
     } 
@@ -625,6 +587,10 @@
         color: #286BE1;
         font-weight: bold;
     }
+    .footer_use_content, .footer_content_right{
+        cursor: pointer;
+    }
+
 
     /* 이용권티켓 */
     .ticket__img {        
@@ -642,6 +608,27 @@
         z-index: 10;
         transition:5s;
     }
+
+
+
+
+    /* 이용권티켓 컨텐츠 */
+
+    .ticket_total_content{
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1000px;
+        background-color: #000;
+        z-index: 9999999;
+    }
+
+
+
+
+
+
 
     /* 성환초이 건듦 */
     .csh__black{
@@ -761,5 +748,5 @@
     }
 
 
-    
+
 }
