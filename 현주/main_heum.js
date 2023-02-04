@@ -21,14 +21,14 @@ const full2TopY = $full2.offsetTop;
 
 console.log(full2TopY);
 
-let scrollTimer = null;
 
+//이용권티켓 스크롤하기
 const box= document.querySelector('.box111');
 
 window.addEventListener("click", function(e){
     console.log(e.clientX, e.clientY);
     let XX = 0
-    let YY = -310
+    let YY = -360
     box.style.transform = 'translate(' +XX + 'px,' + YY + 'px)';
 });
 
@@ -54,6 +54,7 @@ box.addEventListener('transitionend', function(e){
 
 
 
+let scrollTimer = null;
 
 window.addEventListener('scroll', (e) => {
   // console.log(scrollY);

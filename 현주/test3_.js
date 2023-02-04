@@ -112,3 +112,14 @@ $att_s.forEach((item,index)=>{
     })
 })
         
+
+// 이용권 티켓 컨텐츠 클릭했을때 레이어 나오게
+
+function ticketChoice(){
+  let choiceNone = document.getElementById("choice_none");
+  if(choiceNone.style.display=='none'){
+    choiceNone.style.display='block';
+  }else{
+    choiceNone.style.display='none';
+  }
+}

@@ -396,7 +396,6 @@
 
     .benefit_flip {
         perspective: 1100px;
-
     }
 
     .benefit3 {
@@ -693,7 +692,7 @@
         /*
         transform: translate(-50%, 37%);
         */
-        bottom: -300px;
+        bottom: -375px;
         width: 100%;
         height: 100%;
         background-image: url('./img/web/이용권티켓_웹\,탭.png');
@@ -703,8 +702,6 @@
         z-index: 10;
         transition: 5s;
     }
-
-
 
 
     /* 이용권티켓 컨텐츠 */
@@ -744,7 +741,7 @@
         display: grid;
         grid-template-columns: 150px 150px 145px;
         margin-left: 20px;
-
+        margin-bottom: 10px;
     }
 
     .fast_buy_coc {
@@ -780,7 +777,7 @@
         text-align: center;
         line-height: 40px;
         margin-top: 10px;
-        margin-left: 310px;
+        margin-left: 315px;
     }
 
     #ticket_now_time {
@@ -802,11 +799,14 @@
 
 
     /* 빠른구매 클릭했을때 */
+
     .choice_none {
         display: none;
     }
-
-
+    
+    .ticket_buy_choice_age a{
+        color: #444545;
+    }
 
 
 
