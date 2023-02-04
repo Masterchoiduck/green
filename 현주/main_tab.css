@@ -1,8 +1,4 @@
-html, body{
-    width: 100%;
-    height: 100%;        
-    scroll-snap-type: y mandatory;
-}
+
 
 @media (min-width:769px) and (max-width:1024px){
 
@@ -19,17 +15,13 @@ html, body{
     }
 
     .top_menu {
-        color: white;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
     }
 
-    .menu_bar {
-        font-size: 20px;
-        font-weight: bold;
-    }
+
 
     .right_menu {
         color: white;
@@ -40,8 +32,7 @@ html, body{
     }
 
     .menu_icon {
-        margin: 0 0.9375vw;
-        cursor: pointer;
+        display: none;
     }
 
     header {
@@ -53,125 +44,56 @@ html, body{
     }
 
 
+/* 메뉴탭 클릭했을때 메뉴탭 나오게하기 */
+.x_icon{ 
+    display: none;
+ }
+#check-btn {
+    display: none;
+}
+#check-btn:checked ~ .menubars{
+    display: block;
+}
+#check-btn:checked ~ .x_icon{
+    display: flex;
+    z-index: 100;
+}
+.menubars {
+    display: none;
+    
+    width:100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.menubars li{
+    
+    font-size: 50px;
+    font-weight: bold;
+    margin: 25px 0;
+    height: 10px;
+
+    color: #2f2f2f;
+}
 
 
-    /* 풀메뉴 드롭다운 */
-    li {
-        list-style: none;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .top_menu {
-        width: 100vw;
-        overflow: hidden;
-    }
-
-    .top_menu a {
-        color: #fff;
-    }
-
-    .menu_bar_submenu {
-        height: 0;
-        margin-top: 40px;
-    }
-
-    .menu_bar_submenu li {
-        line-height: 20px;
-        font-size: 18px;
-    }
-
-    .menu_bar_submenu li a {
-        color: #2f2f2f;
-    }
-
-    .top_menu:hover {
-        background-color: rgba(255, 255, 255, 0.6);
-        backdrop-filter: blur(20px);
-        transition-duration: 0.5s;
-        height: 385px;
-        transition-duration: 0.5s;
-        box-shadow: #286ce13d 0px 1px 30px 1px;
-    }
-
-    /*유니버셜 로고 흰색에서 회색으로 변경*/
-    .logo_gray {
-        display: none;
-        cursor: pointer;
-    }
-
-    .top_menu:hover .logo_white {
-        display: none !important;
-    }
-
-    .top_menu:hover .logo_gray {
-        display: inline-block !important;
-    }
-
-    /*상단 오른쪽 아이콘 흰색에서 회색으로 변경*/
-    .search_icon_gray {
+    
+    .main_menu_container li {
         display: none;
     }
 
-    .ticket_icon_gray {
-        display: none;
-    }
-
-    .user_icon_gray {
-        display: none;
-    }
-
-    .top_menu:hover .search_icon_white,
-    .top_menu:hover .ticket_icon_white,
-    .top_menu:hover .user_icon_white {
-        display: none !important;
-    }
-
-    .top_menu:hover .search_icon_gray,
-    .top_menu:hover .ticket_icon_gray,
-    .top_menu:hover .user_icon_gray {
-        display: inline-block !important;
-    }
-
-
-    .top_menu:hover .menu_bar_submenu {
-        height: 250px;
-        transition-duration: 0.5s;
-    }
-
-    .top_menu:hover .sss>li>a {
-        color: #2f2f2f;
-        font-weight: 800;
-    }
-
-    .top_menu:hover .menu_icon {
-        color: #2f2f2f;
-    }
-
-    .sss {
-        width: 902px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        height: 90px;
-    }
-
-    .sss li {
-        margin-top: 30px;
-    }
-
-    .menu_bar_submenu>li>a:hover {
-        color: #286BE1;
-        transition-duration: 0.3s;
-    }
+ 
 
     .right_menu {
         height: 90px;
     }
 
 
+    .three_bar{
+        display: flex;
+        font-size: 35px;
+    }
 
 
 
@@ -180,7 +102,7 @@ html, body{
         position: fixed;
         bottom: 60px;
         right: 0;
-        z-index: 999;
+        z-index: 9;
         cursor: pointer;
     }
 
@@ -217,12 +139,14 @@ html, body{
         background-color: #f7f7f7;
         display: grid;
         grid-template-rows: 290px 1fr;
+        justify-content: center;
     }
 
     .full3 {
         background-color: #EEF5FB;
         display: grid;
         grid-template-rows: 290px 1fr;
+        justify-content: center;
     }
 
 
@@ -263,7 +187,7 @@ html, body{
     /* 할인혜택 페이지 */
     .benefit_title_total {
         display: grid;
-        grid-template-columns: 19.1146vw 52.0833vw 104px 23.3854vw;
+        grid-template-columns: 14.7461vw 48.8281vw 24.0234vw 12.4023vw;
     }
 
 
@@ -274,14 +198,16 @@ html, body{
     }
 
     .benefit_content_total {
-        width: 1040px;
+        width: 770px;
         height: 520px;
 
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
-
+    .benefit_content_total div:nth-child(n+7){
+        display: none;
+    }
     .benefit3 {
         width: 250px;
         height: 250px;
@@ -370,26 +296,30 @@ html, body{
 
     .attraction_content_total {
         display: grid;
-        grid-template-columns: 405px 780px;
+        grid-template-columns: 39.5508vw 500px;
         grid-template-rows: 515px;
     }
 
     .main_attraction_small {
+        width: 50.7813vw;
         display: grid;
-        grid-template-columns: 250px 250px 250px;
+        grid-template-columns: 250px 250px;
         grid-template-rows: 250px 250px;
         align-content: space-between;
         justify-content: space-between;
     }
-
+    .main_attraction_small div:nth-child(3n){
+        display: none;
+    }
     .main_attraction_big {
-        width: 390px;
+        width: 38.0859vw;
         height: 515px;
+        border-radius: 20px;
         background-image: url(img/web/호버안내.png);
     }
 
     .att_b1 {
-        width: 390px;
+        width: 38.0859vw;
         height: 515px;
         border-radius: 20px;
 
@@ -408,7 +338,6 @@ html, body{
         width: 250px;
         height: 250px;
         background-image: url(img/web/어트_해리포터\ 앤드\ 더\ 포비든\ 저니.png);
-
         background-size: cover;
         border-radius: 20px;
         transition: 0.5s;
@@ -522,7 +451,7 @@ html, body{
     }
 
     .footer_section_total {
-        width: 946px;
+        width: 750px;
         height: 160px;
 
         margin: 0px auto;
@@ -710,6 +639,7 @@ html, body{
 
     .ticket_buy_choice a {
         color: #444545;
+        text-decoration: none;
     }
 
     .ticket_buy_choice {
@@ -774,6 +704,7 @@ html, body{
     .att_mouse_account {
         animation-iteration-count: infinite;
         text-shadow: 0px 0px 500px #fff;
+        margin: 0 40px;
     }
 
     /* 메인 영상 */
@@ -804,8 +735,11 @@ html, body{
         font-weight: bolder;
         z-index: 10;
         position: absolute;
-        left: 25%;
-        top: 40%;
+        left: 5%;
+        top: 34%;
+        text-align: center;
+        word-wrap: break-word;
+        line-height: 120px;
     }
 
     .blue_effect {

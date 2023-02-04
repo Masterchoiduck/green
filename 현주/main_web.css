@@ -212,7 +212,7 @@
         transition-duration: 0.5s;
     }
 
-    .top_menu:hover .sss>li>a {
+    .top_menu:hover .main_menu_container>li>a {
         color: #2f2f2f;
         font-weight: 800;
     }
@@ -221,7 +221,7 @@
         color: #2f2f2f;
     }
 
-    .sss {
+    .main_menu_container {
         width: 902px;
         display: flex;
         justify-content: space-between;
@@ -229,7 +229,7 @@
         height: 90px;
     }
 
-    .sss li {
+    .main_menu_container li {
         margin-top: 30px;
     }
 
@@ -242,7 +242,9 @@
         height: 90px;
     }
 
-
+    .three_bar{
+        display: none;
+    }
 
 
 
@@ -288,12 +290,14 @@
         background-color: #f7f7f7;
         display: grid;
         grid-template-rows: 290px 1fr;
+        justify-content: center;
     }
 
     .full3 {
         background-color: #EEF5FB;
         display: grid;
         grid-template-rows: 290px 1fr;
+        justify-content: center;
     }
 
 
@@ -441,11 +445,12 @@
 
     .attraction_content_total {
         display: grid;
-        grid-template-columns: 405px 780px;
+        grid-template-columns: 21.0938vw 780px;
         grid-template-rows: 515px;
     }
 
     .main_attraction_small {
+        width: 40.6250vw;
         display: grid;
         grid-template-columns: 250px 250px 250px;
         grid-template-rows: 250px 250px;
@@ -454,13 +459,14 @@
     }
 
     .main_attraction_big {
-        width: 390px;
+        width: 20.3125vw;
         height: 515px;
+        border-radius: 20px;
         background-image: url(img/web/호버안내.png);
     }
 
     .att_b1 {
-        width: 390px;
+        width: 20.3125vw;
         height: 515px;
         border-radius: 20px;
 
@@ -781,6 +787,7 @@
 
     .ticket_buy_choice a {
         color: #444545;
+        text-decoration: none;
     }
 
     .ticket_buy_choice {
@@ -845,6 +852,8 @@
     .att_mouse_account {
         animation-iteration-count: infinite;
         text-shadow: 0px 0px 500px #fff;
+        margin: 0 30px;
+        white-space: normal;
     }
 
     /* 메인 영상 */
@@ -875,6 +884,7 @@
         font-weight: bolder;
         z-index: 10;
         position: absolute;
+        text-align: center;
         left: 25%;
         top: 40%;
     }
