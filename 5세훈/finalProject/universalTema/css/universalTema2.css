@@ -4,13 +4,15 @@
     list-style-type: none;
     margin:0;
     box-sizing: border-box;
+    
 }
     
 body, *{
 	font-family: 'Noto Sans KR', sans-serif;
-    
+      
     
 }
+
 .fa,.fab,.fad,.fal,.far,.fas{
 	font-weight: 900 !important;
 	}
@@ -138,7 +140,7 @@ img{
     position: relative;
     background: linear-gradient(to right, #111, #0e0f19);  
     overflow: hidden;
-    z-index: 0;
+    z-index: -999;
   }
   
   /* 별을 감싼 부모 */
@@ -150,7 +152,7 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
     animation: moveStar 240s linear infinite;
-    z-index: 0;
+    z-index: 2;
     user-select: none;
     pointer-events: none;
   }
