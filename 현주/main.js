@@ -21,20 +21,42 @@ const full2TopY = $full2.offsetTop;
 
 console.log(full2TopY);
 
-
+const $body = document.querySelector("body")
 //이용권티켓 스크롤하기
 const box= document.querySelector('.box111');
 
-window.addEventListener("click", function(e){
-    console.log(e.clientX, e.clientY);
-    let XX = 0
-    let YY = -360
-    box.style.transform = 'translate(' +XX + 'px,' + YY + 'px)';
+let deltaY = 0
+
+window.addEventListener("wheel", function(e){
+  if(!deltaY){
+      wheelTimer = setTimeout(function() {
+        deltaY ++
+        $body.classList.remove("stop-scrolling")
+        console.log(deltaY);
+        return
+    }, 50);
+  }
+  // console.log(Num);
+  // console.log(e.clientX, e.clientY);
+  let XX = 0
+  let YY = -360
+  box.style.transform = 'translate(' +XX + 'px,' + YY + 'px)';
 });
+
+
+
+
+
+
+
+
+
+
+
 
 box.addEventListener('transitionend', function(e){
   box.classList.add('end');
-  console.log(e.e.apsedTime); 
+  // console.log(e); 
   // transition delay time이 찍힌다.
 })
 
@@ -53,11 +75,13 @@ box.addEventListener('transitionend', function(e){
 // }
 
 
+const $main_side_bar = document.querySelector('#main_side_bar')
+const $guide_map_icon = document.querySelector('.guide_map_icon')
 
 let scrollTimer = null;
-
+$guide_map_icon.style.display='none'
 window.addEventListener('scroll', (e) => {
-  // console.log(scrollY);
+  console.log(scrollY);
   
     if(!scrollTimer) {
       scrollTimer = setTimeout(function() {
@@ -68,6 +92,7 @@ window.addEventListener('scroll', (e) => {
           // 검정
           if (window.scrollY>full2TopY) {
             
+            $guide_map_icon.style.display='inline-block'
             item.classList.add('csh__black')
             $search_icon_gray.style.display='inline-block'
             $search_icon_white.style.display='none'
@@ -78,7 +103,7 @@ window.addEventListener('scroll', (e) => {
             $logo_gray.style.display='inline-block'
             $logo_white.style.display='none'
           } else {   // 흰색
-           
+            $guide_map_icon.style.display='none'
             item.classList.remove('csh__black')
             $search_icon_gray.style.display='none'
             $search_icon_white.style.display='inline-block'
@@ -90,8 +115,20 @@ window.addEventListener('scroll', (e) => {
             $logo_white.style.display='inline-block'
           }
         })
-
+        
       }, 500);
     }
-   
+    // -2860
+    if(window.scrollY>=2916){
+  
+        $guide_map_icon.style.position='absolute'
+        $guide_map_icon.style.bottom = '-2850px'
+        console.log('고정');
+      
+    }
+    else {
+      $guide_map_icon.style.position='fixed'
+      $guide_map_icon.style.bottom = '60px'
+      console.log('움직임');
+    }
   });

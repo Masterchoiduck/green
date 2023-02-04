@@ -676,9 +676,9 @@
         /*
         transform: translate(-50%, 37%);
         */
-        bottom: -375px;
+        bottom: -390px;
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
         background-image: url('./img/web/이용권티켓_웹\,탭.png');
 
         background-repeat: no-repeat;
@@ -898,4 +898,9 @@
 
 
 
+}
+
+.stop-scrolling {
+  /* height: 100%; */
+  overflow: hidden;
 }
