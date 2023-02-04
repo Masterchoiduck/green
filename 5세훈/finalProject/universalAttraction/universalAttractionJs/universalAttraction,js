@@ -94,6 +94,22 @@ $list3.forEach(item=>{
 })
 
 
+let toggleNum = 0;
+let express = document.querySelector('#toggle');
+express.addEventListener('click',e=>{
+    if(toggleNum){ 
+        toggleNum --;
+        console.log(toggleNum);
+    }
+    else{
+    toggleNum ++;
+    console.log(toggleNum);
+    }
+    choi();
+})
+
+
+
 
 
 
@@ -202,7 +218,12 @@ $list3.forEach(item=>{
                     condition_3 = true;
                 }
 
-                condition_4 = !item.express
+                if(0 === toggleNum){
+                    condition_4 = true;
+                }if(item.express === true){
+                condition_4 = true;
+                }
+
 
                 if(selectedAlign==='전체'){
                     console.log('전체');
@@ -308,9 +329,10 @@ $list3.forEach(item=>{
  
         // 체크 이벤트
         
-        
+    
         document.querySelector('input[id=chk2]').addEventListener('change',function (e){ 
             e.preventDefault();
+            
             let list = document.querySelectorAll('input[type=checkbox]');
             list.forEach((item, idx)=>{ 
                 if(idx !== list.length-1){
@@ -322,6 +344,7 @@ $list3.forEach(item=>{
 
         document.querySelector('input[id=chk1]').addEventListener('change',function (e){ 
             e.preventDefault();
+           
             let list = document.querySelectorAll('input[type=checkbox]');
             list.forEach((item, idx)=>{
                 if(idx !== list.length-1){                   
@@ -332,13 +355,13 @@ $list3.forEach(item=>{
         }
     )
 
+
     let checkList = document.querySelector('input[id=chk1]');
     let checkListTwo = document.querySelector('input[id=chk2]');
     let checkAll = document.getElementsByName('area');
     let attraction_areaArr = ['위저딩 월드 오브 해리포터', '슈퍼 닌텐도 월드','쥬라기 공원','미니언 파크','뉴욕','할리우드','샌프란시스코','워터 월드','원더랜드','오징어 게임'];
     
    
-
 
 
     checkAll.forEach(item1=>{
@@ -362,6 +385,7 @@ $list3.forEach(item=>{
                 // console.log('ture');
             })
             choi();
+           
             if(value<checkAll.length){
                 checkList.checked = false;
                 checkListTwo.checked = false;
@@ -375,6 +399,7 @@ $list3.forEach(item=>{
             // console.log(checkListTwo.checked);
         })
     })
+
 
 
 
@@ -428,14 +453,14 @@ $list3.forEach(item=>{
         let selectedArea = ['위저딩 월드 오브 해리포터', '슈퍼 닌텐도 월드','쥬라기 공원','미니언 파크','뉴욕','할리우드','샌프란시스코','워터 월드','원더랜드','오징어 게임']
         let selectedSpecial = '전부';
         let selectedLimit = '전체';
-        let selectedExpress = false;
+        let selectedExpress = 0;
         let selectedAlign = '전체';
 
     function choi(){
         selectedArea = attraction_areaArr;
         selectedSpecial = comment;
         selectedLimit = limitComment;
-        selectedExpress = '';
+        selectedExpress = toggleNum;
         selectedAlign = alignComment;
         console.log(selectedArea);
         $attractionContainer.innerHTML='';
@@ -452,7 +477,10 @@ $list3.forEach(item=>{
     }
     // console.log(attraction_areaArr);
         
-        
+    
+    
+
+    // 페이지 리셋(검색버튼 리셋)
     const reset_btn = document.querySelector('.attraction__reset');
     reset_btn.addEventListener('click',e=>{
         location.reload();
