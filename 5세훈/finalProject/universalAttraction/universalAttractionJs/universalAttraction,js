@@ -1,6 +1,14 @@
 'use strict'
-
-
+const $lookNum=document.querySelector('.lookNum')
+let pageFNum = 0
+let choi_lookNum = 0
+let page = 9
+const $show_moreBtn = document.querySelector('.show_moreBtn')
+$show_moreBtn.addEventListener('click',e=>{
+    page+=page
+    choi()
+    console.log(`page : ${page}`);
+})
 // 드롭창 구현
 
 const dropdownBtnList = document.querySelectorAll('.btn_select');
@@ -53,6 +61,7 @@ $list.forEach(item=>{
         comment = e.target.textContent;
         $boxTittle.textContent = comment;
         console.log(comment);
+        page = 9
         choi();
         if($btn_select_mode1.classList.contains('on'))
         { 
@@ -66,6 +75,7 @@ $list2.forEach(item=>{
     item.addEventListener('click',e =>{ 
         limitComment = e.target.textContent;
         $boxTittle2.textContent = limitComment;
+        page = 9
         choi();
         if($btn_select_mode2.classList.contains('on'))
         { 
@@ -82,6 +92,7 @@ $list3.forEach(item=>{
     item.addEventListener('click',e =>{ 
         alignComment = e.target.textContent;
         $boxTittle3.textContent = alignComment;
+        page = 9
         choi();
         if($btn_select_mode3.classList.contains('on'))
         { 
@@ -105,6 +116,7 @@ express.addEventListener('click',e=>{
     toggleNum ++;
     console.log(toggleNum);
     }
+    page = 9
     choi();
 })
 
@@ -164,9 +176,9 @@ express.addEventListener('click',e=>{
         const arr = [];
         
         
-        
         const $attraction__listHeaderNum = document.querySelector('.attraction__listHeaderNum');
         const $attraction__listSmallNum = document.querySelector('.smallNum');
+        
         // console.log(arr);
 
         function filterFn(){
@@ -180,7 +192,7 @@ express.addEventListener('click',e=>{
 
         function late(){
             let testNum = 0
-            let result = arr.filter(item=>{ 
+            let result = arr.filter((item,inx)=>{ 
         // const condition_1 = (item.area === selectedArea);
                 // const condition_1 = selectedArea.includes(item.area)
         // const condition_1 = (item.area === selectedArea)
@@ -242,12 +254,13 @@ express.addEventListener('click',e=>{
             });
             console.log('----------------');
             // console.log(result);
-            result.forEach((item)=>{
-                makeItem(item);
+            result.forEach((item,index)=>{
+                makeItem(item,index);
             })
-
+            
             $attraction__listHeaderNum.innerHTML= result.length;
             $attraction__listSmallNum.innerHTML = result.length;
+            pageFNum = result.length
         }
 
         
@@ -255,17 +268,19 @@ express.addEventListener('click',e=>{
         function makeList(items){
             $attractionContainer.innerHTML = null;
             items.forEach((item,index)=>{ 
-                test_choi(item);
+                test_choi(item,index);
+                // console.log(index);
                 $attractionContainer.innerHTML='';
             });
         }
-        function test_choi(item){
-            arr.push(item);
-            makeItem(item);
+        function test_choi(item,index){
+            arr.push(item,index);
+            makeItem(item,index);
         }
         
         function makeItem(item,index){ 
-            
+            console.log(index);
+            // choi_lookNum ++
             // test1(item);
             // console.log(item);
             
@@ -301,22 +316,38 @@ express.addEventListener('click',e=>{
 
             //리스트 생성
 
-            $div.innerHTML=`
-                <a href="#">
-                <img src="./universalAttractionImage/${item.area}_${item.id}.jpg" class="item_choi_img">
-                                
-                <div class="item_comment">
-                    <div class="item_topComment">
-                        <span class="item__areaSection">${item.area}</span>
-                        <button class="item_comment_btn_${item.attraction}">${attractionlist}</button>
+            if (index<page){
+                $div.innerHTML=`
+                    <a href="#">
+                    <img src="./universalAttractionImage/${item.area}_${item.id}.jpg" class="item_choi_img">
+                                    
+                    <div class="item_comment">
+                        <div class="item_topComment">
+                            <span class="item__areaSection">${item.area}</span>
+                            <button class="item_comment_btn_${item.attraction}">${attractionlist}</button>
+                        </div>
+                        <div>
+                            <span class="item__attractionName">${item.id}</span>
+                        </div>
                     </div>
-                    <div>
-                        <span class="item__attractionName">${item.id}</span>
-                    </div>
-                </div>
-                </a>
-            `;
-            $attractionContainer.appendChild($div);
+                    </a>
+                `;
+                $attractionContainer.appendChild($div);
+                console.log('그만');
+
+            }
+            if(page>=pageFNum){
+                console.log('되는겨?');
+                console.log(pageFNum);
+                $lookNum.innerHTML=`
+                    1 - ${pageFNum}
+                `
+            } else{
+
+                $lookNum.innerHTML=`
+                        1 - ${page}
+                    `
+            }
         }
 
         
@@ -384,6 +415,7 @@ express.addEventListener('click',e=>{
                     // console.log(test__choi);
                 // console.log('ture');
             })
+            page = 9
             choi();
            
             if(value<checkAll.length){
