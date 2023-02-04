@@ -426,15 +426,6 @@
     }
 
 
-
-
-
-
-
-
-
-
-
     /* 베스트 어트랙션 페이지 */
     .attraction_title_total {
         display: grid;
@@ -563,17 +554,9 @@
 
     }
 
-
-
     .d-none {
         display: none;
     }
-
-
-
-
-
-
 
 
     /*퍼레이드 페이지*/
@@ -600,10 +583,6 @@
         background-color: #f7f7f7;
         height: 100px;
     }
-
-
-
-
 
     /* 푸터 */
     .footer {
@@ -685,7 +664,6 @@
         cursor: pointer;
     }
 
-
     /* 이용권티켓 */
     .ticket__img {
         position: absolute;
@@ -702,7 +680,6 @@
         z-index: 10;
         transition: 5s;
     }
-
 
     /* 이용권티켓 컨텐츠 */
 
@@ -728,7 +705,6 @@
         font-size: 30px;
         color: #444545;
         font-weight: 900;
-
     }
 
     .fast_buy_content {
@@ -778,6 +754,7 @@
         line-height: 40px;
         margin-top: 10px;
         margin-left: 315px;
+        cursor: pointer;
     }
 
     #ticket_now_time {
@@ -795,20 +772,20 @@
         margin-top: 18PX;
     }
 
-
-
-
     /* 빠른구매 클릭했을때 */
 
     .choice_none {
         display: none;
+        cursor: pointer;
     }
-    
-    .ticket_buy_choice_age a{
+
+    .ticket_buy_choice a {
         color: #444545;
     }
 
-
+    .ticket_buy_choice {
+        cursor: pointer;
+    }
 
 
     /* 성환초이 건듦 */
@@ -822,7 +799,6 @@
         top: 0;
         z-index: -999;
     }
-
 
     /* 애니메이션 - 펄스 */
     @-webkit-keyframes pulse {
@@ -870,30 +846,6 @@
         animation-iteration-count: infinite;
         text-shadow: 0px 0px 500px #fff;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* 애니메이션 */
-
-
-
-
-
-
-
-
-
 
     /* 메인 영상 */
     .full_video {
