@@ -1,14 +1,24 @@
 'use strict'
-const $lookNum=document.querySelector('.lookNum')
-let pageFNum = 0
-let choi_lookNum = 0
-let page = 9
+
+
+const $lookNum = document.querySelector('.lookNum')
+let pageFNum = 9;
+let page = 9;
 const $show_moreBtn = document.querySelector('.show_moreBtn')
 $show_moreBtn.addEventListener('click',e=>{
-    page+=page
-    choi()
+    page += 9;
+    choi();
     console.log(`page : ${page}`);
-})
+    console.log(pageFNum);
+    if(page > pageFNum){ 
+        $show_moreBtn.style.display = 'none';
+    }
+    else{ 
+        $show_moreBtn.style.display = 'inline-block';
+    }
+});
+
+
 // 드롭창 구현
 
 const dropdownBtnList = document.querySelectorAll('.btn_select');
@@ -61,7 +71,7 @@ $list.forEach(item=>{
         comment = e.target.textContent;
         $boxTittle.textContent = comment;
         console.log(comment);
-        page = 9
+        page = 9;
         choi();
         if($btn_select_mode1.classList.contains('on'))
         { 
@@ -75,7 +85,7 @@ $list2.forEach(item=>{
     item.addEventListener('click',e =>{ 
         limitComment = e.target.textContent;
         $boxTittle2.textContent = limitComment;
-        page = 9
+        page = 9;
         choi();
         if($btn_select_mode2.classList.contains('on'))
         { 
@@ -92,7 +102,7 @@ $list3.forEach(item=>{
     item.addEventListener('click',e =>{ 
         alignComment = e.target.textContent;
         $boxTittle3.textContent = alignComment;
-        page = 9
+        page = 9;
         choi();
         if($btn_select_mode3.classList.contains('on'))
         { 
@@ -116,7 +126,7 @@ express.addEventListener('click',e=>{
     toggleNum ++;
     console.log(toggleNum);
     }
-    page = 9
+    page = 9;
     choi();
 })
 
@@ -191,7 +201,7 @@ express.addEventListener('click',e=>{
     //    0.1초지난 후 함수
 
         function late(){
-            let testNum = 0
+            let testNum = 0;
             let result = arr.filter((item,inx)=>{ 
         // const condition_1 = (item.area === selectedArea);
                 // const condition_1 = selectedArea.includes(item.area)
@@ -245,7 +255,7 @@ express.addEventListener('click',e=>{
                 if(selectedAlign===item.align){
                     condition_5 = true;
                 }
-                testNum ++
+                testNum ++;
                 console.log(`${item.id}`);
                 console.log(`(${item.area}) : ${condition_1} // ${selectedArea}`);
                 console.log(`(${item.special}) : ${condition_2} // ${selectedSpecial}`);
@@ -260,7 +270,7 @@ express.addEventListener('click',e=>{
             
             $attraction__listHeaderNum.innerHTML= result.length;
             $attraction__listSmallNum.innerHTML = result.length;
-            pageFNum = result.length
+            pageFNum = result.length;
         }
 
         
@@ -336,17 +346,16 @@ express.addEventListener('click',e=>{
                 console.log('그만');
 
             }
-            if(page>=pageFNum){
+            if(page >= pageFNum){
                 console.log('되는겨?');
                 console.log(pageFNum);
                 $lookNum.innerHTML=`
                     1 - ${pageFNum}
-                `
+                `;
             } else{
-
                 $lookNum.innerHTML=`
                         1 - ${page}
-                    `
+                    `;
             }
         }
 
@@ -415,9 +424,8 @@ express.addEventListener('click',e=>{
                     // console.log(test__choi);
                 // console.log('ture');
             })
-            page = 9
+            page = 9;
             choi();
-           
             if(value<checkAll.length){
                 checkList.checked = false;
                 checkListTwo.checked = false;

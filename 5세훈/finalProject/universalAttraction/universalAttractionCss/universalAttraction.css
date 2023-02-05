@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
 
-*{ 
+
+  *{ 
     font-family: 'Noto Sans KR';
     box-sizing: border-box;
     margin:0;
@@ -13,8 +14,6 @@ a{
 body{ 
     width:100%;
 }
-
-
 .universalAttraction__header{ 
     background-color: #286BE1;
     width:100%;
