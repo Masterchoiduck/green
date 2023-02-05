@@ -359,7 +359,9 @@
         .aboutbox{ 
             display: none;
         }
-        .ride_name2{ 
+        .ride_name2{
+            display:inline-block;
+            margin-top: 10px;
             font-size: 25px;
             font-weight: 800;
             margin-left: 40px;
