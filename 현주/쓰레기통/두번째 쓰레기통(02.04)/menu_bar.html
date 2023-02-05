@@ -8,13 +8,13 @@
     <style>
 
 
-body
+.main_header_tab_app
 {
   margin: 0;
   padding: 0;
   
   /*충분히 점잖게 보이도록 */
-  background: #232323;
+  background-color: #286BE1;
   color: #cdcdcd;
 }
 
@@ -23,10 +23,8 @@ body
   display: block;
   position: relative;
   top: 50px;
-  left: 90%;
-  
+  left: 90%; 
   z-index: 1;
-  
   -webkit-user-select: none;
   user-select: none;
 }
@@ -43,8 +41,6 @@ body
 {
   color: #286BE1;
 }
-
-
 #menuToggle input
 {
   display: block;
@@ -155,7 +151,6 @@ body
   margin-top: 50px;
   text-align: center;
 }
-
 /*
  * 그리고 왼쪽에서 그것을 밀어 넣자
 
@@ -166,45 +161,41 @@ body
 }
     </style>
 </head>
+
 <body>
+  <div class="main_header_tab_app">
+
+    <nav role="c">
+        <div id="menuToggle">
+          <!--
+    가짜/숨김 확인란이 클릭 수신기로 사용됩니다,
+    이 경우 :checked 선택기를 사용할 수 있습니다.
+          -->
+          <input type="checkbox" />
+          <!--
+    어떤 것들은 햄버거 역할을 한다.
     
-<!--    Made by Erik Terwan    -->
-<!--   24th of November 2015   -->
-<!--        MIT License        -->
-<nav role="c">
-    <div id="menuToggle">
-      <!--
-가짜/숨김 확인란이 클릭 수신기로 사용됩니다,
-이 경우 :checked 선택기를 사용할 수 있습니다.
-      -->
-      <input type="checkbox" />
-      
-      <!--
-어떤 것들은 햄버거 역할을 한다.
-
-그들은 진짜 햄버거처럼 행동하고 있다,
-맥도날드 같은 거 말고요.
-      -->
-      <span></span>
-      <span></span>
-      <span></span>
-      
-      <!--
-메뉴가 버튼 안에 있어야 한다니 안타깝다
-하지만 이봐, 그건 순수한 CSS 마법이야.
-      -->
-      <ul id="menu">
-        <a href="#"><li>요금혜택</li></a>
-        <a href="#"><li>즐길거리</li></a>
-        <a href="#"><li>추천코스</li></a>
-        <a href="#"><li>소통서비스</li></a>
-        <a href="#"><li>이용가이드</li></a>
-      </ul>
-    </div>
-  </nav>
-
-
-
+    그들은 진짜 햄버거처럼 행동하고 있다,
+    맥도날드 같은 거 말고요.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+    메뉴가 버튼 안에 있어야 한다니 안타깝다
+    하지만 이봐, 그건 순수한 CSS 마법이야.
+          -->
+          <ul id="menu">
+            <a href="#"><li>요금혜택</li></a>
+            <a href="#"><li>즐길거리</li></a>
+            <a href="#"><li>추천코스</li></a>
+            <a href="#"><li>소통서비스</li></a>
+            <a href="#"><li>이용가이드</li></a>
+          </ul>
+        </div>
+      </nav>
+  </div>
 
 </body>
 </html>

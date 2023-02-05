@@ -1,4 +1,3 @@
-
       const interval = setInterval(function() {
       var now = new Date();   //현재시간
       var year = now.getFullYear();   //현재 연도

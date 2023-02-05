@@ -16,6 +16,7 @@ const $logo_white=document.querySelector('.logo_white')
 const $logo_gray=document.querySelector('.logo_gray')
 const $ticket__img=document.querySelector('.ticket__img')
 
+
 const $full2 = document.querySelector('.full2');
 const full2TopY = $full2.offsetTop;
 
@@ -91,7 +92,6 @@ window.addEventListener('scroll', (e) => {
 
           // 검정
           if (window.scrollY>full2TopY) {
-            
             $guide_map_icon.style.display='inline-block'
             item.classList.add('csh__black')
             $search_icon_gray.style.display='inline-block'

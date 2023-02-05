@@ -1,82 +1,6 @@
-@font-face {
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 100;
-    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
-}
 
-@font-face {
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 300;
-    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
-}
 
-@font-face {
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 400;
-    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 500;
-    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 700;
-    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 900;
-    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
-}
-
-@font-face {
-    font-family: "Apple SD Gothic Neo";
-    src: url("../fonts/AppleSDGothicNeoR.woff2") format("woff2"), url("../fonts/AppleSDGothicNeoR.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Apple SD Gothic Neo";
-    src: url("../fonts/AppleSDGothicNeoM.woff2") format("woff2"), url("../fonts/AppleSDGothicNeoM.woff") format("woff");
-    font-weight: 500;
-    font-style: medium;
-}
-
-@font-face {
-    font-family: "Apple SD Gothic Neo";
-    src: url("../fonts/AppleSDGothicNeoSB.woff2") format("woff2"), url("../fonts/AppleSDGothicNeoSB.woff") format("woff");
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "Apple SD Gothic Neo";
-    src: url("../fonts/AppleSDGothicNeoB.woff2") format("woff2"), url("../fonts/AppleSDGothicNeoB.woff") format("woff");
-    font-weight: 700;
-    font-style: bold;
-    unicode-range: U+0041-005A, U+0061-007A;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans KR';
-}
-
-@media (min-width:1025px) {
-
+@media (min-width:769px) and (max-width:1024px){
     html,
     body {
         width: 100%;
@@ -90,17 +14,14 @@
     }
 
     .top_menu {
-        color: white;
+        width: 100vw;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
     }
 
-    .menu_bar {
-        font-size: 20px;
-        font-weight: bold;
-    }
+
 
     .right_menu {
         color: white;
@@ -111,8 +32,7 @@
     }
 
     .menu_icon {
-        margin: 0 0.9375vw;
-        cursor: pointer;
+        display: none;
     }
 
     header {
@@ -124,123 +44,55 @@
     }
 
 
+/* 메뉴탭 클릭했을때 메뉴탭 나오게하기 */
+.x_icon{ 
+    display: none;
+ }
+#check-btn {
+    display: none;
+}
+#check-btn:checked ~ .menubars{
+    display: block;
+}
+#check-btn:checked ~ .x_icon{
+    display: flex;
+    z-index: 100;
+}
+.menubars {
+    display: none;
+    
+    width:100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.menubars li{
+    
+    font-size: 50px;
+    font-weight: bold;
+    margin: 25px 0;
+    height: 10px;
+
+    color: #2f2f2f;
+}
 
 
-    /* 풀메뉴 드롭다운 */
-    li {
-        list-style: none;
-    }
-    a {
-        text-decoration: none;
-    }
-    .top_menu {
-        width: 100vw;
-        overflow: hidden;
-    }
-
-    .top_menu a {
-        color: #fff;
-    }
-
-    .menu_bar_submenu {
-        height: 0;
-        margin-top: 40px;
-    }
-
-    .menu_bar_submenu li {
-        line-height: 20px;
-        font-size: 18px;
-    }
-
-    .menu_bar_submenu li a {
-        color: #2f2f2f;
-    }
-
-    .top_menu:hover {
-        background-color: rgba(255, 255, 255, 0.6);
-        backdrop-filter: blur(20px);
-        transition-duration: 0.5s;
-        height: 385px;
-        box-shadow: #286ce13d 0px 1px 30px 1px;
-    }
-
-    /*유니버셜 로고 흰색에서 회색으로 변경*/
-    .logo_gray {
-        display: none;
-        cursor: pointer;
-    }
-
-    .top_menu:hover .logo_white {
-        display: none !important;
-    }
-
-    .top_menu:hover .logo_gray {
-        display: inline-block !important;
-    }
-
-    /*상단 오른쪽 아이콘 흰색에서 회색으로 변경*/
-    .search_icon_gray {
-        display: none;
-    }
-
-    .ticket_icon_gray {
-        display: none;
-    }
-
-    .user_icon_gray {
-        display: none;
-    }
-
-    .top_menu:hover .search_icon_white,
-    .top_menu:hover .ticket_icon_white,
-    .top_menu:hover .user_icon_white {
-        display: none !important;
-    }
-
-    .top_menu:hover .search_icon_gray,
-    .top_menu:hover .ticket_icon_gray,
-    .top_menu:hover .user_icon_gray {
-        display: inline-block !important;
-    }
-
-
-    .top_menu:hover .menu_bar_submenu {
-        height: 250px;
-        transition-duration: 0.5s;
-    }
-
-    .top_menu:hover .main_menu_container>li>a {
-        color: #2f2f2f;
-        font-weight: 800;
-    }
-
-    .top_menu:hover .menu_icon {
-        color: #2f2f2f;
-    }
-
-    .main_menu_container {
-        width: 902px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        height: 90px;
-    }
-
+    
     .main_menu_container li {
-        margin-top: 30px;
+        display: none;
     }
 
-    .menu_bar_submenu>li>a:hover {
-        color: #286BE1;
-        transition-duration: 0.3s;
-    }
+ 
 
     .right_menu {
         height: 90px;
     }
 
+
     .three_bar{
-        display: none;
+        display: flex;
+        font-size: 35px;
     }
 
 
@@ -248,9 +100,9 @@
     /* 사이드바 */
     .guide_map_icon {
         position: fixed;
-        bottom: 60px;
+        bottom: 0;
         right: 0;
-        z-index: 999;
+        z-index: 9;
         cursor: pointer;
     }
 
@@ -286,14 +138,14 @@
     .full4 {
         background-color: #f7f7f7;
         display: grid;
-        grid-template-rows: 290px 1fr;
+        grid-template-rows: 260px 1fr;
         justify-content: center;
     }
 
     .full3 {
         background-color: #EEF5FB;
         display: grid;
-        grid-template-rows: 290px 1fr;
+        grid-template-rows: 260px 1fr;
         justify-content: center;
     }
 
@@ -335,25 +187,26 @@
     /* 할인혜택 페이지 */
     .benefit_title_total {
         display: grid;
-        grid-template-columns: 19.1146vw 52.0833vw 104px 23.3854vw;
+        grid-template-columns: 14.9414vw 45.9961vw 24.4141vw 14.6484vw;
     }
-
+/* 153 471 250 150 */
 
     .benefit2 {
         text-align: end;
         position: relative;
-        top: 265px;
+        top: 235px;
     }
-
     .benefit_content_total {
-        width: 1040px;
+        width: 770px;
         height: 520px;
 
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
-
+    .benefit_content_total div:nth-child(n+7){
+        display: none;
+    }
     .benefit3 {
         width: 250px;
         height: 250px;
@@ -363,6 +216,7 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        border: none;
     }
 
     .benefit_text {
@@ -430,40 +284,42 @@
     /* 베스트 어트랙션 페이지 */
     .attraction_title_total {
         display: grid;
-        grid-template-columns: 19.1146vw 52.0833vw 180px 19.4271vw;
+        grid-template-columns: 14.9414vw 55.7617vw 22.4609vw 6.8359vw;
     }
-
-
+/*250 50*/
     .attraction2 {
         text-align: end;
         position: relative;
-        top: 265px;
+        top: 235px;
     }
 
     .attraction_content_total {
         display: grid;
-        grid-template-columns: 21.0938vw 780px;
+        grid-template-columns: 36.1328vw 500px;
         grid-template-rows: 515px;
     }
 
     .main_attraction_small {
-        width: 40.6250vw;
+        width: 50.7813vw;
         display: grid;
-        grid-template-columns: 250px 250px 250px;
+        grid-template-columns: 250px 250px;
         grid-template-rows: 250px 250px;
         align-content: space-between;
         justify-content: space-between;
     }
-
+    .main_attraction_small div:nth-child(3n){
+        display: none;
+    }
     .main_attraction_big {
-        width: 20.3125vw;
+        width: 34.1797vw;
         height: 515px;
         border-radius: 20px;
         background-image: url(img/web/호버안내.png);
     }
 
     .att_b1 {
-        width: 20.3125vw;
+        width: 34.1797vw;
+        min-width: 100px;
         height: 515px;
         border-radius: 20px;
 
@@ -479,17 +335,18 @@
     }
 
     .att_s1 {
-        width: 250px;
+        width: 24.4141vw;
+        min-width: 225px;
         height: 250px;
         background-image: url(img/web/어트_해리포터\ 앤드\ 더\ 포비든\ 저니.png);
-
         background-size: cover;
         border-radius: 20px;
         transition: 0.5s;
     }
 
     .att_s2 {
-        width: 250px;
+        width: 24.4141vw;
+        min-width: 225px;
         height: 250px;
         background-image: url(img/web/어트_쥬라기월드\ 더\ 라이드.png);
         background-size: cover;
@@ -498,7 +355,8 @@
     }
 
     .att_s3 {
-        width: 250px;
+        width: 24.4141vw;
+        min-width: 225px;
         height: 250px;
         background-image: url(img/web/어트_\ 미니언\ 메이헴.png);
         background-size: cover;
@@ -507,7 +365,8 @@
     }
 
     .att_s4 {
-        width: 250px;
+        width: 24.4141vw;
+        min-width: 225px;
         height: 250px;
         background-image: url(img/web/어트_프리즈\ 레이\ 슬라이더.png);
         background-size: cover;
@@ -516,7 +375,8 @@
     }
 
     .att_s5 {
-        width: 250px;
+        width: 24.4141vw;
+        min-width: 225px;
         height: 250px;
         background-image: url(img/web/어트_마리오\ 카트\ 쿠파의\ 도전장.png);
         background-size: cover;
@@ -525,7 +385,8 @@
     }
 
     .att_s6 {
-        width: 250px;
+        width: 24.4141vw;
+        min-width: 225px;
         height: 250px;
         background-image: url(img/web/어트_쥬라기월드\ 더\ 라이드.png);
         background-size: cover;
@@ -544,7 +405,7 @@
         margin-top: 50px;
         line-height: 40px;
         height: 80px;
-    
+
     }
 
     .att_content {
@@ -566,70 +427,28 @@
 
     .parade_title_total {
         display: grid;
-        grid-template-columns: 19.1146vw 52.0833vw 180px 19.4271vw;
+        grid-template-columns: 14.9414vw 45.9961vw 24.4141vw 14.6484vw;
     }
 
     .parade2 {
         text-align: end;
         position: relative;
-        top: 265px;
+        top: 235px;
     }
+
 
     .parade_content_total {
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 26.0417vw 50px 1fr;
+        grid-template-rows: 46.8750vw 300px 1fr;
         height: 650px;
-        align-items: end;
+        align-items: start;
     }
 
-/* 퍼레이드 호버했을떄 */
-.main_parade_item{
-    position: relative;
-}
-.parade_text_box{
-    width: 20.8333vw;
-    height: 8.8542vw;
-    text-align: center;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    z-index: 100;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 5.7292vw 0;
-    
-}
-      
-.parade_text_title{
-    font-size: 1.5625vw;
-    font-weight: bolder;
-    color: #424242;
-}
-.parade_text_content{
-    font-size: 13px;
-    font-weight: 400;
-    color: #424242;
-}
-.parade_text_time{
-    font-size: 18px;
-    font-weight: 600;
-    color: #424242;
-    width: 75px;
-    height: 35px;
-    border: 2px solid #424242;
-    border-radius: 50px;
-    line-height: 30px;
-    margin-top: 25px;
-}
-
-.d-none div{
-    display: none;
-}
-
-
+    .blank2 {
+        background-color: #f7f7f7;
+        height: 100px;
+    }
 
     /* 푸터 */
     .footer {
@@ -640,16 +459,16 @@
     }
 
     .footer_section_total {
-        width: 946px;
+        width: 87.8906vw;
         height: 160px;
-
+        
         margin: 0px auto;
 
         position: relative;
         top: 40px;
         display: grid;
-        grid-template-columns: 650px 162px;
-        justify-content: space-between;
+        grid-template-columns: 63.4766vw 15.8203vw;
+        justify-content: center;
     }
 
     .footer_content_top {
@@ -697,8 +516,8 @@
 
     .footer_use_content span,
     .footer_copyright {
-        font-size: 15px;
-        margin-right: 29px;
+        font-size: 13px;
+        margin-right: 1.50vw;
     }
 
     .footer_use_import {
@@ -711,21 +530,24 @@
         cursor: pointer;
     }
 
+
+
     /* 이용권티켓 */
     .ticket__img {
         position: absolute;
         /*
         transform: translate(-50%, 37%);
         */
-        bottom: -380px;
+        bottom: -375px;
         width: 100%;
-        /* height: 100%; */
+        height: 100%;
         background-image: url('./img/web/이용권티켓_웹\,탭.png');
 
         background-repeat: no-repeat;
         background-position: bottom center;
         z-index: 10;
         transition: 5s;
+        display: none;
     }
 
     /* 이용권티켓 컨텐츠 */
@@ -734,7 +556,7 @@
         display: grid;
         grid-template-columns: 445px 215px;
         justify-content: center;
-        align-items: end;
+
         z-index: 99;
         margin-top: 600px;
 
@@ -816,7 +638,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin-top: 18px;
+        margin-top: 55px;
     }
 
     /* 빠른구매 클릭했을때 */
@@ -840,6 +662,7 @@
     .csh__black {
         color: #2f2f2f !important;
     }
+
     .earth_video {
         min-width: 100%;
         position: fixed;
@@ -853,10 +676,12 @@
             -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
         }
+
         50% {
             -webkit-transform: scale3d(1.05, 1.05, 1.05);
             transform: scale3d(1.05, 1.05, 1.05);
         }
+
         to {
             -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
@@ -890,8 +715,7 @@
     .att_mouse_account {
         animation-iteration-count: infinite;
         text-shadow: 0px 0px 500px #fff;
-        margin: 0 30px;
-        white-space: normal;
+        margin: 0 40px;
     }
 
     /* 메인 영상 */
@@ -921,9 +745,12 @@
         color: #fff;
         font-weight: bolder;
         z-index: 10;
-        position: relative;
+        position: absolute;
+        left: 5%;
+        top: 34%;
         text-align: center;
-        top: 40%;
+        word-wrap: break-word;
+        line-height: 120px;
     }
 
     .blue_effect {
@@ -935,9 +762,137 @@
 
 
 
-}
 
-.stop-scrolling {
-  /* height: 100%; */
-  overflow: hidden;
+
+
+    /* 클릭메뉴바 */
+
+    
+    #menuToggle
+    {
+      display: block;
+      position: relative;
+      top: 0px;
+
+      z-index: 1;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    
+    #menuToggle a
+    {
+      text-decoration: none;
+      color: #2f2f2f;
+      
+      transition: color 0.3s ease;
+    }
+    
+    #menuToggle a:hover
+    {
+      color: #286BE1;
+    }
+    #menuToggle input
+    {
+      display: block;
+      width: 400px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+
+      cursor: pointer;
+      
+      opacity: 0; 
+      z-index: 2; 
+      
+      -webkit-touch-callout: none;
+    }
+
+    #menuToggle span
+    {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      
+      background: #fff;
+      border-radius: 3px;
+      
+      z-index: 1;
+      
+      transform-origin: 4px 0px;
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child
+    {
+      transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
+      transform-origin: 0% 100%;
+    }
+    
+
+    #menuToggle input:checked ~ span
+    {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #2f2f2f;
+    }
+    
+
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+
+    #menu
+    {
+      position: absolute;
+      width: 100vw;
+      height: 950px;
+      margin: -100px 0 0 -91vw;
+      padding: 50px;
+      padding-top: 160px;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(30px);
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+
+      transform-origin: 0% 0%;
+      transform: translate(100%, 0);
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #menu li
+    {
+      padding: 10px 0;
+      font-size: 50px;
+      font-weight: bolder;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    #menuToggle input:checked ~ ul
+    {
+      transform: none;
+    }
+
+
+
 }
