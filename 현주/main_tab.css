@@ -138,14 +138,14 @@
     .full4 {
         background-color: #f7f7f7;
         display: grid;
-        grid-template-rows: 290px 1fr;
+        grid-template-rows: 260px 1fr;
         justify-content: center;
     }
 
     .full3 {
         background-color: #EEF5FB;
         display: grid;
-        grid-template-rows: 290px 1fr;
+        grid-template-rows: 260px 1fr;
         justify-content: center;
     }
 
@@ -194,7 +194,7 @@
     .benefit2 {
         text-align: end;
         position: relative;
-        top: 265px;
+        top: 235px;
     }
 
     .benefit_content_total {
@@ -290,7 +290,7 @@
     .attraction2 {
         text-align: end;
         position: relative;
-        top: 265px;
+        top: 235px;
     }
 
     .attraction_content_total {
@@ -433,14 +433,16 @@
     .parade2 {
         text-align: end;
         position: relative;
-        top: 265px;
+        top: 235px;
     }
+
 
     .parade_content_total {
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 26.0417vw 2.6042vw 1fr;
+        grid-template-rows: 46.8750vw 300px 1fr;
         height: 650px;
+        align-items: start;
     }
 
     .blank2 {
@@ -457,16 +459,16 @@
     }
 
     .footer_section_total {
-        width: 750px;
+        width: 87.8906vw;
         height: 160px;
-
+        
         margin: 0px auto;
 
         position: relative;
         top: 40px;
         display: grid;
-        grid-template-columns: 650px 162px;
-        justify-content: space-between;
+        grid-template-columns: 63.4766vw 15.8203vw;
+        justify-content: center;
     }
 
     .footer_content_top {
@@ -514,8 +516,8 @@
 
     .footer_use_content span,
     .footer_copyright {
-        font-size: 15px;
-        margin-right: 29px;
+        font-size: 12px;
+        margin-right: 1.9531vw;
     }
 
     .footer_use_import {
@@ -527,6 +529,8 @@
     .footer_content_right {
         cursor: pointer;
     }
+
+
 
     /* 이용권티켓 */
     .ticket__img {
@@ -543,6 +547,7 @@
         background-position: bottom center;
         z-index: 10;
         transition: 5s;
+        display: none;
     }
 
     /* 이용권티켓 컨텐츠 */

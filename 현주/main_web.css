@@ -581,8 +581,10 @@
     .parade_content_total {
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 26.0417vw 2.6042vw 1fr;
+        grid-template-rows: 26.0417vw 50px 1fr;
         height: 650px;
+        align-items: end;
+        
     }
 
     .blank2 {
