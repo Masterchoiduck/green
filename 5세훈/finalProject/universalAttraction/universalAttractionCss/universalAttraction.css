@@ -8,12 +8,16 @@
     list-style-type: none;
     border: 0;
 }
+.item__box{ 
+  cursor: pointer;
+}
 a{ 
   text-decoration: none;
 }
 body{ 
     width:100%;
 }
+
 .universalAttraction__header{ 
     background-color: #286BE1;
     width:100%;

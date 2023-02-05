@@ -190,10 +190,25 @@ express.addEventListener('click',e=>{
         const $attraction__listSmallNum = document.querySelector('.smallNum');
         
         // console.log(arr);
+        
+        const modal = document.querySelector(".modal");
+        const overlay = modal.querySelector(".md_overlay");
+        const closeButton = modal.querySelector("button");
+
+        const modalItembox = document.querySelectorAll('.item__box');
+    
+        modalItembox.forEach(item=>{ 
+            item.addEventListener('click',e=>{ 
+                modal.classList.remove("hidden");
+                console.log('1');
+            })
+        
+        })
 
         function filterFn(){
             setTimeout(function(){ 
-                late()
+                late();
+                
             },100) 
         }
         filterFn();
@@ -328,9 +343,7 @@ express.addEventListener('click',e=>{
 
             if (index<page){
                 $div.innerHTML=`
-                    <a href="#">
-                    <img src="./universalAttractionImage/${item.area}_${item.id}.jpg" class="item_choi_img">
-                                    
+                    <img src="./universalAttractionImage/${item.area}_${item.id}.jpg" class="item_choi_img">               
                     <div class="item_comment">
                         <div class="item_topComment">
                             <span class="item__areaSection">${item.area}</span>
@@ -340,7 +353,6 @@ express.addEventListener('click',e=>{
                             <span class="item__attractionName">${item.id}</span>
                         </div>
                     </div>
-                    </a>
                 `;
                 $attractionContainer.appendChild($div);
                 console.log('그만');
@@ -525,6 +537,8 @@ express.addEventListener('click',e=>{
     reset_btn.addEventListener('click',e=>{
         location.reload();
     })
+
+  
 
 
 
