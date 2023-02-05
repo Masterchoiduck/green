@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+body
+{
+  margin: 0;
+  padding: 0;
+  
+  /*충분히 점잖게 보이도록 */
+  background: #232323;
+  color: #cdcdcd;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 90%;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #2f2f2f;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #286BE1;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 400px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /*  이 항목 숨기기 */ 
+  z-index: 2; /* 그리고 햄버거 위에 올려라 */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+* 모든 햄버거 조각을 변형하세요
+* 십자 표시로.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * 하지만 가운데 것은 숨겨둡시다.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * 오 그래 그리고 마지막은 다른 방향으로 가야해
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+* 절대 위치 설정
+* 화면 왼쪽 상단에
+ */
+#menu
+{
+  position: absolute;
+  width: 100vw;
+  height: 900px;
+  margin: -100px 0 0 -100vw;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* 사파리에서 텍스트 깜박임을 멈추다 */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/*
+ * 그리고 왼쪽에서 그것을 밀어 넣자
+
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+    </style>
+</head>
+<body>
+    
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="c">
+    <div id="menuToggle">
+      <!--
+가짜/숨김 확인란이 클릭 수신기로 사용됩니다,
+이 경우 :checked 선택기를 사용할 수 있습니다.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+어떤 것들은 햄버거 역할을 한다.
+
+그들은 진짜 햄버거처럼 행동하고 있다,
+맥도날드 같은 거 말고요.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+메뉴가 버튼 안에 있어야 한다니 안타깝다
+하지만 이봐, 그건 순수한 CSS 마법이야.
+      -->
+      <ul id="menu">
+        <a href="#"><li>요금혜택</li></a>
+        <a href="#"><li>즐길거리</li></a>
+        <a href="#"><li>추천코스</li></a>
+        <a href="#"><li>소통서비스</li></a>
+        <a href="#"><li>이용가이드</li></a>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+</body>
+</html>
