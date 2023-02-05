@@ -18,13 +18,17 @@
       if((minutes+"").length < 2){
           minutes="0"+minutes;
       }
-      var seconds=now.getSeconds(); //현재 분
+      var seconds=now.getSeconds(); //현재 초
       if((seconds+"").length < 2){
           seconds="0"+seconds;
       }
+      const week = ['일', '월', '화', '수', '목', '금', '토']
+      var day = week[now.getDay()]; //현재 요일
+      
+
       //오늘 날짜 완성.
       document.getElementById("parade_now_date").innerHTML = year + '.' + month + '.' + date + ' ' + hour + ':' + minutes + ':' + seconds;
-      document.getElementById("ticket_now_time").innerHTML = year + '-' + month + '-' + date;
+      document.getElementById("ticket_now_time").innerHTML = year + '-' + month + '-' + date + '(' + day + ')';
   }, 100);
 
 

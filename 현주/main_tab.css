@@ -100,7 +100,7 @@
     /* 사이드바 */
     .guide_map_icon {
         position: fixed;
-        bottom: 60px;
+        bottom: 0;
         right: 0;
         z-index: 9;
         cursor: pointer;
@@ -187,9 +187,9 @@
     /* 할인혜택 페이지 */
     .benefit_title_total {
         display: grid;
-        grid-template-columns: 14.7461vw 48.8281vw 24.0234vw 12.4023vw;
+        grid-template-columns: 14.9414vw 45.9961vw 24.4141vw 14.6484vw;
     }
-
+/* 153 471 250 150 */
 
     .benefit2 {
         text-align: end;
@@ -284,10 +284,9 @@
     /* 베스트 어트랙션 페이지 */
     .attraction_title_total {
         display: grid;
-        grid-template-columns: 19.1146vw 52.0833vw 180px 19.4271vw;
+        grid-template-columns: 14.9414vw 55.7617vw 22.4609vw 6.8359vw;
     }
-
-
+/*250 50*/
     .attraction2 {
         text-align: end;
         position: relative;
@@ -296,7 +295,7 @@
 
     .attraction_content_total {
         display: grid;
-        grid-template-columns: 39.5508vw 500px;
+        grid-template-columns: 36.1328vw 500px;
         grid-template-rows: 515px;
     }
 
@@ -312,14 +311,15 @@
         display: none;
     }
     .main_attraction_big {
-        width: 38.0859vw;
+        width: 34.1797vw;
         height: 515px;
         border-radius: 20px;
         background-image: url(img/web/호버안내.png);
     }
 
     .att_b1 {
-        width: 38.0859vw;
+        width: 34.1797vw;
+        min-width: 100px;
         height: 515px;
         border-radius: 20px;
 
@@ -335,7 +335,8 @@
     }
 
     .att_s1 {
-        width: 250px;
+        width: 24.4141vw;
+        min-width: 225px;
         height: 250px;
         background-image: url(img/web/어트_해리포터\ 앤드\ 더\ 포비든\ 저니.png);
         background-size: cover;
@@ -344,7 +345,8 @@
     }
 
     .att_s2 {
-        width: 250px;
+        width: 24.4141vw;
+        min-width: 225px;
         height: 250px;
         background-image: url(img/web/어트_쥬라기월드\ 더\ 라이드.png);
         background-size: cover;
@@ -353,7 +355,8 @@
     }
 
     .att_s3 {
-        width: 250px;
+        width: 24.4141vw;
+        min-width: 225px;
         height: 250px;
         background-image: url(img/web/어트_\ 미니언\ 메이헴.png);
         background-size: cover;
@@ -362,7 +365,8 @@
     }
 
     .att_s4 {
-        width: 250px;
+        width: 24.4141vw;
+        min-width: 225px;
         height: 250px;
         background-image: url(img/web/어트_프리즈\ 레이\ 슬라이더.png);
         background-size: cover;
@@ -371,7 +375,8 @@
     }
 
     .att_s5 {
-        width: 250px;
+        width: 24.4141vw;
+        min-width: 225px;
         height: 250px;
         background-image: url(img/web/어트_마리오\ 카트\ 쿠파의\ 도전장.png);
         background-size: cover;
@@ -380,7 +385,8 @@
     }
 
     .att_s6 {
-        width: 250px;
+        width: 24.4141vw;
+        min-width: 225px;
         height: 250px;
         background-image: url(img/web/어트_쥬라기월드\ 더\ 라이드.png);
         background-size: cover;
@@ -421,7 +427,7 @@
 
     .parade_title_total {
         display: grid;
-        grid-template-columns: 19.1146vw 52.0833vw 180px 19.4271vw;
+        grid-template-columns: 14.9414vw 45.9961vw 24.4141vw 14.6484vw;
     }
 
     .parade2 {
@@ -620,14 +626,14 @@
         color: #444545;
         font-size: 22px;
         font-weight: 600;
-
+        text-align: center;
         position: relative;
-        width: 300px;
-        height: 300px;
+        width: 320px;
+        height: 250px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin-top: 18PX;
+        margin-top: 55px;
     }
 
     /* 빠른구매 클릭했을때 */

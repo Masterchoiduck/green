@@ -676,7 +676,7 @@
         /*
         transform: translate(-50%, 37%);
         */
-        bottom: -390px;
+        bottom: -380px;
         width: 100%;
         /* height: 100%; */
         background-image: url('./img/web/이용권티켓_웹\,탭.png');
@@ -693,7 +693,7 @@
         display: grid;
         grid-template-columns: 445px 215px;
         justify-content: center;
-
+        align-items: end;
         z-index: 99;
         margin-top: 600px;
 
@@ -768,14 +768,14 @@
         color: #444545;
         font-size: 22px;
         font-weight: 600;
-
+        text-align: center;
         position: relative;
-        width: 300px;
-        height: 300px;
+        width: 320px;
+        height: 250px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin-top: 18PX;
+        margin-top: 18px;
     }
 
     /* 빠른구매 클릭했을때 */
@@ -883,9 +883,8 @@
         color: #fff;
         font-weight: bolder;
         z-index: 10;
-        position: absolute;
+        position: relative;
         text-align: center;
-        left: 25%;
         top: 40%;
     }
 

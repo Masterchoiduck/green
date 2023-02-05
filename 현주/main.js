@@ -122,7 +122,7 @@ window.addEventListener('scroll', (e) => {
     if(window.scrollY>=2916){
   
         $guide_map_icon.style.position='absolute'
-        $guide_map_icon.style.bottom = '-2850px'
+        $guide_map_icon.style.bottom = '-2780px'
         console.log('고정');
       
     }
