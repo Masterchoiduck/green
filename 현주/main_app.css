@@ -545,6 +545,58 @@
         align-items: center;
     }
 
+
+
+/* 퍼레이드 호버했을떄 */
+.main_parade_item{
+    position: relative;
+}
+.parade_text_box{
+    width: 45.5729vw;
+    height: 22.1354vw;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 11.7188vw 0;
+    
+}
+      
+.parade_text_title{
+    font-size: 3.9063vw;
+    font-weight: bolder;
+    color: #424242;
+}
+.parade_text_content{
+    font-size: 1.9531vw;
+    font-weight: 400;
+    color: #424242;
+}
+.parade_text_time{
+    font-size: 18px;
+    font-weight: 600;
+    color: #424242;
+    width: 75px;
+    height: 35px;
+    border: 2px solid #424242;
+    border-radius: 50px;
+    line-height: 30px;
+    margin-top: 25px;
+}
+
+
+.d-none div{
+    display: none;
+}
+
+
+
+
     /* 이용권티켓 */
     .ticket__img {
         position: absolute;

@@ -61,48 +61,6 @@ html, body{
 
 
 /* 헤더 */
-/*
-#main_header{
-    display: flex;
-    justify-content: space-between;
-}
-.logo{
-    margin: 13px 0px 0px 3.9063vw;
-}
-.top_menu{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 902px;
-}
-.menu_bar{
-    font-size: 20px;
-    font-weight: bold;
-}
-.right_menu{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 60px;
-}
-.menu_icon{
-    margin: 0 0.9375vw;
-}
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-}
-
-*/
-/* 메뉴드롭 수정분 */
-
-/* 헤더 */
 .logo{
     margin: 13px 0px 0px 3.9063vw;
 }
@@ -231,6 +189,12 @@ a{
 .right_menu {
     height: 90px;
 }
+
+
+
+
+
+
 
 
 
