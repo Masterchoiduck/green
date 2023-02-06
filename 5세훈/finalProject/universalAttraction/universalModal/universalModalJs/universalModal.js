@@ -4,6 +4,7 @@ const overlay = modal.querySelector(".md_overlay");
 const closeButton = modal.querySelector("button");
 
 
+
 //동작함수
 
 const closeModal = () => {

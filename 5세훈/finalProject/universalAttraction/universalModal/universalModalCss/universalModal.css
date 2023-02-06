@@ -55,7 +55,7 @@
             background-image: url(../image/modalBackground.png);
             background-repeat: no-repeat;
             background-size: cover;
-			width: 90%;
+			width: 65%;
             height: 800px;
 			position: relative;
 			padding: 25px 50px;
@@ -94,7 +94,8 @@
         }
         .md_container{ 
             display: flex;
-            gap:5px
+            justify-content: center;
+            gap:5px;
         }
         .md_container_left{
             display: inline-flex;
@@ -216,7 +217,7 @@
         .icon_comment3{ 
             font-size: 5px;
             font-weight: bolder;
-            margin-left: 3px;
+            margin-left: 5px;
         }
         .icon_comment4{ 
             font-size: 5px;
@@ -231,7 +232,7 @@
         .icon_comment6{ 
             font-size: 5px;
             font-weight: bolder;
-            margin-left: 3px;
+            margin-left: 4px;
         }
         .icon_comment7{ 
             font-size: 5px;
@@ -241,8 +242,14 @@
         .icon_earth{ 
             margin-left: 105px;
         }
+        .icon_heightLimit{ 
+            margin-left: 50px;
+        }
         .icon_Camera{ 
             margin-left:49px;
+        }
+        .icon_person{ 
+            margin-left: 125px;
         }
         .icon_with{ 
             margin-left: 125px;
@@ -261,15 +268,15 @@
         }
         .small_explain2{ 
             font-size:4px;
-            margin-left: 133px;
+            margin-left: 134px;
         }
         .small_explain3{ 
             font-size:4px;
-            margin-left: 33px;
+            margin-left: 32px;
         }
         .small_explain4{ 
             font-size:4px;
-            margin-left: 42px;
+            margin-left: 43px;
         }
         .small_explain5{ 
             font-size: 4px;
@@ -277,7 +284,7 @@
         }
         .small_explain6{ 
             font-size: 4px;
-            margin-left: 33px;
+            margin-left: 32px;
         }
         .small_explain7{ 
             font-size: 4px;
@@ -286,18 +293,17 @@
         
         .small_explain8{ 
             font-size: 4px;
-            margin-left: 33px;
+            margin-left: 170px;
         }
         .attraction__where{ 
             display: flex;
             padding-top: 5px;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
         }
         .attraction__whereTittle{ 
             font-weight: 800;
             text-align: center;
-            margin-left: 200px;
         }
         .image_where{ 
             width:500px;
