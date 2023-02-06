@@ -82,7 +82,7 @@
 
 }
 
-@media (min-width:769) and (max-width:1024px){
+@media (max-width:1024px){
 /* 푸터 */
 .footer {
     color: #fff;

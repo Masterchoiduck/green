@@ -2,6 +2,9 @@
 
 
     /* 헤더 */
+    .logo_gray{
+        display: none;
+    }
     .logo {
         margin: 13px 0px 0px 3.9063vw;
     }
@@ -37,60 +40,17 @@
 
 
     /* 메뉴탭 클릭했을때 메뉴탭 나오게하기 */
-    .x_icon {
-        display: none;
-    }
-
-    #check-btn {
-        display: none;
-    }
-
-    #check-btn:checked~.menubars {
-        display: block;
-    }
-
-    #check-btn:checked~.x_icon {
-        display: flex;
-        z-index: 100;
-    }
-
-    .menubars {
-        display: none;
-
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-
-    .menubars li {
-
-        font-size: 50px;
-        font-weight: bold;
-        margin: 25px 0;
-        height: 10px;
-
-        color: #2f2f2f;
-    }
-
-
-
     .main_menu_container li {
         display: none;
     }
-
-
-
     .right_menu {
         height: 90px;
     }
-
-
-    .three_bar {
+    .three_bar{
         display: flex;
         font-size: 35px;
     }
+
 
 
 
