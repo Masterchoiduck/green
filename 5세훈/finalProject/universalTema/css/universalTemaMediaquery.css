@@ -22,6 +22,12 @@
     .tema__imgCircle_Default{ 
         display: none;
     }
+    .tema_imgCircle_Back_color{ 
+        display: block;
+    }
+    .tema_imgCircle_Back_Bigcolor{ 
+        display: none;
+    }
     
 }
 

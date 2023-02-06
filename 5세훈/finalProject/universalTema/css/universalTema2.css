@@ -18,7 +18,6 @@ body, *{
 
 .main_tema_header{ 
     background-color: black;
-    
     height: 15rem;
 }
 
@@ -124,6 +123,9 @@ img{
     justify-content: center;
     align-items: center;
 }
+.tema_imgCircle_Back_color{ 
+    display: none;
+}
 
 .tema__imgCircle_Back{ 
     transform: rotateY(180deg);
@@ -208,3 +210,5 @@ img{
     font-size: 2rem;
     margin:10rem;
 }
+
+
