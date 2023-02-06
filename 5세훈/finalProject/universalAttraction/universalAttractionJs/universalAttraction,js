@@ -10,12 +10,7 @@ $show_moreBtn.addEventListener('click',e=>{
     choi();
     console.log(`page : ${page}`);
     console.log(pageFNum);
-    if(page > pageFNum){ 
-        $show_moreBtn.style.display = 'none';
-    }
-    else{ 
-        $show_moreBtn.style.display = 'inline-block';
-    }
+    
 });
 
 
@@ -366,6 +361,13 @@ express.addEventListener('click',e=>{
                     modal.classList.remove("hidden");
                 })
             })
+
+            if(page > pageFNum){ 
+                $show_moreBtn.style.display = 'none';
+            }
+            else{ 
+                $show_moreBtn.style.display = 'inline-block';
+            }
 
         }
 
