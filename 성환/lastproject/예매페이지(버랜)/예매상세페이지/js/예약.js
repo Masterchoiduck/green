@@ -167,3 +167,7 @@ makeCalendar(new Date(date.setMonth(date.getMonth() - 1)));
 document.querySelector(`.nextDay`).onclick = () => {
 makeCalendar(new Date(date.setMonth(date.getMonth() + 1)));
 }
+
+function clickFDay(){
+  
+}

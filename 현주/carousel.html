@@ -10,6 +10,9 @@
 
   <!-- Demo styles -->
   <style>
+
+    
+
     @media (min-width:1025px){
     html,
     body {
@@ -46,15 +49,22 @@
       -webkit-align-items: center;
       align-items: center;
     }
-
-    .swiper-slide img {
-      display: block;
-      max-width: 400px;
-      max-height: 400px;
-      min-width: 250px;
-      min-height: 250px;
-      object-fit: cover;
+    .swiper-slide-active{
+      max-width: 23.4375vw !important;
     }
+    .swiper-slide-active img{
+      display: block;
+      object-fit: cover;
+      max-width: 23.4375vw !important;
+    }
+    .swiper-slide{
+      max-width: 20.8333vw ;
+    }
+    .swiper-slide img{
+      max-width: 20.8333vw ;
+    }
+
+    
   }
 
   @media (min-width:769px) and (max-width:1024px){
@@ -94,15 +104,21 @@
       align-items: center;
     }
 
-    .swiper-slide img {
-      display: block;
-      max-width: 350px;
-      max-height: 350px;
-      min-width: 250px;
-      min-height: 250px;
-
-      object-fit: cover;
+    .swiper-slide-active{
+      max-width: 39.0625vw !important;
     }
+    .swiper-slide-active img{
+      display: block;
+      object-fit: cover;
+      max-width: 39.0625vw !important;
+    }
+    .swiper-slide{
+      max-width: 34.1797vw ;
+    }
+    .swiper-slide img{
+      max-width: 34.1797vw ;
+    }
+
   }
   @media (min-width:320px) and (max-width:768px){
     html,
@@ -141,14 +157,19 @@
       align-items: center;
     }
 
-    .swiper-slide img {
+    .swiper-slide-active{
+      max-width: 39.0625vw !important;
+    }
+    .swiper-slide-active img{
       display: block;
-      max-width: 350px;
-      max-height: 350px;
-      min-width: 250px;
-      min-height: 250px;
-
       object-fit: cover;
+      max-width: 39.0625vw !important;
+    }
+    .swiper-slide{
+      max-width: 32.5521vw ;
+    }
+    .swiper-slide img{
+      max-width: 32.5521vw ;
     }
   }
   
@@ -161,9 +182,15 @@
     max-width: 400px !important;
 
   }
+  /* .swiper-slide-prev{
+    width: 300px !important;
+  } */
 
 
-
+  .swiper-container {
+    max-width: 400px;
+    height: auto;
+  }
 
 
 
@@ -195,39 +222,20 @@
 
   <!-- Initialize Swiper -->
   <script>
-    // slideChange: function e() {
-    //   alert('슬라이드 변경');
-    // }
-    var swiper = new Swiper(".mySwiper", {
-      /*
-      slidesPerView: '4',
-      spaceBetween: 35,
-      slidesOffsetBefore:500,
-      slidesOffsetAfter:500,
-      */
-      centeredSlides: true,
-      loop: true,
-      breakpoints: {
+   
 
-        1024 : {
-            slidesPerView: 4,
-            spaceBetween: 35,
-            slidesOffsetBefore:500,
-            slidesOffsetAfter:500,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 0,
-            slidesOffsetBefore:30,
-            slidesOffsetAfter:30,
-        },
-        320: {
-            slidesPerView: 2,
-            spaceBetween: 100,
-            slidesOffsetBefore:10,
-            slidesOffsetAfter:30,
-        },
-    },
+    var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    centeredSlides: true,
+    preventClicks:true,
+    loop:true,
+    breakpoints: {
+    768: {
+      spaceBetween: 35
+    }
+  },
+
     on: {
     init: function () {
       console.log('swiper initialized');
@@ -236,58 +244,6 @@
       
     });
     const $swiperSlide=document.querySelectorAll('.swiper-slide')
-    function test(num){
-      $swiperSlide.forEach((item,index)=>{
-        const $Img= item.querySelector('img')
-        if(num===index){
-          item.classList.add('bigImg')
-          $Img.classList.add('bigImg')
-        } else{
-          item.classList.remove('bigImg')
-          $Img.classList.remove('bigImg')
-        }
-      })
-    }
-    swiper.on('slideChange', function () {
-      // console.log(swiper.activeIndex);
-      if(swiper.activeIndex===4){
-        test(3)
-        console.log('0');
-        return
-      }
-      if(swiper.activeIndex===5){
-        test(4)
-        console.log('1');
-        return
-      }
-      if(swiper.activeIndex===6){
-        test(5)
-        console.log('2');
-        return
-      }
-      if(swiper.activeIndex===7){
-        test(6)
-        console.log('3');
-        return
-      }
-      if(swiper.activeIndex===8){
-        test(7)
-        console.log('4');
-        return
-      }
-      if(swiper.activeIndex===9){
-        test(3)
-        console.log('0--9');
-        return
-      }
-      if(swiper.activeIndex===3){
-        test(3)
-        console.log('0--3');
-        return
-      }
-      console.log(`넌뭐니${swiper.activeIndex}`);
-      return
-  })
   </script>
 </body>
 
