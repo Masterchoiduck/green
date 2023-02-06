@@ -18,6 +18,7 @@ if((minutes+"").length < 2){
 }
 //오늘 날짜 완성.
 var today = year + "" + month + "" + day;
+document.querySelector('.btnCal').innerHTML=`${year}.${month}.${day}`
 const test1 = `${year}-${month}-${day}`
 const test=[
   {date: test1, content: 'today', text: '오늘'},
@@ -51,11 +52,11 @@ Number.prototype.pad = function() {
 }
 
 // 달력 생성
-const makeCalendar = (date,clickDate) => {
-  if(!clickDate){
-    
-    
-  }
+let Ttrue = false
+let Dclick = `${year}-${month}-${day}`
+const makeCalendar = (date) => {
+  // let Dclick = `${year}-${month}-${day}`
+
   // 현재의 년도와 월 받아오기
   const currentYear = new Date(date).getFullYear();
   const currentMonth = new Date(date).getMonth() + 1;
@@ -78,23 +79,20 @@ const makeCalendar = (date,clickDate) => {
   // 이번달 날짜 표시하기
   // console.log(calendarList);
 
-  function test_1(date){
-    if(calendarList[date]){
-      return(calendarList[date][1]);
-    }
-    return ''
-  }
 
-  function test_2(date){
-    if(calendarList[date]){
-      return(calendarList[date][0]);
-    }
-    return ''
-  }
 
-  function test_3(date){
-    if(`${year}-${month}-${day}`===date){
+  function click(date){
+    if(`${Dclick}`===date){
       return 'clickDay'
+    }
+    if(`${Dclick}`>date){
+      return ''
+    }
+  }
+
+  function today(date){
+    if(`${year}-${month}-${day}`===date){
+      return 'today'
     }
     if(`${year}-${month}-${day}`>date){
       return 'todayBefore'
@@ -103,11 +101,11 @@ const makeCalendar = (date,clickDate) => {
 
   for (let i = 1; i <= lastDay; i++) {
     const date = `${currentYear}-${currentMonth.pad()}-${i.pad()}`
-    console.log(date);
+    // console.log(date);
     // console.log(`${currentMonth.pad()} // ${i.pad()}`);
 
     htmlDummy += `
-      <div class="${test_3(date)||'number'}">
+      <div class="${click(date)||'number'} ${today(date)||''}">
         ${i}
         <p class="nomouse dsNone">
           ${currentMonth.pad()}
@@ -127,9 +125,8 @@ const makeCalendar = (date,clickDate) => {
 
   const $dateBoard = document.querySelector('.dateBoard')
   const $dateMonth = document.querySelector('.dsNone')
-
-  
-  
+  let TTnem = 0
+  if(Ttrue){return} else{Ttrue=false}
   $dateBoard.addEventListener('click',e=>{
     console.log(`${currentMonth}`);
     console.log(`${e.target.innerText}`);
@@ -143,18 +140,22 @@ const makeCalendar = (date,clickDate) => {
       }
 
 
-    console.log(`${currentYear}__${currentMonth}__${e.target.innerText}`);
-    
+      Dclick = `${currentYear}-${$month}-${$day}`
+      console.log(Dclick);
     //오늘 날자 표시
     document.querySelector('.btnCal').innerHTML=`${currentYear}.${$month}.${$day}`
+    Ttrue=true
+    TTnem++
+    console.log(TTnem);
+    makeCalendar(date)
   })
 }
 
-document.querySelector('.btnCal').innerHTML=`${year}.${month}.${day}`
+
 
 
 const date = new Date();
-console.log(date);
+// console.log(date);
 makeCalendar(date);
 
 
@@ -167,6 +168,129 @@ makeCalendar(new Date(date.setMonth(date.getMonth() - 1)));
 document.querySelector(`.nextDay`).onclick = () => {
 makeCalendar(new Date(date.setMonth(date.getMonth() + 1)));
 }
+
+const onlyPass=[
+  {
+    "won" : '111,600',
+    "day" : '1일',
+    "age" : '어린이'
+  },
+  {
+    "won" : '141,000',
+    "day" : '1일',
+    "age" : '어른'
+  },
+  {
+    "won" : '126,400',
+    "day" : '1.5일',
+    "age" : '어린이'
+  },
+  {
+    "won" : '151,500',
+    "day" : '1.5일',
+    "age" : '어른'
+  },
+  {
+    "won" : '133,000',
+    "day" : '2일',
+    "age" : '어린이'
+  },
+  {
+    "won" : '163,400',
+    "day" : '2일',
+    "age" : '어른'
+  }
+]
+
+const passPusPass=[
+    {
+      "won" : '121,400',
+      "day" : '1일',
+      "age" : '어린이(12세 이하)'
+    },
+    {
+      "won" : '150,800',
+      "day" : '1일',
+      "age" : '어른(12세 이상)'
+    },
+    {
+      "won" : '150,400',
+      "day" : '1.5일',
+      "age" : '어린이(12세 이하)'
+    },
+    {
+      "won" : '186,500',
+      "day" : '1.5일',
+      "age" : '어른(12세 이상)'
+    },
+    {
+      "won" : '170,400',
+      "day" : '2일',
+      "age" : '어린이(12세 이하)'
+    },
+    {
+      "won" : '226,300',
+      "day" : '2일',
+      "age" : '어른(12세 이상)'
+    }
+  ]
+
+const $txt=document.querySelector('.txt')
+
+// onlyPass.forEach(onlypass=>{
+//   console.log(onlypass);
+// })
+// passPusPass.forEach(passPusPass=>{
+//   console.log(passPusPass);
+// })
+
+$txt.innerHTML=`
+  <span class="passDay">스튜디오 패스(1일권)
+    </br>
+  ${onlyPass[0].age}</span>
+    </br>
+  <span class = "won" style="display : none">${onlyPass[0].won}</span>
+`
+const $won = document.querySelector('.won').innerText.replace(',', '')
+
+console.log($won);
+
+const $base_prod_list=document.querySelector('#base_prod_list')
+const $number=document.querySelector('.number')
+const $down=document.querySelector('.down')
+const $up=document.querySelector('.up')
+const $total_sum=document.querySelector('#total_sum')
+
+
+// 클릭시 숫자 올라가는거
+function NumBtn(){
+
+  $down.addEventListener('click',e=>{
+    if($base_prod_list.querySelector('input').value>'1'){
+      $base_prod_list.querySelector('input').value--
+      $total_sum.innerHTML =`
+      ${(($base_prod_list.querySelector('input').value)*$won).toLocaleString('ko-KR')}원
+    ` 
+      
+    }
+  })
+  
+  $up.addEventListener('click',e=>{
+    $base_prod_list.querySelector('input').value++
+    $total_sum.innerHTML =`
+    ${(($base_prod_list.querySelector('input').value)*$won).toLocaleString('ko-KR')}원
+  ` 
+  })
+
+  $total_sum.innerHTML =`
+    ${(($base_prod_list.querySelector('input').value)*$won).toLocaleString('ko-KR')}원
+  ` 
+
+  
+}
+
+NumBtn()
+
 
 function clickFDay(){
   
