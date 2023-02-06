@@ -6,6 +6,9 @@
     box-sizing: border-box;
     
 }
+body{ 
+    background-color: #000;
+}
     
 body, *{
 	font-family: 'Noto Sans KR', sans-serif;
@@ -25,7 +28,7 @@ body, *{
 .main_tema_body_intro{
     margin: 10rem 22.5rem; 
     
-    background-color: #222;
+    
     
 }
 
@@ -205,7 +208,6 @@ img{
     font-family: 'Noto Sans KR';
     font-weight: bolder;
     color: #0066FF;
-    background-color: #222;
     font-size: 2rem;
     margin:10rem;
 }
