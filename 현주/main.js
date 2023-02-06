@@ -78,6 +78,7 @@ box.addEventListener('transitionend', function(e){
 
 const $main_side_bar = document.querySelector('#main_side_bar')
 const $guide_map_icon = document.querySelector('.guide_map_icon')
+const $menuToggle = document.querySelectorAll('#menuToggle span')
 
 let scrollTimer = null;
 $guide_map_icon.style.display='none'
@@ -92,6 +93,10 @@ window.addEventListener('scroll', (e) => {
 
           // 검정
           if (window.scrollY>full2TopY) {
+            $menuToggle.forEach(item=>{
+              console.log(item);
+              item.style.backgroundColor='#000'
+            })
             $guide_map_icon.style.display='inline-block'
             item.classList.add('csh__black')
             $search_icon_gray.style.display='inline-block'
@@ -103,6 +108,9 @@ window.addEventListener('scroll', (e) => {
             $logo_gray.style.display='inline-block'
             $logo_white.style.display='none'
           } else {   // 흰색
+            $menuToggle.forEach(item=>{
+              item.style.backgroundColor='#fff'
+            })
             $guide_map_icon.style.display='none'
             item.classList.remove('csh__black')
             $search_icon_gray.style.display='none'
