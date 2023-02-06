@@ -1,3 +1,6 @@
+*{
+    padding: 0;
+}
 @media (min-width:1025px) {
 
     /* 헤더 */
@@ -55,7 +58,7 @@
     }
 
     .top_menu a {
-        color: #fff;
+        color: #000;
     }
 
     .menu_bar_submenu {
