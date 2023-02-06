@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 *{ 
     list-style-type: none;
     margin:0;
@@ -16,9 +15,7 @@ body, *{
     
 }
 
-.fa,.fab,.fad,.fal,.far,.fas{
-	font-weight: 900 !important;
-	}
+
 .main_tema_header{ 
     background-color: black;
     
@@ -210,8 +207,4 @@ img{
     color: #0066FF;
     font-size: 2rem;
     margin:10rem;
-}
-.footer{
-    margin-top: 10rem;
-    background-color: #0066FF;
 }
