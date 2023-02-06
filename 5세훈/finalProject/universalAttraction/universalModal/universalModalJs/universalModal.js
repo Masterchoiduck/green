@@ -32,7 +32,7 @@ $detailBtn.addEventListener('click',e=> {
     $detailBox.style.display = 'block';
     $aboutBox.style.display = 'none';
 
-    $detailBtn.style.color = '#000';
+    $detailBtn.style.color = '#2f2f2f';
     $aboutBtn.style.color = '#ccc';
 });
 

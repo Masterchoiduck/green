@@ -106,7 +106,7 @@
             background-image: url(../image/modalLeftImage.png);
             background-repeat: no-repeat;
             background-size: cover;
-            width: 300px;
+            width: 350px;
             height: 690px;
             
         }
@@ -170,150 +170,128 @@
             cursor: pointer;
             font-size: 30px;
             padding-left: 10px;
-            font-weight: 500;
-            color: #000;
+            font-weight: 700;
+            color: #2f2f2f;
             letter-spacing: -1px;
         }
         .toggle_header2{ 
             cursor: pointer;
             font-size: 30px;
             padding-left: 20px;
-            font-weight: 500;
+            font-weight: 700;
             color:#ccc;
             letter-spacing: -1px;
 
         }
         .ride_btn{ 
-            margin-left: 40px;
+            margin-left: 70px;
             border-radius: 20px;
-            padding: 5px 10px;
+            padding: 6px 12px;
             color: #fff;
             background-color: #8444fc;
             font-size: 10px;
+            margin-top: 10px;
+            
         }
+
         .detail_commentbox{ 
-            margin-left: 40px;
-            padding-top: 10px;
+            margin-left: 70px;
         }
         .ride_name{ 
             font-size: 25px;
-            font-weight: 800;
+            font-weight: 700;
+            color: #2f2f2f;
+        }
+        .comment_explain{ 
+            display: flex;
+            flex-direction: column;
+
         }
         
-        .icon_attraction{ 
+        .icon_comment_container{ 
             margin-top: 10px;
         }
-        .icon_comment{ 
-            font-size: 5px;
+        .icon_comment,
+        .icon_comment2,
+        .icon_comment3,
+        .icon_comment5,
+        .icon_comment6
+        { 
+            font-size: 13px;
             font-weight: bolder;
             margin-left:5px
         }
-        .icon_comment2{ 
-            font-size: 5px;
-            font-weight: bolder;
-            margin-left: 1px;
-        }
-
-        .icon_comment3{ 
-            font-size: 5px;
-            font-weight: bolder;
-            margin-left: 5px;
-        }
-        .icon_comment4{ 
-            font-size: 5px;
-            font-weight: bolder;
-            margin-left: 3px;
-        }
-        .icon_comment5{ 
-            font-size: 5px;
-            font-weight: bolder;
-            margin-left: 1px;
-        }
-        .icon_comment6{ 
-            font-size: 5px;
-            font-weight: bolder;
-            margin-left: 4px;
-        }
-        .icon_comment7{ 
-            font-size: 5px;
-            font-weight: bolder;
-            margin-left: 4px;
-        }
+        
         .icon_earth{ 
             margin-left: 105px;
         }
         .icon_heightLimit{ 
-            margin-left: 50px;
+            margin-left: 22px;
         }
-        .icon_Camera{ 
-            margin-left:49px;
-        }
+       
         .icon_person{ 
             margin-left: 125px;
         }
-        .icon_with{ 
-            margin-left: 125px;
-        }
+       
 
-        .icon_Career{ 
-            margin-left: 125px;
-            
-        }
-        .icon_universal{ 
-            margin-left: 145px;
-        }
+        
+       
         .small_explain{ 
-            font-size:4px;
-            margin-left: 33px;
+            font-size: 4px;
+            margin-left: 5px;
         }
         .small_explain2{ 
             font-size:4px;
-            margin-left: 134px;
+            margin-left: 5px;
         }
         .small_explain3{ 
             font-size:4px;
-            margin-left: 32px;
+            margin-left: 5px;
         }
         .small_explain4{ 
             font-size:4px;
-            margin-left: 43px;
+            margin-left: 5px;
         }
-        .small_explain5{ 
-            font-size: 4px;
-            margin-left: 89px;
-        }
+   
         .small_explain6{ 
             font-size: 4px;
-            margin-left: 32px;
+            margin-left: 5px;
         }
-        .small_explain7{ 
-            font-size: 4px;
-            margin-left: 168px;
-        }
+       
         
         .small_explain8{ 
             font-size: 4px;
-            margin-left: 170px;
+            margin-left: 5px;
         }
         .attraction__where{ 
             display: flex;
-            padding-top: 5px;
+            
+            padding-top: 30px;
             flex-direction: column;
             align-items: center;
         }
         .attraction__whereTittle{ 
             font-weight: 800;
             text-align: center;
+            
         }
         .image_where{ 
             width:500px;
             height:auto;
+            margin-top: 20px;
+
         }
         .right_alertComment{ 
             display: inline;
             margin-left:150px;
             position: absolute;
+        
             
+        }
+        .icon_comment__box { 
+            padding-top: 12px;
+            display: flex;
+            align-items: baseline;
         }
         .img_area_comment{
             margin-left: 10px; 
@@ -364,13 +342,14 @@
         /* about box css */
         .aboutbox{ 
             display: none;
+            margin-left: 32px;
         }
         .ride_name2{
             display:inline-block;
-            margin-top: 10px;
             font-size: 25px;
-            font-weight: 800;
+            font-weight: 700;
             margin-left: 40px;
+            color: #2f2f2f;
         }
         .about_commentbox{ 
             margin-left: 40px;
