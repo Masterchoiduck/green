@@ -37,36 +37,6 @@
 
 
 //퍼레이드 캐러셀 슬라이드
-    $(document).ready(function(){
-        $('.multiple-items').slick({
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: '15.6250vw',
-          speed:300,
-          
-          responsive: [
-                {
-                  breakpoint: 1024,
-                  settings: {
-                    centerMode: true,
-                    centerPadding: '29.2969vw',
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
-                },
-                {
-                  breakpoint: 768,
-                  settings: {
-                    centerMode: true,
-                    centerPadding: '22.1354vw',
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                  }
-                }
-              ]
-        });
-      });
 
 
 //어트랙션 호버 - 이미지 변경

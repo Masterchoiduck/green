@@ -33,7 +33,7 @@ window.addEventListener("wheel", function(e){
       wheelTimer = setTimeout(function() {
         deltaY ++
         $body.classList.remove("stop-scrolling")
-        console.log(deltaY);
+        // console.log(deltaY);
         return
     }, 50);
   }
@@ -82,7 +82,7 @@ const $guide_map_icon = document.querySelector('.guide_map_icon')
 let scrollTimer = null;
 $guide_map_icon.style.display='none'
 window.addEventListener('scroll', (e) => {
-  console.log(scrollY);
+  // console.log(scrollY);
   
     if(!scrollTimer) {
       scrollTimer = setTimeout(function() {
@@ -123,12 +123,65 @@ window.addEventListener('scroll', (e) => {
   
         $guide_map_icon.style.position='absolute'
         $guide_map_icon.style.bottom = '-2780px'
-        console.log('고정');
+        // console.log('고정');
       
     }
     else {
       $guide_map_icon.style.position='fixed'
       $guide_map_icon.style.bottom = '60px'
-      console.log('움직임');
+      // console.log('움직임');
     }
   });
+
+  const $swiperSlide = document.querySelectorAll('.swiper-slide')
+  $swiperSlide.forEach(item=>{
+    console.log(item);
+    const $are=item.getAttribute('aria-label')
+    const $dic=item.querySelector('.parade_text_box')
+    console.log($are);
+    const $IMG=item.querySelector('img')
+    $IMG.addEventListener('mouseover',e=>{
+      if($are==='1 / 5'){
+        $IMG.src='./img/web/퍼레이드_마리오_블러.png'
+        $dic.classList.remove('d-none')
+      }
+      if($are==='2 / 5'){
+        $IMG.src='./img/web/퍼레이드_쥬라기_블러.png'
+        $dic.classList.remove('d-none')
+      }
+      if($are==='3 / 5'){
+        $IMG.src='./img/web/퍼레이드_미니언즈_블러.png'
+        $dic.classList.remove('d-none')
+      }
+      if($are==='4 / 5'){
+        $IMG.src='./img/web/퍼레이드_트랜스포머_블러.png'
+        $dic.classList.remove('d-none')
+      }
+      if($are==='5 / 5'){
+        $IMG.src='./img/web/퍼레이드_해리포터_블러.png'
+        $dic.classList.remove('d-none')
+      }
+    })
+    $IMG.addEventListener('mouseout',e=>{
+      if($are==='1 / 5'){
+        $IMG.src='./img/web/퍼레이드_마리오.png'
+        $dic.classList.add('d-none')
+      }
+      if($are==='2 / 5'){
+        $IMG.src='./img/web/퍼레이드_쥬라기.png'
+        $dic.classList.add('d-none')
+      }
+      if($are==='3 / 5'){
+        $IMG.src='./img/web/퍼레이드_미니언즈.png'
+        $dic.classList.add('d-none')
+      }
+      if($are==='4 / 5'){
+        $IMG.src='./img/web/퍼레이드_트랜스포머.png'
+        $dic.classList.add('d-none')
+      }
+      if($are==='5 / 5'){
+        $IMG.src='./img/web/퍼레이드_해리포터.png'
+        $dic.classList.add('d-none')
+      }
+    })
+  })
