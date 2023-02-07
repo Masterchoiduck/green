@@ -567,19 +567,18 @@
     justify-items: center;
     z-index: 100;
     position: absolute;
-    top: 0;
-    left: 0;
-    margin: 9.7656vw 0 ;
-    
+    top: 37%;
+    left: 7%;
 }
-      
+
 .parade_text_title{
     font-size: 2.9297vw;
     font-weight: bolder;
     color: #424242;
 }
 .parade_text_content{
-    font-size: 13px;
+    margin-top: 10px;
+    font-size: 15px;
     font-weight: 400;
     color: #424242;
 }
@@ -599,6 +598,28 @@
     display: none;
 }
 
+.parade_text_end{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 28.9063vw;
+    text-align: center;
+}
+
+
+/* 퍼레이드 실시간 시간 */
+#parade_now_date{
+    font-size: 30px;
+    color: #2F2F2F;
+    font-weight: 500;
+    text-align: center;
+
+
+    position: absolute;
+    bottom: 0;
+    left: 36%;
+
+}
 
 
     /* 푸터 */

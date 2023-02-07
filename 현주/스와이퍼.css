@@ -36,7 +36,7 @@
     }
     .swiper-slide-active{
       max-width: 23.4375vw !important;
-      
+      position: relative;
     }
     .swiper-slide-active img{
       display: block;
@@ -151,22 +151,22 @@
     }
 
     .swiper-slide-active{
-      max-width: 39.0625vw !important;
-      
+      max-width: 52.0833vw !important;
+
     }
     .swiper-slide-active img{
       display: block;
       object-fit: cover;
-      max-width: 39.0625vw !important;
-      
+      max-width: 52.0833vw !important;
+
     }
     .swiper-slide{
-      max-width: 32.5521vw ;
-      
+      max-width: 45.5729vw ;
+
     }
     .swiper-slide img{
-      max-width: 32.5521vw ;
-      
+      max-width: 45.5729vw ;
+
     }
   }
   

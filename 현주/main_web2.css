@@ -592,22 +592,23 @@
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
-    z-index: 100;
     position: absolute;
-    top: 115px;
-    left: 21px;
-    margin: 5.7292vw 0;
+    top: 35%;
+    left: 5%;
+    
 }
       
 .parade_text_title{
-    font-size: 1.5625vw;
+    font-size: 1.7188vw;
     font-weight: bolder;
     color: #424242;
+    margin-bottom: 10px;
 }
 .parade_text_content{
-    font-size: 13px;
+    font-size: 17px;
     font-weight: 400;
     color: #424242;
+    margin-bottom: 15px;
 }
 .parade_text_time{
     font-size: 18px;
@@ -631,6 +632,22 @@
     color: #fff;
     margin-top: 28.9063vw;
     text-align: center;
+}
+
+
+/* 퍼레이드 실시간 시간 */
+#parade_now_date{
+    font-size: 40px;
+    color: #2F2F2F;
+    font-weight: 500;
+    text-align: center;
+
+
+    position: absolute;
+    bottom: -10px;
+    left: 40%;
+    z-index: 100000;
+
 }
 
 
