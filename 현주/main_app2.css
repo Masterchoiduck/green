@@ -95,14 +95,14 @@
     .full4 {
         background-color: #f7f7f7;
         display: grid;
-        grid-template-rows: 250px 1fr;
+        grid-template-rows: 300px 1fr;
         justify-content: center;
     }
 
     .full3 {
         background-color: #EEF5FB;
         display: grid;
-        grid-template-rows: 250px 1fr;
+        grid-template-rows: 300px 1fr;
         justify-content: center;
     }
 
@@ -116,8 +116,7 @@
 
         /* 원래 benefit 등 각 각 따로 줌 */
         text-align: start;
-        position: relative;
-        top: 130px;
+        margin-bottom: 75px;
         pointer-events: none;
     }
 
@@ -125,8 +124,8 @@
         pointer-events: none;
         font-size: 15px;
         color: #2f2f2f;
+        margin-bottom: 5px;
     }
-
     /* 공용
     .main_section_top{
         display: grid;
@@ -137,7 +136,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        width: 200px;
+        width: 79.4271vw;
         height: 300px;
         margin: 0 auto;
     }
@@ -159,27 +158,27 @@
 
     .benefit2 {
         text-align: start;
-        width: 170px;
+        width: 19.5313vw;
     }
 
     .benefit_content_total {
-        width: 67.7083vw;
-        height: 101.5625vw;
-
+        width: 66.4063vw;
+        height: 66.4063vw;
         display: grid;
+        gap: 10px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         justify-content: center;
     }
 
-    .benefit_content_total div:nth-child(n+7) {
+    .benefit_content_total div:nth-child(n+5) {
         display: none;
     }
 
     .benefit3 {
         width: 32.5521vw;
-        min-width: 200px;
-        min-height: 200px;
+        min-width: 230px;
+        min-height: 230px;
         height: 32.5521vw;
         background-color: #fff;
         text-align: center;
@@ -187,7 +186,6 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        border: 3px solid #F7F7F7;
     }
 
     .benefit_text {
@@ -258,7 +256,7 @@
 
     /*250 50*/
     .attraction2 {
-        text-align: start;
+        text-align: end;
         width: 170px;
     }
 
@@ -409,7 +407,7 @@
     }
 */
     .parade2 {
-        text-align: start;
+        text-align: end;
         width: 170px;
     }
 

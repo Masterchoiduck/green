@@ -258,6 +258,7 @@
         pointer-events: none;
         font-size: 15px;
         color: #2f2f2f;
+        margin-bottom: 5px;
     }
 
     /* 공용
@@ -270,7 +271,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        width: 87.8906vw;
+        width: 84.9609vw;
         height: 300px;
         margin: 0 auto;
     }
@@ -290,13 +291,13 @@
 
     .benefit2 {
         text-align: start;
-        width: 170px;
+        width: 140px;
 
     }
     .benefit_content_total {
-        width: 770px;
-        height: 520px;
-
+        width: 75.1953vw;
+        height: 49.8047vw;
+        gap: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -305,8 +306,10 @@
         display: none;
     }
     .benefit3 {
-        width: 250px;
-        height: 250px;
+        width: 24.4141vw;
+        min-width: 240px;
+        min-height: 240px;
+        height: 24.4141vw;
         background-color: #fff;
         text-align: center;
         display: flex;
@@ -386,21 +389,23 @@
     }*/
 /*250 50*/
     .attraction2 {
-        text-align: start;
-        width: 170px;
+        text-align: end;
+        width: 110px;
 
     }
 
     .attraction_content_total {
         display: grid;
-        grid-template-columns: 36.1328vw 500px;
+        gap: 1.9531vw;
+        grid-template-columns: 34.1797vw 500px;
         grid-template-rows: 515px;
     }
 
     .main_attraction_small {
-        width: 50.7813vw;
+        width: 50.2930;
         display: grid;
-        grid-template-columns: 250px 250px;
+        gap: 1.4648vw;
+        grid-template-columns: repeat(2, minmax(235px, 250px));
         grid-template-rows: 250px 250px;
         align-content: space-between;
         justify-content: space-between;
@@ -417,7 +422,7 @@
 
     .att_b1 {
         width: 34.1797vw;
-        min-width: 100px;
+        min-width: 50px;
         height: 515px;
         border-radius: 20px;
 
@@ -426,6 +431,7 @@
         font-size: 20px;
         position: relative;
         padding-top: 120px;
+        background-position: center;
     }
 
     .att_s {
@@ -434,7 +440,7 @@
 
     .att_s1 {
         width: 24.4141vw;
-        min-width: 225px;
+        min-width: 235px;
         height: 250px;
         background-image: url(img/web/어트_해리포터\ 앤드\ 더\ 포비든\ 저니.png);
         background-size: cover;
@@ -444,7 +450,7 @@
 
     .att_s2 {
         width: 24.4141vw;
-        min-width: 225px;
+        min-width: 235px;
         height: 250px;
         background-image: url(img/web/어트_쥬라기월드\ 더\ 라이드.png);
         background-size: cover;
@@ -454,7 +460,7 @@
 
     .att_s3 {
         width: 24.4141vw;
-        min-width: 225px;
+        min-width: 235px;
         height: 250px;
         background-image: url(img/web/어트_\ 미니언\ 메이헴.png);
         background-size: cover;
@@ -464,7 +470,7 @@
 
     .att_s4 {
         width: 24.4141vw;
-        min-width: 225px;
+        min-width: 235px;
         height: 250px;
         background-image: url(img/web/어트_프리즈\ 레이\ 슬라이더.png);
         background-size: cover;
@@ -474,7 +480,7 @@
 
     .att_s5 {
         width: 24.4141vw;
-        min-width: 225px;
+        min-width: 235px;
         height: 250px;
         background-image: url(img/web/어트_마리오\ 카트\ 쿠파의\ 도전장.png);
         background-size: cover;
@@ -484,7 +490,7 @@
 
     .att_s6 {
         width: 24.4141vw;
-        min-width: 225px;
+        min-width: 235px;
         height: 250px;
         background-image: url(img/web/어트_쥬라기월드\ 더\ 라이드.png);
         background-size: cover;

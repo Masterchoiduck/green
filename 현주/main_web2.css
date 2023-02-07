@@ -76,7 +76,6 @@
 }
 
 @media (min-width:1025px) {
-
     html,
     body {
         width: 100%;
@@ -88,7 +87,6 @@
     .logo {
         margin: 13px 0px 0px 3.9063vw;
     }
-
     .top_menu {
         color: white;
         display: flex;
@@ -345,16 +343,18 @@
     }
 
     .benefit_content_total {
-        width: 1040px;
-        height: 520px;
+        width: 1030px;
+        height: 510px;
         gap: 0.5208vw;
         display: grid;
-        grid-template-columns: repeat(4, minmax(200px, 250px));
+        grid-template-columns: repeat(4, minmax(180px, 250px));
         grid-template-rows: 1fr 1fr;
     }
 
     .benefit3 {
         width: 250px;
+        min-width: 190px;
+        max-width: 250px;
         height: 250px;
         
         background-color: #fff;
@@ -725,7 +725,6 @@
         width: 100%;
         /* height: 100%; */
         background-image: url('./img/web/이용권티켓_웹\,탭.png');
-
         background-repeat: no-repeat;
         background-position: bottom center;
         z-index: 10;
