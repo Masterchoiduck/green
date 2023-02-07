@@ -228,14 +228,14 @@
     .full4 {
         background-color: #f7f7f7;
         display: grid;
-        grid-template-rows: 260px 1fr;
+        grid-template-rows: 300px 1fr;
         justify-content: center;
     }
 
     .full3 {
         background-color: #EEF5FB;
         display: grid;
-        grid-template-rows: 260px 1fr;
+        grid-template-rows: 300px 1fr;
         justify-content: center;
     }
 
@@ -249,8 +249,8 @@
 
         /* 원래 benefit 등 각 각 따로 줌 */
         text-align: start;
-        position: relative;
-        top: 160px;
+
+        margin-bottom: 75px;
         pointer-events: none;
     }
 
@@ -266,22 +266,32 @@
         grid-template-columns: 19.1146vw 52.0833vw 104px 23.3854vw;
     }
     */
+    .main_section_top{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 87.8906vw;
+        height: 300px;
+        margin: 0 auto;
+    }
     .main_section_bottom {
         margin: 0 auto;
     }
 
 
     /* 할인혜택 페이지 */
+    /*
     .benefit_title_total {
         display: grid;
         grid-template-columns: 14.9414vw 45.9961vw 24.4141vw 14.6484vw;
     }
+    */
 /* 153 471 250 150 */
 
     .benefit2 {
-        text-align: end;
-        position: relative;
-        top: 235px;
+        text-align: start;
+        width: 170px;
+
     }
     .benefit_content_total {
         width: 770px;
@@ -367,17 +377,18 @@
         transform: rotateY(180deg);
     }
 
-
+    
     /* 베스트 어트랙션 페이지 */
+    /*
     .attraction_title_total {
         display: grid;
         grid-template-columns: 14.9414vw 55.7617vw 22.4609vw 6.8359vw;
-    }
+    }*/
 /*250 50*/
     .attraction2 {
-        text-align: end;
-        position: relative;
-        top: 235px;
+        text-align: start;
+        width: 170px;
+
     }
 
     .attraction_content_total {
@@ -511,16 +522,14 @@
 
 
     /*퍼레이드 페이지*/
-
+/*
     .parade_title_total {
         display: grid;
         grid-template-columns: 14.9414vw 45.9961vw 24.4141vw 14.6484vw;
     }
-
+*/
     .parade2 {
         text-align: end;
-        position: relative;
-        top: 235px;
     }
 
 
