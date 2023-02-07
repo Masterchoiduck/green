@@ -2,7 +2,7 @@
 const modal = document.querySelector(".modal");
 const overlay = modal.querySelector(".md_overlay");
 const closeButton = modal.querySelector("button");
-
+const md_content = modal.querySelector('.md_content');
 
 
 //동작함수
@@ -11,7 +11,6 @@ const closeModal = () => {
     modal.classList.add("hidden");
 }
 //클릭 이벤트
-
 closeButton.addEventListener("click", closeModal);
 
 
@@ -36,30 +35,4 @@ $detailBtn.addEventListener('click',e=> {
     $aboutBtn.style.color = '#ccc';
 });
 
-const $btnimgChoice = document.querySelector('.md_container_left');
-const $btn1 = $btnimgChoice.querySelector('.btn_img1');
-const $btn2 = $btnimgChoice.querySelector('.btn_img2');
-const $btn3 = $btnimgChoice.querySelector('.btn_img3');
-
-$btn1.addEventListener('click',e=> { 
-    $btnimgChoice.style.backgroundImage = "url('./universalModal/image/modalLeftImage.png')"
-    $btn1.style.backgroundColor = '#fff';
-    $btn2.style.backgroundColor = 'rgb(82, 88, 86)';
-    $btn3.style.backgroundColor = 'rgb(82, 88, 86)';
-
-    
-})
-$btn2.addEventListener('click',e=> { 
-    $btnimgChoice.style.backgroundImage = "url('./universalModal/image/modalLeftImage2.png')"
-    $btn2.style.backgroundColor = '#fff';
-    $btn3.style.backgroundColor = 'rgb(82, 88, 86)';
-    $btn1.style.backgroundColor = 'rgb(82, 88, 86)';
-    
-})
-$btn3.addEventListener('click',e=> { 
-    $btnimgChoice.style.backgroundImage = "url('./universalModal/image/modalLeftImage3.png')"
-    $btn3.style.backgroundColor = '#fff';
-    $btn1.style.backgroundColor = 'rgb(82, 88, 86)';
-    $btn2.style.backgroundColor = 'rgb(82, 88, 86)';
-})
 

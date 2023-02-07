@@ -1,4 +1,15 @@
 /* tablet mode */
+@media screen and (max-width:1100px){ 
+    .text_box{ 
+        display:none;
+    }
+}
+    
+
+
+
+
+
 @media screen and (max-width: 1024px){ 
     .main_tema_body_cotainer{ 
         grid-template-columns: repeat(2,minmax(1px,auto));
@@ -28,6 +39,7 @@
     .tema_imgCircle_Back_Bigcolor{ 
         display: none;
     }
+   
     
 }
 

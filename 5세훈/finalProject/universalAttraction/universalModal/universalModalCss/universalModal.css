@@ -103,12 +103,8 @@
             flex-wrap: wrap;
             align-content: center;
             justify-content: flex-end; 
-            background-image: url(../image/modalLeftImage.png);
-            background-repeat: no-repeat;
-            background-size: cover;
             width: 350px;
             height: 690px;
-            
         }
         .md_container_leftComment1{ 
             text-align: center;
