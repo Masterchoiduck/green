@@ -77,7 +77,7 @@ const interval = setInterval(function() {
   //오늘 날짜 완성.
   document.getElementById("parade_now_date").innerHTML = year + '.' + month + '.' + date + ' ' + hour + ':' + minutes + ':' + seconds;
   document.getElementById("ticket_now_time").innerHTML = year + '-' + month + '-' + date + '(' + day + ')';
-}, 100);
+}, 1000);
 
 
 //어트랙션 호버 - 이미지 변경
