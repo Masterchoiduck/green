@@ -17,13 +17,12 @@
     
     .btn_close{
 			all: unset;
-			background-color: #ccc;
 			color: white;
-			width:20px;
-            height: 25px;
+			width: 25px;
+            height: 30px;
             text-align: center;
-			border-radius: 3px;
 			cursor: pointer;
+            font-size: 1.5rem;
             
 		}
         .btn_box{ 
@@ -194,9 +193,11 @@
             margin-left: 70px;
         }
         .ride_name{ 
+            display: block;
             font-size: 25px;
             font-weight: 700;
             color: #2f2f2f;
+            margin-top: 1rem;
         }
         .comment_explain{ 
             display: flex;
@@ -338,6 +339,7 @@
         .aboutbox{ 
             display: none;
             margin-left: 32px;
+            margin-top:1rem;
         }
         .ride_name2{
             display:inline-block;
