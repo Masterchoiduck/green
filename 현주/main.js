@@ -23,11 +23,11 @@ const full2TopY = $full2.offsetTop;
 console.log(full2TopY);
 
 const $body = document.querySelector("body")
+
 //이용권티켓 스크롤하기
 const box= document.querySelector('.box111');
 
 let deltaY = 0
-
 window.addEventListener("wheel", function(e){
   if(!deltaY){
       wheelTimer = setTimeout(function() {
@@ -80,19 +80,7 @@ const interval = setInterval(function() {
 }, 100);
 
 
-
-
-  
-
-
-//퍼레이드 캐러셀 슬라이드
-
-
 //어트랙션 호버 - 이미지 변경
-
-
-
-
 const $att_s=document.querySelectorAll('.att_s')
 const $att_title = document.querySelectorAll('.att_title')
 const test_title1 =[]
@@ -132,10 +120,8 @@ item.addEventListener('mouseout', e => {
   $att_mouse_account.classList.remove('d-none')
 })
 })
-    
 
 // 이용권 티켓 컨텐츠 클릭했을때 레이어 나오게
-
 function ticketChoice(){
 let choiceNone = document.getElementById("choice_none");
 if(choiceNone.style.display=='none'){
@@ -144,19 +130,11 @@ choiceNone.style.display='block';
 choiceNone.style.display='none';
 }
 }
-
-
-
-
-
 box.addEventListener('transitionend', function(e){
   box.classList.add('end');
-  // console.log(e); 
+  // console.log(e);
   // transition delay time이 찍힌다.
 })
-
-
-
 // window.onload = function(){
 //   console.log('윈도우 새로고침할때 발생');
 //   console.log(scrollY);
@@ -168,8 +146,6 @@ box.addEventListener('transitionend', function(e){
 //   }
 //   }
 // }
-
-
 const $main_side_bar = document.querySelector('#main_side_bar')
 const $guide_map_icon = document.querySelector('.guide_map_icon')
 const $menuToggle = document.querySelectorAll('#menuToggle span')
@@ -178,15 +154,12 @@ let scrollTimer = null;
 $guide_map_icon.style.display='none'
 window.addEventListener('scroll', (e) => {
   // console.log(scrollY);
-  
     if(!scrollTimer) {
       scrollTimer = setTimeout(function() {
         scrollTimer = null;
-        
-        $menu_bar.forEach(item=> {        
-
+        $menu_bar.forEach(item=>{
           // 검정
-          if (window.scrollY>full2TopY) {
+          if (window.scrollY>=full2TopY){
             $menuToggle.forEach(item=>{
               console.log(item);
               item.style.backgroundColor='#000'
@@ -217,16 +190,13 @@ window.addEventListener('scroll', (e) => {
             $logo_white.style.display='inline-block'
           }
         })
-        
       }, 500);
     }
     // -2860
     if(window.scrollY>=2916){
-  
         $guide_map_icon.style.position='absolute'
         $guide_map_icon.style.bottom = '-2780px'
         // console.log('고정');
-      
     }
     else {
       $guide_map_icon.style.position='fixed'
@@ -234,7 +204,6 @@ window.addEventListener('scroll', (e) => {
       // console.log('움직임');
     }
   });
-
   const $swiperSlide = document.querySelectorAll('.swiper-slide')
   $swiperSlide.forEach(item=>{
     console.log(item);

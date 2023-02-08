@@ -296,6 +296,7 @@
     }
     .benefit_content_total {
         width: 75.1953vw;
+        min-width: 740px;
         height: 49.8047vw;
         gap: 10px;
         display: grid;
@@ -391,30 +392,33 @@
     .attraction2 {
         text-align: end;
         width: 110px;
-
     }
-
     .attraction_content_total {
         display: grid;
-        gap: 1.9531vw;
-        grid-template-columns: 34.1797vw 500px;
+        gap: 10px;
+        grid-template-columns: 34.1797vw 51.7578vw;
         grid-template-rows: 515px;
+        justify-items: center;
+        align-items: center;
     }
 
     .main_attraction_small {
-        width: 50.2930;
+        width: 50.2930vw;
         display: grid;
-        gap: 1.4648vw;
-        grid-template-columns: repeat(2, minmax(235px, 250px));
+        gap: 10px;
+        grid-template-columns: 24.4141vw 24.4141vw;
         grid-template-rows: 250px 250px;
         align-content: space-between;
         justify-content: space-between;
+        justify-items: center;
+        align-items: center;
     }
     .main_attraction_small div:nth-child(3n){
         display: none;
     }
     .main_attraction_big {
         width: 34.1797vw;
+        min-width: 100px;
         height: 515px;
         border-radius: 20px;
         background-image: url(img/web/호버안내.png);
@@ -440,7 +444,7 @@
 
     .att_s1 {
         width: 24.4141vw;
-        min-width: 235px;
+        min-width: 190px;
         height: 250px;
         background-image: url(img/web/어트_해리포터\ 앤드\ 더\ 포비든\ 저니.png);
         background-size: cover;
@@ -450,7 +454,7 @@
 
     .att_s2 {
         width: 24.4141vw;
-        min-width: 235px;
+        min-width: 190px;
         height: 250px;
         background-image: url(img/web/어트_쥬라기월드\ 더\ 라이드.png);
         background-size: cover;
@@ -460,7 +464,7 @@
 
     .att_s3 {
         width: 24.4141vw;
-        min-width: 235px;
+        min-width: 190px;
         height: 250px;
         background-image: url(img/web/어트_\ 미니언\ 메이헴.png);
         background-size: cover;
@@ -470,7 +474,7 @@
 
     .att_s4 {
         width: 24.4141vw;
-        min-width: 235px;
+        min-width: 190px;
         height: 250px;
         background-image: url(img/web/어트_프리즈\ 레이\ 슬라이더.png);
         background-size: cover;
@@ -480,7 +484,7 @@
 
     .att_s5 {
         width: 24.4141vw;
-        min-width: 235px;
+        min-width: 190px;
         height: 250px;
         background-image: url(img/web/어트_마리오\ 카트\ 쿠파의\ 도전장.png);
         background-size: cover;
@@ -490,7 +494,7 @@
 
     .att_s6 {
         width: 24.4141vw;
-        min-width: 235px;
+        min-width: 190px;
         height: 250px;
         background-image: url(img/web/어트_쥬라기월드\ 더\ 라이드.png);
         background-size: cover;
@@ -613,12 +617,9 @@
     color: #2F2F2F;
     font-weight: 500;
     text-align: center;
-
-
     position: absolute;
     bottom: 0;
     left: 36%;
-
 }
 
 

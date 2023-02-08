@@ -105,7 +105,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-right: 60px;
+        margin-right: 3.1250vw;
     }
 
     .menu_icon {
@@ -216,7 +216,7 @@
     }
 
     .main_menu_container {
-        width: 902px;
+        width: 46.9792vw;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -446,8 +446,9 @@
     }
 
     .main_attraction_small {
-        width: 780px;
+        width: 40.6250vw;
         display: grid;
+        gap: 15px;
         grid-template-columns: 250px 250px 250px;
         grid-template-rows: 250px 250px;
         align-content: space-between;
@@ -459,6 +460,7 @@
         height: 515px;
         border-radius: 20px;
         background-image: url(img/web/호버안내.png);
+        background-repeat: no-repeat;
     }
 
     .att_b1 {

@@ -163,7 +163,9 @@
 
     .benefit_content_total {
         width: 66.4063vw;
+        min-width: 410px;
         height: 66.4063vw;
+        min-height: 410px;
         display: grid;
         gap: 10px;
         grid-template-columns: 1fr 1fr;
@@ -177,8 +179,8 @@
 
     .benefit3 {
         width: 32.5521vw;
-        min-width: 230px;
-        min-height: 230px;
+        min-width: 200px;
+        min-height: 200px;
         height: 32.5521vw;
         background-color: #fff;
         text-align: center;

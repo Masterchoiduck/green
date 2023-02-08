@@ -16,6 +16,7 @@
     }
 
     .swiper-slide {
+      height: 90% !important;
       text-align: center;
       font-size: 18px;
       /* background: #fff; */
@@ -74,6 +75,7 @@
     }
 
     .swiper-slide {
+      height: 80% !important;
       text-align: center;
       font-size: 18px;
       /* background: #fff; */
@@ -131,6 +133,7 @@
     }
 
     .swiper-slide {
+      height: 80% !important;
       text-align: center;
       font-size: 18px;
       /* background: #fff; */
