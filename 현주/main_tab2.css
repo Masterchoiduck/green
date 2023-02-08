@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 @media (min-width:769px) and (max-width:1024px){
     html,
     body {
@@ -16,13 +20,14 @@
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
+        padding: 0 !important;
     }
     .right_menu {
         color: white;
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-right: 60px;
+        margin-right: 30px !important;
     }
     .menu_icon {
         display: none;
@@ -149,7 +154,7 @@
       position: absolute;
       width: 110vw;
       height: 100vh;
-      margin: -60px 0 0 -95vw;
+      margin: -100px 0 0 -100vw;
       padding: 50px;
       padding-top: 160px;
       background-color: rgba(255, 255, 255, 0.8);
@@ -194,7 +199,130 @@
         }
 
 
+    /* 이용권티켓 */
+    .ticket__img {
+        position: absolute;
+        /*
+        transform: translate(-50%, 37%);
+        */
+        bottom: -375px;
+        width: 100%;
+        height: 100%;
+        background-image: url('./img/web/이용권티켓_웹\,탭.png');
 
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        z-index: 10;
+        transition: 5s;
+        display: none;
+    }
+
+    /* 이용권티켓 컨텐츠 */
+
+    .ticket_total_content {
+        display: grid;
+        grid-template-columns: 445px 215px;
+        justify-content: center;
+
+        z-index: 99;
+        margin-top: 600px;
+
+    }
+
+    .ticket_left {
+        display: grid;
+        grid-template-rows: 100px 100px 100px;
+        justify-content: start;
+        justify-items: start;
+    }
+
+    .fast_buy_title {
+        margin-top: 20px;
+        font-size: 30px;
+        color: #444545;
+        font-weight: 900;
+    }
+
+    .fast_buy_content {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .fast_buy_content_1,
+    .fast_buy_content_2 {
+        display: grid;
+        grid-template-columns: 150px 150px 145px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .fast_buy_coc {
+        display: flex;
+    }
+
+    .fast_buy_coc div {
+        margin-right: 10px;
+        color: #444545;
+        font-size: 17px;
+        vertical-align: middle;
+    }
+
+    .fast_buy_coc .buy_icon {
+        color: #286BE1;
+        font-size: 20px;
+        vertical-align: middle;
+
+    }
+
+    .fast_buy_coc .arrow_small {
+        color: #444545;
+        font-size: 14px;
+    }
+
+    .ticket_buy_btn {
+        font-size: 17px;
+        width: 100px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: #286BE1;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        margin-top: 10px;
+        margin-left: 315px;
+        cursor: pointer;
+    }
+
+    #ticket_now_time {
+        z-index: 100;
+        color: #444545;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        position: relative;
+        width: 320px;
+        height: 250px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 55px;
+    }
+
+    /* 빠른구매 클릭했을때 */
+
+    .choice_none {
+        display: none;
+        cursor: pointer;
+    }
+
+    .ticket_buy_choice a {
+        color: #444545;
+        text-decoration: none;
+    }
+
+    .ticket_buy_choice {
+        cursor: pointer;
+    }
 
 
 
@@ -707,130 +835,7 @@
 
 
 
-    /* 이용권티켓 */
-    .ticket__img {
-        position: absolute;
-        /*
-        transform: translate(-50%, 37%);
-        */
-        bottom: -375px;
-        width: 100%;
-        height: 100%;
-        background-image: url('./img/web/이용권티켓_웹\,탭.png');
 
-        background-repeat: no-repeat;
-        background-position: bottom center;
-        z-index: 10;
-        transition: 5s;
-        display: none;
-    }
-
-    /* 이용권티켓 컨텐츠 */
-
-    .ticket_total_content {
-        display: grid;
-        grid-template-columns: 445px 215px;
-        justify-content: center;
-
-        z-index: 99;
-        margin-top: 600px;
-
-    }
-
-    .ticket_left {
-        display: grid;
-        grid-template-rows: 100px 100px 100px;
-        justify-content: start;
-        justify-items: start;
-    }
-
-    .fast_buy_title {
-        margin-top: 20px;
-        font-size: 30px;
-        color: #444545;
-        font-weight: 900;
-    }
-
-    .fast_buy_content {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .fast_buy_content_1,
-    .fast_buy_content_2 {
-        display: grid;
-        grid-template-columns: 150px 150px 145px;
-        margin-left: 20px;
-        margin-bottom: 10px;
-    }
-
-    .fast_buy_coc {
-        display: flex;
-    }
-
-    .fast_buy_coc div {
-        margin-right: 10px;
-        color: #444545;
-        font-size: 17px;
-        vertical-align: middle;
-    }
-
-    .fast_buy_coc .buy_icon {
-        color: #286BE1;
-        font-size: 20px;
-        vertical-align: middle;
-
-    }
-
-    .fast_buy_coc .arrow_small {
-        color: #444545;
-        font-size: 14px;
-    }
-
-    .ticket_buy_btn {
-        font-size: 17px;
-        width: 100px;
-        height: 40px;
-        border-radius: 50px;
-        background-color: #286BE1;
-        color: #fff;
-        text-align: center;
-        line-height: 40px;
-        margin-top: 10px;
-        margin-left: 315px;
-        cursor: pointer;
-    }
-
-    #ticket_now_time {
-        z-index: 100;
-        color: #444545;
-        font-size: 22px;
-        font-weight: 600;
-        text-align: center;
-        position: relative;
-        width: 320px;
-        height: 250px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-top: 55px;
-    }
-
-    /* 빠른구매 클릭했을때 */
-
-    .choice_none {
-        display: none;
-        cursor: pointer;
-    }
-
-    .ticket_buy_choice a {
-        color: #444545;
-        text-decoration: none;
-    }
-
-    .ticket_buy_choice {
-        cursor: pointer;
-    }
 
 
     /* 성환초이 건듦 */

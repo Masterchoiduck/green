@@ -252,6 +252,170 @@ body { overflow-x: hidden; }
         cursor: pointer;
     }
 
+    /* 이용권티켓 */
+    .ticket__img {
+        position: absolute;
+        /*
+        transform: translate(-50%, 37%);
+        */
+        bottom: -380px;
+        width: 100%;
+        /* height: 100%; */
+        background-image: url('./img/web/이용권티켓_웹\,탭.png');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        z-index: 10;
+        transition: 2s;
+    }
+
+    /* 이용권티켓 컨텐츠 */
+
+    .ticket_total_content {
+        display: grid;
+        grid-template-columns: 445px 215px;
+        justify-content: center;
+        align-items: end;
+        z-index: 99;
+        margin-top: 600px;
+
+    }
+
+    .ticket_left {
+        display: grid;
+        grid-template-rows: 100px 100px 100px;
+        justify-content: start;
+        justify-items: start;
+    }
+
+    .fast_buy_title {
+        margin-top: 20px;
+        font-size: 30px;
+        color: #444545;
+        font-weight: 900;
+    }
+
+    .fast_buy_content {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .fast_buy_content_1,
+    .fast_buy_content_2 {
+        display: grid;
+        grid-template-columns: 150px 150px 145px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .fast_buy_coc {
+        display: flex;
+    }
+
+    .fast_buy_coc div {
+        margin-right: 10px;
+        color: #444545;
+        font-size: 17px;
+        vertical-align: middle;
+    }
+
+    .fast_buy_coc .buy_icon {
+        color: #286BE1;
+        font-size: 20px;
+        vertical-align: middle;
+
+    }
+
+    .fast_buy_coc .arrow_small {
+        color: #444545;
+        font-size: 14px;
+    }
+
+    .ticket_buy_btn {
+        font-size: 17px;
+        width: 100px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: #286BE1;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        margin-top: 10px;
+        margin-left: 315px;
+        cursor: pointer;
+    }
+
+    #ticket_now_time {
+        z-index: 100;
+        color: #444545;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        position: relative;
+        width: 320px;
+        height: 250px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 18px;
+    }
+/* 메인 영상 */
+.full_video {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none
+}
+
+.full_video iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100vh;
+    min-width: 177.77vh;
+    transform: translate(-50%, -50%)
+}
+
+.usk_title_name {
+    font-size: 100px;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 10;
+    position: relative;
+    text-align: center;
+    top: 40%;
+}
+
+.blue_effect {
+    width: 100vw;
+    height: 100vh;
+    z-index: 100px;
+    position: absolute;
+}
+
+    /* 빠른구매 클릭했을때 */
+
+    .choice_none {
+        display: none;
+        cursor: pointer;
+    }
+
+    .ticket_buy_choice a {
+        color: #444545;
+        text-decoration: none;
+    }
+
+    .ticket_buy_choice {
+        cursor: pointer;
+    }
+
+
+
+
 
 
     /* 풀페이지 전체 */
@@ -734,128 +898,6 @@ body { overflow-x: hidden; }
         cursor: pointer;
     }
 
-    /* 이용권티켓 */
-    .ticket__img {
-        position: absolute;
-        /*
-        transform: translate(-50%, 37%);
-        */
-        bottom: -380px;
-        width: 100%;
-        /* height: 100%; */
-        background-image: url('./img/web/이용권티켓_웹\,탭.png');
-        background-repeat: no-repeat;
-        background-position: bottom center;
-        z-index: 10;
-        transition: 2s;
-    }
-
-    /* 이용권티켓 컨텐츠 */
-
-    .ticket_total_content {
-        display: grid;
-        grid-template-columns: 445px 215px;
-        justify-content: center;
-        align-items: end;
-        z-index: 99;
-        margin-top: 600px;
-
-    }
-
-    .ticket_left {
-        display: grid;
-        grid-template-rows: 100px 100px 100px;
-        justify-content: start;
-        justify-items: start;
-    }
-
-    .fast_buy_title {
-        margin-top: 20px;
-        font-size: 30px;
-        color: #444545;
-        font-weight: 900;
-    }
-
-    .fast_buy_content {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .fast_buy_content_1,
-    .fast_buy_content_2 {
-        display: grid;
-        grid-template-columns: 150px 150px 145px;
-        margin-left: 20px;
-        margin-bottom: 10px;
-    }
-
-    .fast_buy_coc {
-        display: flex;
-    }
-
-    .fast_buy_coc div {
-        margin-right: 10px;
-        color: #444545;
-        font-size: 17px;
-        vertical-align: middle;
-    }
-
-    .fast_buy_coc .buy_icon {
-        color: #286BE1;
-        font-size: 20px;
-        vertical-align: middle;
-
-    }
-
-    .fast_buy_coc .arrow_small {
-        color: #444545;
-        font-size: 14px;
-    }
-
-    .ticket_buy_btn {
-        font-size: 17px;
-        width: 100px;
-        height: 40px;
-        border-radius: 50px;
-        background-color: #286BE1;
-        color: #fff;
-        text-align: center;
-        line-height: 40px;
-        margin-top: 10px;
-        margin-left: 315px;
-        cursor: pointer;
-    }
-
-    #ticket_now_time {
-        z-index: 100;
-        color: #444545;
-        font-size: 22px;
-        font-weight: 600;
-        text-align: center;
-        position: relative;
-        width: 320px;
-        height: 250px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-top: 18px;
-    }
-
-    /* 빠른구매 클릭했을때 */
-
-    .choice_none {
-        display: none;
-        cursor: pointer;
-    }
-
-    .ticket_buy_choice a {
-        color: #444545;
-        text-decoration: none;
-    }
-
-    .ticket_buy_choice {
-        cursor: pointer;
-    }
 
 
     /* 성환초이 건듦 */
@@ -916,45 +958,7 @@ body { overflow-x: hidden; }
         white-space: normal;
     }
 
-    /* 메인 영상 */
-    .full_video {
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none
-    }
-
-    .full_video iframe {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100vw;
-        height: 56.25vw;
-        min-height: 100vh;
-        min-width: 177.77vh;
-        transform: translate(-50%, -50%)
-    }
-
-    .usk_title_name {
-        font-size: 100px;
-        color: #fff;
-        font-weight: bolder;
-        z-index: 10;
-        position: relative;
-        text-align: center;
-        top: 40%;
-    }
-
-    .blue_effect {
-        width: 100vw;
-        height: 100vh;
-        z-index: 100px;
-        position: absolute;
-    }
-
+    
 
 
 }
