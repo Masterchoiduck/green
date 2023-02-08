@@ -20,8 +20,11 @@ body, *{
 
 
 .main_tema_header{ 
-    background-color: black;
-    height: 15rem;
+    color: #286BE1;;
+    font-size: 3rem;
+    margin-left: 3.5rem;
+    font-weight: 700;
+    margin-top: 10rem;
 }
 
 .main_tema_body_intro{
@@ -33,14 +36,14 @@ body, *{
 .text_box{ 
     display: flex;
     justify-content: center;
-    margin-top:4rem;
+    margin-top:5rem;
 }
 
 .main_tema_top{ 
     color:#fff;
 }
 .main_tema_body_header{ 
-    color:#0066FF; 
+    color:#286BE1; 
 }
 
 .main_tema_body_cotainer{ 
@@ -101,7 +104,7 @@ img{
     display: flex;
     align-items: center;
     flex-direction: row;
-    color: #0066FF;
+    color: #286BE1;;
     font-weight: bolder;
     margin-top:2.5rem;
     cursor: pointer;
@@ -216,11 +219,13 @@ img{
 .tema__video_header{ 
     font-family: 'Noto Sans KR';
     font-weight: bolder;
-    color: #0066FF;
+    color: #286BE1;;
     font-size: 2rem;
 }
 .text__header{ 
     margin-bottom: 4rem;
+    font-size: 3rem;
+    margin-left: 3.5rem;
 }
 
 

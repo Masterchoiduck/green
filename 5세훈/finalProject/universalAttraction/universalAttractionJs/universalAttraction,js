@@ -385,9 +385,10 @@ express.addEventListener('click',e=>{
         document.querySelector('input[id=chk2]').addEventListener('change',function (e){ 
             e.preventDefault();
             
-            let list = document.querySelectorAll('input[type=checkbox]');
+            let list = document.querySelectorAll('input[class=checkedBox]');
+            console.log(list);
             list.forEach((item, idx)=>{ 
-                if(idx !== list.length-1){
+                if(idx !== list.length){
                 item.checked = this.checked;
                 }
             })
@@ -397,9 +398,9 @@ express.addEventListener('click',e=>{
         document.querySelector('input[id=chk1]').addEventListener('change',function (e){ 
             e.preventDefault();
            
-            let list = document.querySelectorAll('input[type=checkbox]');
+            let list = document.querySelectorAll('input[class=checkedBox]');
             list.forEach((item, idx)=>{
-                if(idx !== list.length-1){                   
+                if(idx !== list.length){                   
                     item.checked = this.checked;
                     // console.log(item.checked);
                 }
