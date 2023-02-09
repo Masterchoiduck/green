@@ -6,13 +6,11 @@ let pageFNum = 9;
 let page = 9;
 const $show_moreBtn = document.querySelector('.show_moreBtn')
 $show_moreBtn.addEventListener('click',e=>{
-    page += 9;
-    choi();
-    console.log(`page : ${page}`);
-    console.log(pageFNum);
-    
+page += 9;
+choi();
+console.log(`page : ${page}`);
+console.log(pageFNum);
 });
-
 
 // 드롭창 구현
 
@@ -61,6 +59,10 @@ const $btn_select_mode3 = document.querySelector('.btn_select_mode3');
 
 let comment = '전부';
 
+
+
+
+
 $list.forEach(item=>{ 
     item.addEventListener('click',e =>{ 
         comment = e.target.textContent;
@@ -68,10 +70,16 @@ $list.forEach(item=>{
         console.log(comment);
         page = 9;
         choi();
-        if($btn_select_mode1.classList.contains('on'))
-        { 
+
+        if(e.currentTarget !== item){
+            console.log(e.target); 
             $btn_select_mode1.classList.remove('on');
         }
+        if($btn_select_mode1.classList.contains('on'))
+        { 
+        $btn_select_mode1.classList.remove('on');
+     }
+        
     })
 });
 
@@ -279,6 +287,7 @@ express.addEventListener('click',e=>{
                 test_choi(item,index);
                 // console.log(index);
                 $attractionContainer.innerHTML='';
+
             });
         }
         function test_choi(item,index){
@@ -341,6 +350,7 @@ express.addEventListener('click',e=>{
                 console.log('그만');
 
             }
+
             if(page >= pageFNum){
                 console.log('되는겨?');
                 console.log(pageFNum);
