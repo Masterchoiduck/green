@@ -18,13 +18,19 @@ body, *{
     
 }
 
-
+.main_tema_body{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .main_tema_header{ 
+    display: flex;
+    justify-content: center;
     color: #286BE1;;
     font-size: 3rem;
-    margin-left: 3.5rem;
     font-weight: 700;
     margin-top: 10rem;
+    flex-direction: column;
 }
 
 .main_tema_body_intro{
@@ -225,7 +231,6 @@ img{
 .text__header{ 
     margin-bottom: 4rem;
     font-size: 3rem;
-    margin-left: 3.5rem;
 }
 
 
