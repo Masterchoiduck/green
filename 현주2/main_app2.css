@@ -686,17 +686,6 @@
 
 
 /* 퍼레이드 실시간 시간 */
-#parade_now_date{
-    position: absolute;
-    width: 100%;
-    bottom: 50px;
-    font-size: 40px;
-    color: #2F2F2F;
-    font-weight: 400;
-    text-align: center;
-
-
-}
 
 
 
