@@ -3,15 +3,30 @@ const modal = document.querySelector(".modal");
 const overlay = modal.querySelector(".md_overlay");
 const closeButton = modal.querySelector("button");
 const md_content = modal.querySelector('.md_content');
+const $body = document.querySelector('body');
 
+
+
+modal.addEventListener('click',e =>{ 
+    if(e.target === overlay){ 
+        modal.classList.add('hidden');
+    }
+})
 
 //동작함수
 
-const closeModal = () => {
+const closeModal = (e) => {
     modal.classList.add("hidden");
+   
 }
 //클릭 이벤트
 closeButton.addEventListener("click", closeModal);
+
+
+
+
+
+
 
 
 const $detailBox = document.querySelector('.detail_commentbox');
