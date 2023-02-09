@@ -2,10 +2,32 @@
     margin: 0;
     padding: 0;
 }
+
+.d-none {
+    display: none !important;
+}
+
+.mySwiper { height: 29vw; }
+.mySwiper .back { position: relative; overflow: hidden; display: flex;
+    justify-content: center; }
+.mySwiper .back.blur::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);    
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mySwiper .back > img { width: 99.2%; }
+
 @media (min-width:769px) and (max-width:1024px){
     html,
     body {
-        width: 100%;
+        width: 100%3
         height: 100%;
         scroll-snap-type: y mandatory;
     }
@@ -654,9 +676,7 @@
 
     }
 
-    .d-none {
-        display: none;
-    }
+    
 
 
     /*퍼레이드 페이지*/
@@ -689,42 +709,6 @@
 .main_parade_item{
     position: relative;
 }
-.parade_text_box{
-    width: 34.1797vw;
-    height: 14.6484vw;
-    text-align: center;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    z-index: 100;
-    position: absolute;
-    top: 37%;
-    left: 7%;
-}
-
-.parade_text_title{
-    font-size: 2.9297vw;
-    font-weight: bolder;
-    color: #424242;
-}
-.parade_text_content{
-    margin-top: 10px;
-    font-size: 15px;
-    font-weight: 400;
-    color: #424242;
-}
-.parade_text_time{
-    font-size: 18px;
-    font-weight: 600;
-    color: #424242;
-    width: 75px;
-    height: 35px;
-    border: 2px solid #424242;
-    border-radius: 50px;
-    line-height: 30px;
-    margin-top: 25px;
-}
 
 .d-none div{
     display: none;
@@ -740,15 +724,6 @@
 
 
 /* 퍼레이드 실시간 시간 */
-#parade_now_date{
-    position: absolute;
-    width: 100%;
-    bottom: 50px;
-    font-size: 40px;
-    color: #2F2F2F;
-    font-weight: 400;
-    text-align: center;
-}
     /* 푸터 */
     .footer {
         color: #fff;
@@ -760,9 +735,7 @@
     .footer_section_total {
         width: 87.8906vw;
         height: 160px;
-        
         margin: 0px auto;
-
         position: relative;
         top: 40px;
         display: grid;

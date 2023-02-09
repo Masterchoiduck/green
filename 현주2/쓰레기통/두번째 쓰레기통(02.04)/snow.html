@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+    </style>
+</head>
+<body>
+    <canvas width="460" height="460" >
+
+    <script>
+const $canvas = document.querySelector("canvas");
+const ctx = $canvas.getContext("2d");
+
+const getRandomRadius = () => Math.random() * 1 + 0.5;
+const getRandomSpeed = () => Math.random() * 0.3 + 0.1;
+const getRandomDir = () => [-1, 1][Math.floor(Math.random() * 2)];
+
+const getCanvasSize = () => {
+  const canvasWidth = $canvas.clientWidth;
+  const canvasHeight = $canvas.clientHeight;
+
+  return { canvasWidth, canvasHeight };
+}
+
+const Snow = {
+  data: [],
+
+  init() {
+    Snow.make();
+    Snow.loop();
+  },
+
+  loop() {
+    Snow.move();
+    Snow.draw();
+
+    window.requestAnimationFrame(Snow.loop);
+  },
+
+  make() {
+    const data = [];
+  
+    const canvasWidth = $canvas.clientWidth;
+    const canvasHeight = $canvas.clientWidth;
+  
+    // 랜덤한 데이터 200개 생성
+    for (let i = 0; i < 200; i++) {
+      const x = Math.random() * canvasWidth;
+      const y = Math.random() * canvasHeight;
+  
+      const size = getRandomRadius();
+      const speed = getRandomSpeed();
+      const dir = getRandomDir();
+  
+      data.push({ x, y, size, speed, dir });
+    }
+  
+    // Snow 객체에 데이터 저장
+    Snow.data = data;
+  },
+
+  move() {
+    const { canvasWidth, canvasHeight } = getCanvasSize();
+  
+    Snow.data = Snow.data.map((item) => {
+      // 방향에 맞게 이동
+      item.x += item.dir * item.speed;
+      item.y += item.speed;
+  
+      // 캔버스를 벗어났는지 판단
+      const isMinOverPositionX = -item.size > item.x;
+      const isMaxOverPositionX = item.x > canvasWidth;
+      const isOverPositionY = item.y > canvasHeight;
+  
+      // 벗어나면 반대방향, 맨 위로
+      if (isMinOverPositionX || isMaxOverPositionX) {
+        item.dir *= -1;
+      }
+      if (isOverPositionY) {
+        item.y = -item.size;
+      }
+  
+      return item;
+    });
+  },
+
+  draw() {
+    const { canvasWidth, canvasHeight } = getCanvasSize();
+
+    ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+  
+    ctx.fillStyle = "#0f1018";
+    ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+
+    Snow.data.forEach((item) => {
+      ctx.beginPath();
+      ctx.fillStyle = "rgba(255, 255, 255, .6)";
+      ctx.arc(item.x, item.y, item.size, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.closePath();
+    });
+  },
+};
+
+Snow.init();
+
+window.onresize = () => {
+  $canvas.width = window.innerWidth;
+  
+  Snow.make();
+};
+    </script>
+</body>
+</html>

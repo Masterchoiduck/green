@@ -76,6 +76,59 @@
 }
 
 body { overflow-x: hidden; }
+
+
+.parade_text_box{
+    width: 75%;
+    height: 50%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+}
+      
+.parade_text_title{
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: #424242;
+    margin-bottom: 10px;
+}
+.parade_text_content{
+    font-size: 0.9vw;
+    font-weight: 400;
+    color: #424242;
+    margin-bottom: 15px;
+}
+.parade_text_time{
+    font-size: 18px;
+    font-weight: 600;
+    color: #424242;
+    width: 75px;
+    height: 35px;
+    border: 2px solid #424242;
+    border-radius: 50px;
+    line-height: 30px;
+    margin-top: 25px;
+}
+.parade_text_end{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 28.9063vw;
+    text-align: center;
+}
+
+
+/* 퍼레이드 실시간 시간 */
+#parade_now_date{    
+    font-size: 40px;
+    color: #2F2F2F;
+    font-weight: 400;
+    text-align: center;
+}
+
 @media (min-width:1025px) {
     html,
     body {
@@ -752,69 +805,7 @@ body { overflow-x: hidden; }
 .main_parade_item{
     position: relative;
 }
-.parade_text_box{
-    width: 20.8333vw;
-    height: 8.8542vw;
-    text-align: center;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    position: absolute;
-    top: 35%;
-    left: 5%;
-    
-}
-      
-.parade_text_title{
-    font-size: 1.7188vw;
-    font-weight: bolder;
-    color: #424242;
-    margin-bottom: 10px;
-}
-.parade_text_content{
-    font-size: 17px;
-    font-weight: 400;
-    color: #424242;
-    margin-bottom: 15px;
-}
-.parade_text_time{
-    font-size: 18px;
-    font-weight: 600;
-    color: #424242;
-    width: 75px;
-    height: 35px;
-    border: 2px solid #424242;
-    border-radius: 50px;
-    line-height: 30px;
-    margin-top: 25px;
-}
 
-.d-none div{
-    display: none;
-}
-
-.parade_text_end{
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
-    margin-top: 28.9063vw;
-    text-align: center;
-}
-
-
-/* 퍼레이드 실시간 시간 */
-#parade_now_date{
-    position: absolute;
-    width: 100%;
-    bottom: 50px;
-    font-size: 40px;
-    color: #2F2F2F;
-    font-weight: 400;
-    text-align: center;
-
-
-}
 
 
 
@@ -961,6 +952,15 @@ body { overflow-x: hidden; }
     
 
 
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    div.full4 > div.swiper.mySwiper {
+        height: 100% !important;
+    } 
+    .parade_text_box{ height: 80%; }
+    .parade_text_title { font-size: 3vw; }
+    .parade_text_content{ font-size: 1.6vw; }
 }
 
 .stop-scrolling {

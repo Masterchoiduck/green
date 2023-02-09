@@ -1,9 +1,3 @@
-// const $Html = document.querySelector('html')
-//   setTimeout(()=>{
-//     console.log('1111');
-//     $Html.classList.remove('d-none')
-//   },1000)
-
 const $header = document.querySelector('header')
 const $menu_bar =document.querySelectorAll('.menu_bar')
 const $search_icon_gray=document.querySelector('.search_icon_gray')
@@ -27,6 +21,7 @@ const $body = document.querySelector("body")
 //이용권티켓 스크롤하기
 const box= document.querySelector('.box111');
 
+
 let deltaY = 0
 window.addEventListener("wheel", function(e){
   if(!deltaY){
@@ -43,8 +38,6 @@ window.addEventListener("wheel", function(e){
   let YY = -380
   box.style.transform = 'translate(' +XX + 'px,' + YY + 'px)';
 });
-
-
 
 
 const interval = setInterval(function() {
@@ -132,20 +125,8 @@ choiceNone.style.display='none';
 }
 box.addEventListener('transitionend', function(e){
   box.classList.add('end');
-  // console.log(e);
-  // transition delay time이 찍힌다.
 })
-// window.onload = function(){
-//   console.log('윈도우 새로고침할때 발생');
-//   console.log(scrollY);
-//   if(scrollY>0){
-//     function scrollToTop() {
-//           window.scrollBy(0,-50);
-//           timeOut=setTimeout('scrollToTop()',10);
-//       clearTimeout(timeOut);
-//   }
-//   }
-// }
+
 const $main_side_bar = document.querySelector('#main_side_bar')
 const $guide_map_icon = document.querySelector('.guide_map_icon')
 const $menuToggle = document.querySelectorAll('#menuToggle span')
@@ -161,7 +142,7 @@ window.addEventListener('scroll', (e) => {
           // 검정
           if (window.scrollY>=full2TopY){
             $menuToggle.forEach(item=>{
-              console.log(item);
+              //console.log(item);
               item.style.backgroundColor='#000'
             })
             $guide_map_icon.style.display='inline-block'
@@ -204,55 +185,32 @@ window.addEventListener('scroll', (e) => {
       // console.log('움직임');
     }
   });
-  const $swiperSlide = document.querySelectorAll('.swiper-slide')
-  $swiperSlide.forEach(item=>{
-    console.log(item);
-    const $are=item.getAttribute('aria-label')
-    const $dic=item.querySelector('.parade_text_box')
-    console.log($are);
-    const $IMG=item.querySelector('img')
-    $IMG.addEventListener('mouseover',e=>{
-      if($are==='1 / 5'){
-        $IMG.src='./img/web/퍼레이드_마리오_블러.png'
-        $dic.classList.remove('d-none')
-      }
-      if($are==='2 / 5'){
-        $IMG.src='./img/web/퍼레이드_쥬라기_블러.png'
-        $dic.classList.remove('d-none')
-      }
-      if($are==='3 / 5'){
-        $IMG.src='./img/web/퍼레이드_미니언즈_블러.png'
-        $dic.classList.remove('d-none')
-      }
-      if($are==='4 / 5'){
-        $IMG.src='./img/web/퍼레이드_트랜스포머_블러.png'
-        $dic.classList.remove('d-none')
-      }
-      if($are==='5 / 5'){
-        $IMG.src='./img/web/퍼레이드_해리포터_블러.png'
-        $dic.classList.remove('d-none')
-      }
-    })
-    $IMG.addEventListener('mouseout',e=>{
-      if($are==='1 / 5'){
-        $IMG.src='./img/web/퍼레이드_마리오.png'
-        $dic.classList.add('d-none')
-      }
-      if($are==='2 / 5'){
-        $IMG.src='./img/web/퍼레이드_쥬라기.png'
-        $dic.classList.add('d-none')
-      }
-      if($are==='3 / 5'){
-        $IMG.src='./img/web/퍼레이드_미니언즈.png'
-        $dic.classList.add('d-none')
-      }
-      if($are==='4 / 5'){
-        $IMG.src='./img/web/퍼레이드_트랜스포머.png'
-        $dic.classList.add('d-none')
-      }
-      if($are==='5 / 5'){
-        $IMG.src='./img/web/퍼레이드_해리포터.png'
-        $dic.classList.add('d-none')
-      }
-    })
+
+  const $swiperWrapper = document.querySelector('.swiper.mySwiper > div.swiper-wrapper');
+  const $swiperSlide = $swiperWrapper.querySelectorAll('div.full4 div.swiper-slide');
+
+  $swiperWrapper.addEventListener('mouseleave', e => {
+   
+      $swiperSlide.forEach(subItem => {
+        const subBack = subItem.querySelector('.back');
+        const paradeText = subItem.querySelector('div.parade_text_box');
+
+        subBack.classList.remove('blur')
+        paradeText.classList.add('d-none');
+      });
+   
   })
+
+  $swiperSlide.forEach(item => {
+    const back = item.querySelector('.back');
+
+    back.addEventListener('mouseenter', e => {
+      $swiperSlide.forEach(subItem => {
+        const subBack = subItem.querySelector('.back');
+        const paradeText = subItem.querySelector('div.parade_text_box');
+
+        subBack.classList.toggle('blur', item === subItem)
+        paradeText.classList.toggle('d-none', item !== subItem);
+      });
+    });
+  });
