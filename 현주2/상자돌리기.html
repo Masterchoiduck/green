@@ -7,7 +7,7 @@
     <title>UNIVERSAL STUDIO</title>
     <link rel="stylesheet" href="swiper.css">
     <link rel="stylesheet" href="main_tab2.css">
-    <link rel="stylesheet" href="main_web2.css">
+    <link rel="stylesheet" href="main_web_test.css">
     <link rel="stylesheet" href="main_app2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     
@@ -23,6 +23,19 @@
     <!-- AOS 라이브러리 -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+    <!-- 박스넘어가기 슬라이드 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/krebszattila/jquery-flipbox/master/src/jquery.flipbox.css">
+    <style>
+        button {margin: 2px; border: 1px solid #888; outline: none; background: #aaa; line-height: 20px; cursor: pointer;}
+        button:hover {background: #bbb;}
+        .item {display: inline-block;text-align: center; vertical-align: top; font-size: 0;}
+        .flipbox {width: 100vw; height: 100vh;font-size: initial;}
+        .flipbox .side {width: 100vw; height: 100vh; color: #fff; text-align: center; user-select: none;}
+
+
+    </style>
 </head>
 <body class="snap-on stop-scrolling">
     <!--헤더-->
@@ -116,17 +129,17 @@
     </div>
 
     <!--메인페이지-->
-    <div id="main_container">
-        <div id="main_fullPage">
+    <div id="main_container item">
+        <div id="main_fullPage flipbox2" class="flipbox">
             <!--메인 첫 페이지-->
 
-            <div class="main_section full1">
+            <div class="main_section full1 side side1">
                 <div class="full_video">
                     <!-- 인터넷 연결 되야 영상 재생 됨.
                         <iframe allow="autoplay; fullscreen" allowfullscreen="" src="./img/ESTsecurity_Earth from ESTsoft on Vimeo.html" style="border: none"></iframe>
                     -->
                     <iframe allow="autoplay; fullscreen" allowfullscreen="" src="https://player.vimeo.com/video/346991810?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"></iframe>
-                    <img class="blue_effect" src="img/web/blueEff.png" alt="파란색 효과">
+                    <img class="blue_effect" style="position: relative;" src="img/web/blueEff.png" alt="파란색 효과">
                     <div class="usk_title_name">UNIVERSAL STUDIO</div>
                 </div>
             </div>
@@ -204,7 +217,7 @@
 
             
             <!--할인혜택 페이지-->
-            <div class="main_section full2">
+            <div class="main_section full2 side side2">
                 <div class="main_section_top benefit_title_total">
                     <div data-aos="fade-down" class="main_title benefit"data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">할인혜택</div>
                     <div class="main_All benefit2">All Benefits ></div>
@@ -262,7 +275,7 @@
             </div>
 
             <!--베스트 어트랙션 페이지-->
-            <div class="main_section full3">
+            <div class="main_section full3 side side3">
                 <div class="main_section_top attraction_title_total">
 
                     <div class="main_title attraction" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">BEST ATTRACTION</div>
@@ -363,7 +376,7 @@
             </div>
 
             <!--퍼레이드 페이지-->
-            <div class="main_section full4">
+            <div class="main_section full4 side side4">
                 <div class="main_section_top parade_title_total">
                     <div class="main_title parade" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">PARADE</div>
                     <div class="main_All parade2">All Parades ></div>
@@ -587,5 +600,43 @@
         AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
     </script>
 
+
+    <!-- 박스 굴리기 슬라이드 -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdn.rawgit.com/krebszattila/jquery-flipbox/master/src/jquery.flipbox.js"></script>
+
+        <script>
+
+            // Vertical
+            $('#box2').flipbox({
+                vertical: true,
+                scroll: true
+            });
+            $('#box2').flipbox({
+                vertical: false,
+                autoplay: true,
+                autoplayReverse: false,
+                autoplayWaitDuration: 2000,
+                autoplayPauseOnHover: true
+            });
+            // Buttons
+            $('button.prev').click(function() {
+                $(this).closest('.item').find('.box').flipbox('prev', $(this).hasClass('reverse'));
+            });
+            $('button.next').click(function() {
+                $(this).closest('.item').find('.box').flipbox('next', $(this).hasClass('reverse'));
+            });
+            $('button.jump').click(function() {
+                $(this).closest('.item').find('.box').flipbox('jump', $(this).data('index'), $(this).hasClass('reverse'));
+            });
+            $('button.config').click(function() {
+                $(this).closest('.item').find('.box')
+                    .flipbox({
+                        animationDuration: $(this).data('duration'),
+                        animationEasing: $(this).data('easing')
+                    })
+                    .flipbox('next');
+            });
+        </script>
 </body>
 </html>
