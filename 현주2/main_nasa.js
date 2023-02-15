@@ -1,5 +1,4 @@
 const $header = document.querySelector('header')
-const $menu_bar =document.querySelectorAll('.menu_bar')
 const $search_icon_gray=document.querySelector('.search_icon_gray')
 const $search_icon_white=document.querySelector('.search_icon_white')
 const $ticket_icon_white=document.querySelector('.ticket_icon_white')
@@ -39,7 +38,7 @@ window.addEventListener("wheel", function(e){
   box.style.transform = 'translate(' +XX + 'px,' + YY + 'px)';
 });
 
-
+// 날짜 계산하기
 const interval = setInterval(function() {
   var now = new Date();   //현재시간
   var year = now.getFullYear();   //현재 연도
@@ -135,27 +134,31 @@ let scrollTimer = null;
 $guide_map_icon.style.display='none'
 window.addEventListener('scroll', (e) => {
   // console.log(scrollY);
-    if(!scrollTimer) {
-      scrollTimer = setTimeout(function() {
-        scrollTimer = null;
-        $menu_bar.forEach(item=>{
-          // 검정
-          if (window.scrollY>=full2TopY){
-            $menuToggle.forEach(item=>{
-              //console.log(item);
-              item.style.backgroundColor='#000'
-            })
-            $guide_map_icon.style.display='inline-block'
+    // if(!scrollTimer) {
+    //   scrollTimer = setTimeout(function() {
+    //     scrollTimer = null;
+    //     $menu_bar.forEach(item=>{
+    //       // 검정
+    //       if (window.scrollY>=full2TopY){
+    //         $menuToggle.forEach(item=>{
+    //           //console.log(item);
+    //           item.style.backgroundColor='#000'
+    //         })
+    //         $guide_map_icon.style.display='inline-block'
 
-          } else {   // 흰색
-            $menuToggle.forEach(item=>{
-              item.style.backgroundColor='#fff'
-            })
-            $guide_map_icon.style.display='none'
+    //       } else {   // 흰색
+    //         $menuToggle.forEach(item=>{
+    //           item.style.backgroundColor='#fff'
+    //         })
+    //         $guide_map_icon.style.display='none'
 
-          }
-        })
-      }, 500);
+    //       }
+    //     })
+    //   }, 500);
+    if(window.scrollY>=900){
+      $guide_map_icon.style.display='inline-block'
+    }else{
+      $guide_map_icon.style.display='none'
     }
     // -2860
     if(window.scrollY>=2916){
