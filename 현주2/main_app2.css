@@ -208,14 +208,16 @@
 
     .full2,
     .full4 {
-        background-color: #f7f7f7;
+        /* background-color: #f7f7f7; */
+        background-color: #05091b;
         display: grid;
         grid-template-rows: 300px 1fr;
         justify-content: center;
     }
 
     .full3 {
-        background-color: #EEF5FB;
+        /* background-color: #EEF5FB; */
+        background-color: #05091b;
         display: grid;
         grid-template-rows: 300px 1fr;
         justify-content: center;

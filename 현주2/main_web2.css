@@ -73,14 +73,15 @@
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans KR';
-    
+
 }
 
-body { overflow-x: hidden; 
+body {
+    overflow-x: hidden;
 }
 
 
-.parade_text_box{
+.parade_text_box {
     width: 80%;
     height: 170px;
     text-align: center;
@@ -90,21 +91,23 @@ body { overflow-x: hidden;
     justify-items: center;
     position: absolute;
 }
-      
-.parade_text_title{
+
+.parade_text_title {
     font-size: 30px;
     font-weight: bolder;
     color: #424242;
 
 }
-.parade_text_content{
+
+.parade_text_content {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     color: #424242;
 
 }
-.parade_text_time{
+
+.parade_text_time {
     font-size: 16px;
     font-weight: 600;
     color: #424242;
@@ -116,7 +119,8 @@ body { overflow-x: hidden;
     margin-top: 30px;
 
 }
-.parade_text_end{
+
+.parade_text_end {
     font-size: 30px;
     font-weight: bold;
     color: #fff;
@@ -126,7 +130,7 @@ body { overflow-x: hidden;
 
 
 /* 퍼레이드 실시간 시간 */
-#parade_now_date{    
+#parade_now_date {
     font-size: 35px;
     color: #2F2F2F;
     font-weight: 400;
@@ -135,22 +139,17 @@ body { overflow-x: hidden;
     bottom: 55px;
 }
 
-
-.particles-js-canvas-el{
+#particles-js {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
+
 
 /* ---- particles.js container ---- */
 
-#particles-js ,#particles-js2, #particles-js3 {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-color: #06071A;
-    
-}
 
 /* ---- stats.js ---- */
 .count-particles {
@@ -190,18 +189,20 @@ body { overflow-x: hidden;
 }
 
 @media (min-width:1025px) {
+
     html,
     body {
         width: 100%;
         height: 100%;
         scroll-snap-type: y mandatory;
-        
+
     }
 
     /* 헤더 */
     .logo {
         margin: 13px 0px 0px 3.9063vw;
     }
+
     .top_menu {
         color: white;
         display: flex;
@@ -242,9 +243,11 @@ body { overflow-x: hidden;
     li {
         list-style: none;
     }
+
     a {
         text-decoration: none;
     }
+
     .top_menu {
         width: 100vw;
         overflow: hidden;
@@ -351,7 +354,7 @@ body { overflow-x: hidden;
         height: 90px;
     }
 
-    .three_bar{
+    .three_bar {
         display: none;
     }
 
@@ -472,44 +475,45 @@ body { overflow-x: hidden;
         align-items: center;
         margin-top: 18px;
     }
-/* 메인 영상 */
-.full_video {
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none
-}
 
-.full_video iframe {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 56.25vw;
-    min-height: 100vh;
-    min-width: 177.77vh;
-    transform: translate(-50%, -50%)
-}
+    /* 메인 영상 */
+    .full_video {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none
+    }
 
-.usk_title_name {
-    font-size: 100px;
-    color: #fff;
-    font-weight: bolder;
-    z-index: 10;
-    position: relative;
-    text-align: center;
-    top: 40%;
-}
+    .full_video iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 56.25vw;
+        min-height: 100vh;
+        min-width: 177.77vh;
+        transform: translate(-50%, -50%)
+    }
 
-.blue_effect {
-    width: 100vw;
-    height: 100vh;
-    z-index: 100px;
-    position: absolute;
-}
+    .usk_title_name {
+        font-size: 100px;
+        color: #fff;
+        font-weight: bolder;
+        z-index: 10;
+        position: relative;
+        text-align: center;
+        top: 40%;
+    }
+
+    .blue_effect {
+        width: 100vw;
+        height: 100vh;
+        z-index: 100px;
+        position: absolute;
+    }
 
     /* 빠른구매 클릭했을때 */
 
@@ -544,7 +548,7 @@ body { overflow-x: hidden;
         scroll-snap-align: center;
         scroll-snap-stop: always;
         margin: 0 auto;
-        scroll-behavior: smooth; 
+        scroll-behavior: smooth;
     }
 
     .full1 {
@@ -554,7 +558,7 @@ body { overflow-x: hidden;
         /* height: 140vh; */
         scroll-snap-align: end;
         scroll-snap-stop: always;
-        scroll-behavior: smooth; 
+        scroll-behavior: smooth;
     }
 
 
@@ -563,19 +567,22 @@ body { overflow-x: hidden;
     .full2,
     .full4 {
         position: relative;
-        background-color: #f7f7f7;
+        /* background-color: #f7f7f7; */
+        background-color: #05091b;
+        /* background-color: transparent; */
         display: grid;
         grid-template-rows: 300px 1fr;
         justify-content: center;
-        scroll-behavior: smooth; 
+        scroll-behavior: smooth;
     }
 
     .full3 {
-        background-color: #EEF5FB;
+        /* background-color: #EEF5FB; */
+        background-color: #05091b;
         display: grid;
         grid-template-rows: 300px 1fr;
         justify-content: center;
-        scroll-behavior: smooth; 
+        scroll-behavior: smooth;
     }
 
 
@@ -598,7 +605,7 @@ body { overflow-x: hidden;
     }
 
 
-    .main_section_top{
+    .main_section_top {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -637,7 +644,7 @@ body { overflow-x: hidden;
         min-width: 190px;
         max-width: 250px;
         height: 250px;
-        
+
         background-color: #fff;
         text-align: center;
         display: flex;
@@ -826,7 +833,7 @@ body { overflow-x: hidden;
         margin-top: 50px;
         line-height: 40px;
         height: 80px;
-    
+
     }
 
     .att_content {
@@ -845,7 +852,7 @@ body { overflow-x: hidden;
 
 
     /*퍼레이드 페이지*/
-/*
+    /*
     .parade_title_total {
         display: grid;
         grid-template-columns: 19.1146vw 52.0833vw 180px 19.4271vw;
@@ -863,10 +870,10 @@ body { overflow-x: hidden;
         align-items: end;
     }
 
-/* 퍼레이드 호버했을떄 */
-.main_parade_item{
-    position: relative;
-}
+    /* 퍼레이드 호버했을떄 */
+    .main_parade_item {
+        position: relative;
+    }
 
 
 
@@ -876,7 +883,8 @@ body { overflow-x: hidden;
         color: #fff;
         width: 100%;
         height: 230px;
-        background-color: #05091b;
+        /* background-color: #05091b; */
+        background-color: #030611;
     }
 
     .footer_section_total {
@@ -957,6 +965,7 @@ body { overflow-x: hidden;
     .csh__black {
         color: #2f2f2f !important;
     }
+
     .earth_video {
         min-width: 100%;
         position: fixed;
@@ -970,10 +979,12 @@ body { overflow-x: hidden;
             -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
         }
+
         50% {
             -webkit-transform: scale3d(1.05, 1.05, 1.05);
             transform: scale3d(1.05, 1.05, 1.05);
         }
+
         to {
             -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
@@ -1011,21 +1022,30 @@ body { overflow-x: hidden;
         white-space: normal;
     }
 
-    
+
 
 
 }
 
-@media (min-width:769px) and (max-width:1024px){
-    div.full4 > div.swiper.mySwiper {
+@media (min-width:769px) and (max-width:1024px) {
+    div.full4>div.swiper.mySwiper {
         height: 100% !important;
-    } 
-    .parade_text_box{ height: 80%; }
-    .parade_text_title { font-size: 3vw; }
-    .parade_text_content{ font-size: 1.6vw; }
+    }
+
+    .parade_text_box {
+        height: 80%;
+    }
+
+    .parade_text_title {
+        font-size: 3vw;
+    }
+
+    .parade_text_content {
+        font-size: 1.6vw;
+    }
 }
 
 .stop-scrolling {
-  /* height: 100%; */
-  overflow: hidden;
+    /* height: 100%; */
+    overflow: hidden;
 }
