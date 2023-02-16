@@ -109,7 +109,7 @@ a:hover {
 .btnBox a {
     width: 169px;
     height: 59px;
-    background: #fe5730;
+    background: #286BE1;
     margin-left: 7px;
     font-size: 16px;
     line-height: 59px;
@@ -127,7 +127,7 @@ a:hover {
 }
 
 .btnBox.cb a {
-    background: #1b9bf0;
+    background: #286BE1;
 }
 
 .btnBox.ym a {
@@ -301,20 +301,20 @@ a:hover {
 
 .dateCalBox.el .ui-datepicker-header,
 .dateCalBox.el .ui-state-active:before {
-    background: #fe5730 !important;
+    background: #286BE1 !important;
 }
 
 .dateCalBox.el .ui-datepicker table td.able a {
-    color: #fe5730
+    color: #286BE1
 }
 
 .dateCalBox.cb .ui-datepicker-header,
 .dateCalBox.cb .ui-state-active:before {
-    background: #1b9bf0 !important;
+    background: #286BE1 !important;
 }
 
 .dateCalBox.cb .ui-datepicker table td.able a {
-    color: #1b9bf0
+    color: #286BE1
 }
 
 .dateCalBox.ym .ui-datepicker-header,
@@ -642,7 +642,7 @@ a:hover {
 .buyInfo {
     padding-right: 3rem;
     position: sticky;
-    z-index: 10;
+    /* z-index: 10; */
     float: right;
     width: 472px;
     top: 45px;
@@ -685,7 +685,7 @@ a:hover {
     float: left;
     width: 50%;
     height: 74px;
-    background: #fe5730;
+    background: #286BE1;
     margin: 0;
     font-size: 18px;
     line-height: 74px;
@@ -697,8 +697,8 @@ a:hover {
 
 .buyInfo .btnBox a:first-child {
     background: #fff;
-    border: solid 1px #fe5730;
-    color: #fe5730;
+    border: solid 1px #286BE1;
+    color: #286BE1;
 }
 
 .buyInfo .btnBox:after {
@@ -713,14 +713,14 @@ a:hover {
 }
 
 .buyInfo .btnBox.first a.elRes {
-    background: #fe5730 !important;
-    border-color: #fe5730
+    background: #286BE1 !important;
+    border-color: #286BE1
 }
 
 .buyInfo .btnBox.first a.cbRes {
-    background: #1b9bf0 !important;
+    background: #286BE1 !important;
     color: #fff !important;
-    border-color: #1b9bf0;
+    border-color: #286BE1;
 }
 
 .buyInfo .btnBox.first a.speedRes {
@@ -866,7 +866,7 @@ a:hover {
 }
 
 .buyInfo .itemOpt .notify {
-    color: #fe5730;
+    color: #286BE1;
 }
 
 .buyInfo .itemOpt .choice,
@@ -1632,30 +1632,30 @@ a:hover {
 }
 
 .buyInfo.el .amtBox strong {
-    color: #fe5730;
+    color: #286BE1;
 }
 
 .buyInfo.el .itemDet li.on,
 .buyInfo.el .itemDet li.on span {
-    border-color: #fe5730;
+    border-color: #286BE1;
 }
 
 .buyInfo.cb .amtBox strong {
-    color: #1b9bf0;
+    color: #286BE1;
 }
 
 .buyInfo.cb .itemDet li.on,
 .buyInfo.cb .itemDet li.on span {
-    border-color: #1b9bf0;
+    border-color: #286BE1;
 }
 
 .buyInfo.cb .btnBox a {
-    background: #1b9bf0;
+    background: #286BE1;
 }
 
 .buyInfo.cb .btnBox a:first-child {
-    border-color: #1b9bf0;
-    color: #1b9bf0;
+    border-color: #286BE1;
+    color: #286BE1;
 }
 
 .buyInfo.speed .amtBox strong {
@@ -1780,11 +1780,10 @@ a:hover {
 .layerPopup {
     position: fixed;
     z-index: 999;
-    top: 50%;
-    left: 50%;
+    top: 21%;
+    left: 30%;
     background: #fff;
     overflow: hidden;
-    display: none;
 }
 
 .layerPopup .cont .tit {
@@ -1807,7 +1806,7 @@ a:hover {
 .layerPopup .btnBox button {
     width: 140px;
     height: 44px;
-    background: #fe5730;
+    background: #286BE1;
     margin: 0 1px;
     font-size: 14px;
     line-height: 42px;
@@ -1823,7 +1822,7 @@ a:hover {
 
 .layerPopup .btnBox.cb a,
 .layerPopup .btnBox.cb button {
-    background: #1b9bf0;
+    background: #286BE1;
 }
 
 .layerPopup .btnBox.ym a,
@@ -1858,13 +1857,13 @@ a:hover {
 }
 
 .layerPopup.notice1 .btnBox .only {
-    background: #fe5730 !important;
+    background: #286BE1 !important;
     border: 0;
     color: #fff;
 }
 
 .layerPopup.notice1 .btnBox.cb .only {
-    background: #1b9bf0 !important;
+    background: #286BE1 !important;
 }
 
 .layerPopup.notice1 .btnBox.ym .only {
@@ -1916,13 +1915,13 @@ a:hover {
 }
 
 .layerPopup.notice2 .btnBox .only {
-    background: #fe5730 !important;
+    background: #286BE1 !important;
     border: 0;
     color: #fff;
 }
 
 .layerPopup.notice2 .btnBox.cb .only {
-    background: #1b9bf0 !important;
+    background: #286BE1 !important;
 }
 
 .layerPopup.notice2 .btnBox.ym .only {
@@ -1934,7 +1933,6 @@ a:hover {
 }
 
 #popupDate {
-    top: 48.5%;
     width: 640px;
 }
 
@@ -1973,7 +1971,7 @@ a:hover {
     content: '';
     width: 17px;
     height: 20px;
-    background-image: url('/web/img/202003170001/icon_time.png');
+    background-image: url('https://reservation.everland.com/web/img/202003170001/icon_time.png');
     background-repeat: no-repeat;
     margin: -6px 6px 0 0;
     vertical-align: middle;
@@ -1982,17 +1980,19 @@ a:hover {
 
 #popupDate .intro {
     background: #fff;
-    padding: 45px 0 25px 0;
-    font-size: 21px;
+    padding: 45px 0 50px 0;
+    font-size: 35px;
     color: #000;
     text-align: center;
 }
 
 #popupDate .dateCalBox {
-    width: 480px;
+    /* width: 480px; */
     background: #aaa;
-    margin-bottom: -15px;
-    padding: 0 80px 85px 80px;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: -15px; */
+    /* padding: 0 80px 85px 80px; */
 }
 
 #popupDate .dateCalBox:before {
@@ -2073,11 +2073,11 @@ a:hover {
 }
 
 .legend.el li.able {
-    color: #fe5730;
+    color: #286BE1;
 }
 
 .legend.cb li.able {
-    color: #1b9bf0;
+    color: #286BE1;
 }
 
 .legend.speed li.able {
@@ -2093,4 +2093,46 @@ a:hover {
     bottom: 10px;
     z-index: 2;
     margin-bottom: 20px;
+}
+
+#wrapCont{
+   background-position: 17.1528vw -0.1389vw;
+    background-image: url(../bg_calback.png);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-size: 630px auto;
+}
+
+.layerMask {
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: .7;
+    filter: alpha(opacity=75);
+}
+.D-none{
+    display: none;
+}
+.dayText2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60px;
+    cursor: pointer;
+    font-size: 30px;
+}
+.able{
+    color: #286BE1;
+}
+.disabled2 {
+    border-radius: 0.7em;
+    background-color: #286BE1;
+    border: #286BE1 1px solid;
+    color: #fff;
+    font-weight: 700;
 }

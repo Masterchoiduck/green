@@ -83,7 +83,7 @@ const makeCalendar = (date) => {
 
   function click(date){
     if(`${Dclick}`===date){
-      return 'clickDay'
+      return ''
     }
     if(`${Dclick}`>date){
       return ''
@@ -98,6 +98,16 @@ const makeCalendar = (date) => {
       return 'todayBefore'
     }
   }
+  function click2(date){
+    if(`${Dclick}`===date){
+      return `clickDay`
+    }
+    if(`${Dclick}`>date){
+      return ``
+      // `style="
+      // display: none;"`
+    }
+  }
 
   for (let i = 1; i <= lastDay; i++) {
     const date = `${currentYear}-${currentMonth.pad()}-${i.pad()}`
@@ -106,10 +116,12 @@ const makeCalendar = (date) => {
 
     htmlDummy += `
       <div class="${click(date)||'number'} ${today(date)||''}">
-        ${i}
-        <p class="nomouse dsNone">
-          ${currentMonth.pad()}
-        </p>
+        <div class="${click2(date)||''}">
+          ${i}
+          <p class="nomouse dsNone">
+            ${currentMonth.pad()}
+          </p>
+        </div>
       </div>
     `;
   }
@@ -160,15 +172,15 @@ makeCalendar(date);
 
 
 // 이전달 이동
-document.querySelector(`.prevDay`).onclick = () => {
-makeCalendar(new Date(date.setMonth(date.getMonth() - 1)));
-}
+document.querySelector(`.prevDay`).addEventListener('click',e=>{
+  makeCalendar(new Date(date.setMonth(date.getMonth() - 1)));
+}) 
 
 // 다음달 이동
-document.querySelector(`.nextDay`).onclick = () => {
-makeCalendar(new Date(date.setMonth(date.getMonth() + 1)));
-}
+document.querySelector(`.nextDay`).addEventListener('click',e=>{
+  makeCalendar(new Date(date.setMonth(date.getMonth() + 1)));
 
+})
 const onlyPass=[
   {
     "won" : '111,600',
@@ -251,7 +263,7 @@ $txt.innerHTML=`
     </br>
   <span class = "won" style="display : none">${onlyPass[0].won}</span>
 `
-const $won = document.querySelector('.won').innerText.replace(',', '')
+let $won = document.querySelector('.won').innerText.replace(',', '')
 
 console.log($won);
 
@@ -262,9 +274,75 @@ const $up=document.querySelector('.up')
 const $total_sum=document.querySelector('#total_sum')
 
 
+
+const $tab = document.querySelector('.tab')
+const $tabLi = $tab.querySelectorAll('li')
+const $viewRelate =document.querySelectorAll('.viewRelate')
+console.log($tabLi);
+$tabLi.forEach((item,inx) =>{
+  item.addEventListener('click',e=>{
+    $tabLi.forEach((item2,inx2)=>{
+      item2.classList.toggle('on',inx2===inx)
+    })
+    $viewRelate.forEach((item3,inx3)=>{
+      item3.classList.toggle('open',inx3===inx)
+    })
+  })
+})
+
+const $layerPopup =document.querySelector('.layerPopup')
+const $layerMask = document.querySelector('.layerMask')
+const $passDay = document.querySelector('.passDay')
+const $day = document.querySelector('.day')
+$layerMask.classList.toggle('layerMask')
+
+const $btnBox = document.querySelector('.btnBox')
+console.log($btnBox);
+$btn_cartInsert2=document.querySelector('#btnCalCancel')
+$btn_cartInsert1=document.querySelector('#btnCalConfirm')
+
+$btn_cartInsert2.addEventListener('click',e=>{
+  $layerMask.classList.toggle('layerMask')
+  $layerPopup.classList.toggle('D-none')
+})
+$btn_cartInsert1.addEventListener('click',e=>{
+  $layerMask.classList.toggle('layerMask')
+  $layerPopup.classList.toggle('D-none')
+})
+
+const $opt5 = document.querySelector('#base_prod_tit')
+$opt5.addEventListener('click',e=>{
+  $layerMask.classList.toggle('layerMask')
+  $layerPopup.classList.toggle('D-none')
+})
+
+const $dayText2 = document.querySelectorAll('.dayText2 ')
+$dayText2.forEach((item,inx)=>{
+  item.addEventListener('click',e=>{
+    $layerMask.classList.toggle('layerMask')
+    $layerPopup.classList.toggle('D-none')
+    $dayText2.forEach((item2,inx2)=>{
+      $passDay.innerHTML=`
+      <span class="passDay">${item.textContent}(1일권)
+    </br>
+      ${onlyPass[0].age}</span>
+    </br>
+     <span class = "won" style="display : none">126,400</span>
+      `
+      $total_sum.innerHTML =`
+      ${(($base_prod_list.querySelector('input').value)*126400).toLocaleString('ko-KR')}원
+    ` 
+      item2.classList.toggle('able',inx!==inx2)
+      item2.classList.toggle('disabled',inx===inx2)
+      $day.innerText='스튜디오 패스(1.5일권)'
+    })
+  })
+})
+
+
 // 클릭시 숫자 올라가는거
 function NumBtn(){
-
+  $won = document.querySelector('.won').innerText.replace(',', '')
   $down.addEventListener('click',e=>{
     if($base_prod_list.querySelector('input').value>'1'){
       $base_prod_list.querySelector('input').value--
@@ -290,8 +368,3 @@ function NumBtn(){
 }
 
 NumBtn()
-
-
-function clickFDay(){
-  
-}
