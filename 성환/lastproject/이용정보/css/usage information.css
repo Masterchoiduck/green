@@ -73,6 +73,7 @@
 }
 
 .content{
+    margin-top: 150px !important;
     margin: 60px;
     display: flex;
     flex-direction: row;
@@ -231,4 +232,7 @@
     height: 30px;
     background-image: url(../img/search.png);
     background-size: 30px 30px;
+}
+footer{
+    margin-top: 120px;
 }

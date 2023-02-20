@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,13 @@
     <link rel="stylesheet" href="../font.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
+    <link rel="stylesheet" href="../../../현주2/footer.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="../예매페이지(버랜)/큰틀/js/aos/aos.css">
+    <script src="../예매페이지(버랜)/큰틀/js/aos/aos.js"></script>
     <title>티켓종류/요금</title>
 </head>
+
 <body><!--헤더-->
     <header id="main_header">
         <ul class="top_menu">
@@ -63,7 +69,7 @@
                 <div class="menu_icon">
                     <img class="search_icon_white" src="img/icon/search_end.png" alt="검색 아이콘">
                     <img class="search_icon_gray" src="img/icon/search_blacck.png" alt="검색 아이콘콘">
-                </div> 
+                </div>
                 <div class="menu_icon">
                     <img class="ticket_icon_white" src="img/icon/ticket2.png" alt="이용권 구매 아이콘">
                     <img class="ticket_icon_gray" src="img/icon/ticket_black.png" alt="이용권 구매 아이콘">
@@ -85,7 +91,7 @@
     <div>
         <div class="center">
             <!-- 카드 할인 혜택 -->
-            <div class="center__box">
+            <div class="center__box" data-aos="fade-up" data-aos-delay="300">
                 <div class="other_1">
                     <div class="other__text">카드 할인 혜택</div>
                 </div>
@@ -117,114 +123,160 @@
                 </div>
             </div>
             <!-- 이달의 혜택 -->
-            <div class="other">
-                <div class="other__text">이달의 혜택</div>
-            </div>
-            <div class="test_2">
-                <div class="test">
-                    <div class="item1">토끼띠 할인</div>
-                    <div class="item2 img5"></div>
-                    <div class="item3">2023.02.01~2023.02.28</div>
-                    <div class="item4"><button class="item__btn">자세히</button></div>
+            <div data-aos="fade-up" data-aos-delay="300">
+                <div class="other">
+                    <div class="other__text">이달의 혜택</div>
                 </div>
-                <div class="test">
-                    <div class="item1">교복 우대</div>
-                    <div class="item2 img6"></div>
-                    <div class="item3">2023.02.01~2023.02.28</div>
-                    <div class="item4"><button class="item__btn">자세히</button></div>
+                <div class="test_2">
+                    <div class="test">
+                        <div class="item1">토끼띠 할인</div>
+                        <div class="item2 img5"></div>
+                        <div class="item3">2023.02.01~2023.02.28</div>
+                        <div class="item4"><button class="item__btn">자세히</button></div>
+                    </div>
+                    <div class="test">
+                        <div class="item1">교복 우대</div>
+                        <div class="item2 img6"></div>
+                        <div class="item3">2023.02.01~2023.02.28</div>
+                        <div class="item4"><button class="item__btn">자세히</button></div>
+                    </div>
+                    <div class="test">
+                        <div class="item1">군인 할인</div>
+                        <div class="item2 img7"></div>
+                        <div class="item3">2023.02.01~2023.02.28</div>
+                        <div class="item4"><button class="item__btn">자세히</button></div>
+                    </div>
+                    <div class="test hidden"></div>
                 </div>
-                <div class="test">
-                    <div class="item1">군인 할인</div>
-                    <div class="item2 img7"></div>
-                    <div class="item3">2023.02.01~2023.02.28</div>
-                    <div class="item4"><button class="item__btn">자세히</button></div>
-                </div>
-                <div class="test hidden"></div>
             </div>
             <!-- 연간 혜택 -->
+            <div data-aos="fade-up" data-aos-delay="300">
             <div class="other">
                 <div class="other__text">연간 혜택</div>
             </div>
-            <div class="test_2">
-                <div class="test">
-                    <div class="item1">문화누리카드 우대</div>
-                    <div class="item2 img8"></div>
-                    <div class="item3">2023.01.01~2023.12.31</div>
-                    <div class="item4"><button class="item__btn">자세히</button></div>
+                <div class="test_2">
+                    <div class="test">
+                        <div class="item1">문화누리카드 우대</div>
+                        <div class="item2 img8"></div>
+                        <div class="item3">2023.01.01~2023.12.31</div>
+                        <div class="item4"><button class="item__btn">자세히</button></div>
+                    </div>
+                    <div class="test">
+                        <div class="item1">최대 50% 할인</div>
+                        <div class="item2 img9"></div>
+                        <div class="item3">2023.01.01~2023.12.31</div>
+                        <div class="item4"><button class="item__btn">자세히</button></div>
+                    </div>
+                    <div class="test hidden"></div>
+                    <div class="test hidden"></div>
                 </div>
-                <div class="test">
-                    <div class="item1">최대 50% 할인</div>
-                    <div class="item2 img9"></div>
-                    <div class="item3">2023.01.01~2023.12.31</div>
-                    <div class="item4"><button class="item__btn">자세히</button></div>
-                </div>
-                <div class="test hidden"></div>
-                <div class="test hidden"></div>
             </div>
             <!-- 상시우대 -->
-            <div class="other">
-                <div class="other__text">상시우대</div>
-            </div>
-            <div class="test_2">
-                <div class="test">
-                    <div class="item1">장애인 우대</div>
-                    <div class="item2 img10"></div>
-                    <div class="item3">2023.01.01~2023.12.31</div>
-                    <div class="item4"><button class="item__btn">자세히</button></div>
-                </div> 
-                <div class="test">
-                    <div class="item1">국가유공자 우대</div>
-                    <div class="item2 img11"></div>
-                    <div class="item3">2023.01.01~2023.12.31</div>
-                    <div class="item4"><button class="item__btn">자세히</button></div>
+            <div data-aos="fade-up" data-aos-delay="300">
+                <div class="other">
+                    <div class="other__text">상시우대</div>
                 </div>
-                <div class="test">
-                    <div class="item1">임산부 우대</div>
-                    <div class="item2 img12"></div>
-                    <div class="item3">2023.01.01~2023.12.31</div>
-                    <div class="item4"><button class="item__btn">자세히</button></div>
-                </div>
-                <div class="test">
-                    <div class="item1">행복카드 우대</div>
-                    <div class="item2 img13"></div>
-                    <div class="item3">2023.01.01~2023.12.31</div>
-                    <div class="item4"><button class="item__btn">자세히</button></div>
+                <div class="test_2">
+                    <div class="test">
+                        <div class="item1">장애인 우대</div>
+                        <div class="item2 img10"></div>
+                        <div class="item3">2023.01.01~2023.12.31</div>
+                        <div class="item4"><button class="item__btn">자세히</button></div>
+                    </div>
+                    <div class="test">
+                        <div class="item1">국가유공자 우대</div>
+                        <div class="item2 img11"></div>
+                        <div class="item3">2023.01.01~2023.12.31</div>
+                        <div class="item4"><button class="item__btn">자세히</button></div>
+                    </div>
+                    <div class="test">
+                        <div class="item1">임산부 우대</div>
+                        <div class="item2 img12"></div>
+                        <div class="item3">2023.01.01~2023.12.31</div>
+                        <div class="item4"><button class="item__btn">자세히</button></div>
+                    </div>
+                    <div class="test">
+                        <div class="item1">행복카드 우대</div>
+                        <div class="item2 img13"></div>
+                        <div class="item3">2023.01.01~2023.12.31</div>
+                        <div class="item4"><button class="item__btn">자세히</button></div>
+                    </div>
                 </div>
             </div>
             <!-- 4시 이후 입장 이벤트 -->
-            <div class="other">
-                <div class="other__text">4시 이후 입장 이벤트</div>
-            </div>
-            <div class="test_2">
-                <div class="test">
-                    <div class="test">
-                        <div class="item1">네이버페이 예매</div>
-                        <div class="item2 img14"></div>
-                        <div class="item3">2023.01.01~2023.12.31</div>
-                        <div class="item4"><button class="item__btn">자세히</button></div>
-                    </div>
-                </div> 
-                <div class="test">
-                    <div class="test">
-                        <div class="item1">카카오페이 예매</div>
-                        <div class="item2 img15"></div>
-                        <div class="item3">2023.01.01~2023.12.31</div>
-                        <div class="item4"><button class="item__btn">자세히</button></div>
-                    </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+                <div class="other">
+                    <div class="other__text">4시 이후 입장 이벤트</div>
                 </div>
-                <div class="test">
+                <div class="test_2">
                     <div class="test">
-                        <div class="item1">온라인 예매</div>
-                        <div class="item2 img16"></div>
-                        <div class="item3">2023.01.01~2023.12.31</div>
-                        <div class="item4"><button class="item__btn">자세히</button></div>
+                        <div class="test">
+                            <div class="item1">네이버페이 예매</div>
+                            <div class="item2 img14"></div>
+                            <div class="item3">2023.01.01~2023.12.31</div>
+                            <div class="item4"><button class="item__btn">자세히</button></div>
+                        </div>
                     </div>
+                    <div class="test">
+                        <div class="test">
+                            <div class="item1">카카오페이 예매</div>
+                            <div class="item2 img15"></div>
+                            <div class="item3">2023.01.01~2023.12.31</div>
+                            <div class="item4"><button class="item__btn">자세히</button></div>
+                        </div>
+                    </div>
+                    <div class="test">
+                        <div class="test">
+                            <div class="item1">온라인 예매</div>
+                            <div class="item2 img16"></div>
+                            <div class="item3">2023.01.01~2023.12.31</div>
+                            <div class="item4"><button class="item__btn">자세히</button></div>
+                        </div>
+                    </div>
+                    <div class="test hidden"></div>
                 </div>
-                <div class="test hidden"></div>
             </div>
         </div>
     </div>
 
-    <footer>footer</footer>
+    <!--푸터-->
+    <footer class="main_section footer">
+        <div class="footer_section_total">
+            <div class="footer_content_left">
+                <div class="footer_content_top">
+                    <div class="footer_US_logo"><img src="../../../../현주2/img/로고_화이트_최종.png" alt="유니버셜스튜디오 로고">
+                    </div>
+                    <div class="footer_US_title">UNIVERSAL STUDIO</div>
+                </div>
+                <div class="footer_content_bottom">
+                    <div class="footer_use_content">
+                        <span>이용약관</span>
+                        <span class="footer_use_import">개인정보처리방침</span>
+                        <span>위치기반서비스 이용약관</span>
+                        <span>법적고지</span>
+                        <span>사업자정보확인</span>
+                    </div>
+                    <div class="footer_copyright">Copyright ⓒ Universal Studio. All Rights Reserved.</div>
+                </div>
+            </div>
+            <div class="footer_content_right">
+                <div class="footer_sns instagram_icon">
+                    <i class="fa-brands fa-instagram" style="color: #fff;"></i>
+                </div>
+                <div class="footer_sns facebook_icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="footer_sns youtube_icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="footer_sns twitter_icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+    <script>
+        AOS.init()
+    </script>
 </html>

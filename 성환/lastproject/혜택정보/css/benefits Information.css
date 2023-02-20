@@ -40,6 +40,10 @@
     justify-items: center
 }
 
+.content{
+    margin-top: 150px !important;
+}
+
 .other{
     width: 1118px;
     height: 75px;
@@ -358,3 +362,6 @@ a{
     height: 90px;
 }
 
+footer {
+    margin-top: 150px;
+}
