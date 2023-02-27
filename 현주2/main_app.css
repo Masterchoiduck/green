@@ -2,9 +2,10 @@
 
 
     /* 헤더 */
-    .logo_gray{
+    .logo_gray {
         display: none;
     }
+
     .logo {
         margin: 13px 0px 0px 3.9063vw;
     }
@@ -42,10 +43,12 @@
     .main_menu_container li {
         display: none;
     }
+
     .right_menu {
         height: 90px;
     }
-    .three_bar{
+
+    .three_bar {
         display: flex;
         font-size: 35px;
     }
@@ -243,13 +246,14 @@
         color: #d4d4d4;
         margin-bottom: 5px;
     }
+
     /* 공용
     .main_section_top{
         display: grid;
         grid-template-columns: 19.1146vw 52.0833vw 104px 23.3854vw;
     }
     */
-    .main_section_top{
+    .main_section_top {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -347,7 +351,7 @@
         position: relative;
         transition: .4s;
         transform-style: preserve-3d;
-        background-color: rgba(255,255,255, 0.8);
+        background-color: rgba(255, 255, 255, 0.8);
     }
 
     .benefit_front,
@@ -528,7 +532,7 @@
 
 
     /*퍼레이드 페이지*/
-/*
+    /*
     .parade_title_total {
         display: grid;
         grid-template-columns: 14.9414vw 45.9961vw 24.4141vw 14.6484vw;
@@ -640,63 +644,66 @@
         align-items: center;
     }
 
-/* 퍼레이드 호버했을떄 */
-.main_parade_item{
-    position: relative;
-}
-.parade_text_box{
-    width: 45.5729vw;
-    height: 22.1354vw;
-    text-align: center;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    z-index: 100;
-    position: absolute;
-    top: 40%;
-    left: 6%;
-    
-}
-      
-.parade_text_title{
-    font-size: 3.9063vw;
-    font-weight: bolder;
-    color: #424242;
-}
-.parade_text_content{
-    font-size: 2.6042vw;
-    font-weight: 400;
-    color: #424242;
-    margin-top: 5px;
-}
-.parade_text_time{
-    font-size: 18px;
-    font-weight: 600;
-    color: #424242;
-    width: 75px;
-    height: 35px;
-    border: 2px solid #424242;
-    border-radius: 50px;
-    line-height: 30px;
-    margin-top: 25px;
-}
+    /* 퍼레이드 호버했을떄 */
+    .main_parade_item {
+        position: relative;
+    }
+
+    .parade_text_box {
+        width: 45.5729vw;
+        height: 22.1354vw;
+        text-align: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        z-index: 100;
+        position: absolute;
+        top: 40%;
+        left: 6%;
+
+    }
+
+    .parade_text_title {
+        font-size: 3.9063vw;
+        font-weight: bolder;
+        color: #424242;
+    }
+
+    .parade_text_content {
+        font-size: 2.6042vw;
+        font-weight: 400;
+        color: #424242;
+        margin-top: 5px;
+    }
+
+    .parade_text_time {
+        font-size: 18px;
+        font-weight: 600;
+        color: #424242;
+        width: 75px;
+        height: 35px;
+        border: 2px solid #424242;
+        border-radius: 50px;
+        line-height: 30px;
+        margin-top: 25px;
+    }
 
 
-.d-none div{
-    display: none;
-}
+    .d-none div {
+        display: none;
+    }
 
-.parade_text_end{
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
-    margin-top: 28.9063vw;
-    text-align: center;
-}
+    .parade_text_end {
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+        margin-top: 28.9063vw;
+        text-align: center;
+    }
 
 
-/* 퍼레이드 실시간 시간 */
+    /* 퍼레이드 실시간 시간 */
 
 
 
